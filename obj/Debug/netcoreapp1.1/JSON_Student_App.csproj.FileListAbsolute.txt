@@ -6,3 +6,4 @@ C:\Users\huda\Documents\GitHub\JSON_Student_App\bin\Debug\netcoreapp1.1\JSON_Stu
 C:\Users\huda\Documents\GitHub\JSON_Student_App\obj\Debug\netcoreapp1.1\JSON_Student_App.AssemblyInfo.cs
 C:\Users\huda\Documents\GitHub\JSON_Student_App\obj\Debug\netcoreapp1.1\JSON_Student_App.dll
 C:\Users\huda\Documents\GitHub\JSON_Student_App\obj\Debug\netcoreapp1.1\JSON_Student_App.pdb
+C:\Users\huda\Documents\GitHub\JSON_Student_App\obj\Debug\netcoreapp1.1\JSON_Student_App.csprojResolveAssemblyReference.cache
