@@ -1,7 +1,7 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\huda\\.nuget\\packages"
+      "/Users/Ella/.nuget/packages"
     ]
   }
 }
