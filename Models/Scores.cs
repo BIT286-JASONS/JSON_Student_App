@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace JSON_Student_App.Models
 {
-    public class Games
+    public class Scores
     {
     }
 }
