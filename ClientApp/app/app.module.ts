@@ -6,6 +6,10 @@ import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
+import { LoginComponent } from './components/login/login.component';
+import { NewAccountComponent } from './components/newaccount/newaccount.component';
+import { ChangePasswordComponent } from './components/changepassword/changepassword.component';
+
 
 @NgModule({
     bootstrap: [ AppComponent ],
@@ -14,6 +18,9 @@ import { CounterComponent } from './components/counter/counter.component';
         NavMenuComponent,
         CounterComponent,
         FetchDataComponent,
+        LoginComponent,
+        NewAccountComponent,
+        ChangePasswordComponent,
         HomeComponent
     ],
     imports: [
@@ -23,6 +30,9 @@ import { CounterComponent } from './components/counter/counter.component';
             { path: 'home', component: HomeComponent },
             { path: 'counter', component: CounterComponent },
             { path: 'fetch-data', component: FetchDataComponent },
+            { path: 'login', component: LoginComponent },
+            { path: 'newaccount', component: NewAccountComponent },
+            { path: 'changepassword', component: ChangePasswordComponent },
             { path: '**', redirectTo: 'home' }
         ])
     ]
