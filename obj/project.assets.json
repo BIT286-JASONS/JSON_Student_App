@@ -9723,15 +9723,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\huda\\.nuget\\packages\\": {}
+    "C:\\Users\\kirby\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\huda\\Documents\\GitHub\\JSON_Student_App\\JSON_Student_App.csproj",
+      "projectUniqueName": "C:\\Users\\kirby\\Source\\Repos\\JSON_Student_App2\\JSON_Student_App.csproj",
       "projectName": "JSON_Student_App",
-      "projectPath": "C:\\Users\\huda\\Documents\\GitHub\\JSON_Student_App\\JSON_Student_App.csproj",
-      "outputPath": "C:\\Users\\huda\\Documents\\GitHub\\JSON_Student_App\\obj\\",
+      "projectPath": "C:\\Users\\kirby\\Source\\Repos\\JSON_Student_App2\\JSON_Student_App.csproj",
+      "outputPath": "C:\\Users\\kirby\\Source\\Repos\\JSON_Student_App2\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

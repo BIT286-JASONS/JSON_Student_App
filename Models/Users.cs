@@ -7,5 +7,6 @@ namespace JSON_Student_App.Models
 {
     public class Users
     {
+
     }
 }
