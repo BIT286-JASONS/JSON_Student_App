@@ -9736,6 +9736,9 @@
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
+      "files": {
+        "lib/netcoreapp1.1/JSON_Student_App.dll": "C:\\Users\\huda\\Documents\\GitHub\\JSON_Student_App\\bin\\placeholder\\netcoreapp1.1\\JSON_Student_App.dll"
+      },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {}
@@ -9745,18 +9748,17 @@
     "frameworks": {
       "netcoreapp1.1": {
         "dependencies": {
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "1.1.1"
+          },
+          "bootstrap": {
+            "target": "Package",
+            "version": "3.3.7"
+          },
           "Microsoft.AspNetCore": {
             "target": "Package",
             "version": "1.1.1"
-          },
-          "Microsoft.Extensions.Logging.Debug": {
-            "target": "Package",
-            "version": "1.1.1"
-          },
-          "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "1.1.1",
-            "autoReferenced": true
           },
           "Microsoft.AspNetCore.Mvc": {
             "target": "Package",
@@ -9770,9 +9772,9 @@
             "target": "Package",
             "version": "1.1.1"
           },
-          "bootstrap": {
+          "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
-            "version": "3.3.7"
+            "version": "1.1.1"
           }
         }
       }
