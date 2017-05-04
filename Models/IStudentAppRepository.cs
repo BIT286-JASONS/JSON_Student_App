@@ -25,9 +25,9 @@ namespace JSON_Student_App.Models
     {
         void Add(Score item);
         IEnumerable<Score> GetAll();
-        Scores Find(long key);
+        Score Find(long key);
         void Remove(long key);
-        void Update(Scores item);
+        void Update(Score item);
     }
 
 
