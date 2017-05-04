@@ -1,16 +1,21 @@
 ﻿import { Injectable } from "@angular/core";
 import { Http } from "@angular/http";
-import "rxjs/add/operator/map";
-import { Observable } from "rxjs/Observable";
-import { NoteItem } from "../../models/note/noteModel";
-import { Configuration } from "../../app.constants";
+import 'rxjs/add/operator/toPromise';
+import { Teacher } from "../models/teacherModel";
 
 @Injectable()
-export class NoteService {
-    constructor(private _http: Http, private _configuration: Configuration) {
+export class TeacherService {
+
+
+    constructor(private http: Http) {
     }
 
-    public getAll = (): Observable<NoteItem[]> => {
-        return this._http.get(this._configuration.ServerWithApiUrl)
-            .map(data => data.json());
-    };
+    getAll(): Promise<Teacher[]> {
+        return this.http.get('/api/contactsApi/')
+            .toPromise()
+            .then(response => response.json())
+            .then(teacher => Array.from(teacher, t => new Teacher(t)))
+            .catch(error => console.log(error));
+    }
+
+}
