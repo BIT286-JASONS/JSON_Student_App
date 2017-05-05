@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 namespace JSON_Student_App.Models
 {
    
-        public class AppContext : DbContext
+        public class StudentAppContext : DbContext
         {
-        public AppContext(DbContextOptions<AppContext> options)
+        public StudentAppContext(DbContextOptions<StudentAppContext> options)
             : base(options)
         {
         }
         public DbSet<Student> Student { get; set; }
         public DbSet<Score> Score { get; set; }
         public DbSet<Teacher> Teacher { get; set; }
-        public DbSet<Scores> Scores { get; set; }
+
     }
 }
