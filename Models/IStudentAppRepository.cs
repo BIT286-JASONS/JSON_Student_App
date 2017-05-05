@@ -23,11 +23,11 @@ namespace JSON_Student_App.Models
     }
     public interface IScoreRepository
     {
-        void Add(Scores item);
-        IEnumerable<Scores> GetAll();
-        Scores Find(long key);
+        void Add(Score item);
+        IEnumerable<Score> GetAll();
+        Score Find(long key);
         void Remove(long key);
-        void Update(Scores item);
+        void Update(Score item);
     }
 
 
