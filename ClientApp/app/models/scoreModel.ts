@@ -1,4 +1,4 @@
-﻿export class Score {
+﻿export class ScoreModel {
     
     public id: number;
     public questions: number;
