@@ -12,49 +12,101 @@ namespace JSON_Student_App.Controllers
     [Route("api/[controller]")]
     public class StudentController : Controller
     {
-        private readonly IStudentRepository _studentRepository;
 
-        public StudentController(StudentRepository studentRepository)
+
+
+
+        [HttpGet("[action]")]
+        public IEnumerable<Student> Get()
         {
-            _studentRepository = studentRepository;
+            var list = new List<Student>();
+            list.Add(new Student
+            {
+                ID = 1,
+                FirstName = "Joe",
+                LastName = "Thompson",
+                Username = "jthomp",
+                Password = "1234",
+                TeacherID = 1
+            });
+            list.Add(new Student
+            {
+                ID = 2, 
+                FirstName = "Kimmy",
+                LastName = "Schmidt",
+                Username = "kschmidt",
+                Password = "1234",
+                TeacherID = 1
+            });
+            list.Add(new Student
+            {
+                ID = 3, 
+                FirstName = "Jerome",
+                LastName = "Lewis",
+                Username = "jlewis",
+                Password = "1234",
+                TeacherID = 1
+            });
+            list.Add(new Student
+            {
+                ID = 4,
+                FirstName = "Micky",
+                LastName = "O'rilley",
+                Username = "mickyo",
+                Password = "1234",
+                TeacherID = 1
+            });
+            list.Add(new Student
+            {
+                ID = 5,
+                FirstName = "Sanjay",
+                LastName = "Patel",
+                Username = "spatel",
+                Password = "1234",
+                TeacherID = 1
+            });
+            list.Add(new Student
+            {
+                ID = 6, 
+                FirstName = "Martha",
+                LastName = "Fleming",
+                Username = "mfleming",
+                Password = "1234",
+                TeacherID = 1
+            });
+            return list;
         }
 
-        [HttpGet]
-        public IEnumerable<Student> GetAll()
-        {
-            return _studentRepository.GetAll();
-        }
+        //// GET: api/values
+        //[HttpGet]
+        //public IEnumerable<string> Get()
+        //{
+        //    return new string[] { "value1", "value2" };
+        //}
 
-        // GET: api/values
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+        //// GET api/values/5
+        //[HttpGet("{id}")]
+        //public string Get(int id)
+        //{
+        //    return "value";
+        //}
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
+        //// POST api/values
+        //[HttpPost]
+        //public void Post([FromBody]string value)
+        //{
+        //}
 
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody]string value)
-        {
-        }
+        //// PUT api/values/5
+        //[HttpPut("{id}")]
+        //public void Put(int id, [FromBody]string value)
+        //{
+        //}
 
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        //// DELETE api/values/5
+        //[HttpDelete("{id}")]
+        //public void Delete(int id)
+        //{
+        //}
     }
 }

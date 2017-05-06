@@ -12,51 +12,51 @@ namespace JSON_Student_App.Controllers
     [Route("api/[controller]")]
     public class TeacherController : Controller
     {
-        private readonly ITeacherRepository _teacherRepository;
 
 
-        public TeacherController(TeacherRepository teacherRespository)
+
+
+
+
+        [HttpGet("[action]")]
+        public IEnumerable<Teacher> Get()
         {
-            _teacherRepository = teacherRespository;
+            var list = new List<Teacher>();
+            list.Add(new Teacher { ID = 1, FirstName = "Bob", LastName = "Smith", Username = "mathrules", Password = "password" });
+            list.Add(new Teacher { ID = 2, FirstName = "Sandra", LastName = "Klien", Username = "sandraklien", Password = "password" });
+            return list;
         }
 
+        //// GET: api/values
+        //[HttpGet]
+        //public IEnumerable<string> Get()
+        //{
+        //    return new string[] { "value1", "value2" };
+        //}
 
-        [HttpGet]
-        public IEnumerable<Teacher> GetAll()
-        {
-            return _teacherRepository.GetAll();
-        }
+        //// GET api/values/5
+        //[HttpGet("{id}")]
+        //public string Get(int id)
+        //{
+        //    return "value";
+        //}
 
-        // GET: api/values
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+        //// POST api/values
+        //[HttpPost]
+        //public void Post([FromBody]string value)
+        //{
+        //}
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
+        //// PUT api/values/5
+        //[HttpPut("{id}")]
+        //public void Put(int id, [FromBody]string value)
+        //{
+        //}
 
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody]string value)
-        {
-        }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        //// DELETE api/values/5
+        //[HttpDelete("{id}")]
+        //public void Delete(int id)
+        //{
+        //}
     }
 }
