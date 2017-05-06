@@ -17,13 +17,56 @@ namespace JSON_Student_App.Models
             _context = context;
 
             if (_context.Students.Count() == 0)
-                Add(new Student {
-                    FirstName = "guy",
-                    LastName = "name",
-                    Username = "XxguynamexX",
-                    Password = "abcdefg",
+            {
+                Add(new Student
+                {
+                    FirstName = "Joe",
+                    LastName = "Thompson",
+                    Username = "jthomp",
+                    Password = "1234",
                     TeacherID = 1
-                });                      
+                });
+                Add(new Student
+                {
+                    FirstName = "Kimmy",
+                    LastName = "Schmidt",
+                    Username = "kschmidt",
+                    Password = "1234",
+                    TeacherID = 1
+                });
+                Add(new Student
+                {
+                    FirstName = "Jerome",
+                    LastName = "Lewis",
+                    Username = "jlewis",
+                    Password = "1234",
+                    TeacherID = 1
+                });
+                Add(new Student
+                {
+                    FirstName = "Micky",
+                    LastName = "O'rilley",
+                    Username = "mickyo",
+                    Password = "1234",
+                    TeacherID = 1
+                });
+                Add(new Student
+                {
+                    FirstName = "Sanjay",
+                    LastName = "Patel",
+                    Username = "spatel",
+                    Password = "1234",
+                    TeacherID = 1
+                });
+                Add(new Student
+                {
+                    FirstName = "Martha",
+                    LastName = "Fleming",
+                    Username = "mfleming",
+                    Password = "1234",
+                    TeacherID = 1
+                });
+            }
         }
 
         public IEnumerable<Student> GetAll()
@@ -62,13 +105,16 @@ namespace JSON_Student_App.Models
     {
         private readonly AppContext _context;
 
-        //public TeacherRepository(AppContext context)
-        //{
-        //    _context = context;
+        public TeacherRepository(AppContext context)
+        {
+            _context = context;
 
-        //    //if (_context.Student.Count() == 0)
-        //    //    Add(new Student { Name = "Item1" });
-        // }
+            if (_context.Teachers.Count() == 0)
+            {
+                Add(new Teacher { FirstName = "Bob", LastName = "Smith", Username = "mathrules", Password = "password" });
+                Add(new Teacher { FirstName = "Sandra", LastName = "Klien", Username = "sandraklien", Password = "password" });
+            }
+        }
 
         public IEnumerable<Teacher> GetAll()
         {
@@ -106,13 +152,34 @@ namespace JSON_Student_App.Models
     {
         private readonly AppContext _context;
 
-        //public TeacherRepository(AppContext context)
-        //{
-        //    _context = context;
+        public ScoreRepository(AppContext context)
+        {
+            _context = context;
 
-        //    //if (_context.Student.Count() == 0)
-        //    //    Add(new Student { Name = "Item1" });
-        //}
+            if (_context.Scores.Count() == 0)
+            {
+                Add(new Score { GameID = 1, StudentID = 4, NumberQuestions = 10, NumberCorrect = 8, Time = RandomDayFunc(), TeacherID = 1 });
+                Add(new Score { GameID = 3, StudentID = 1, NumberQuestions = 10, NumberCorrect = 3, Time = RandomDayFunc(), TeacherID = 1 });
+                Add(new Score { GameID = 2, StudentID = 3, NumberQuestions = 10, NumberCorrect = 4, Time = RandomDayFunc(), TeacherID = 1 });
+                Add(new Score { GameID = 4, StudentID = 4, NumberQuestions = 10, NumberCorrect = 9, Time = RandomDayFunc(), TeacherID = 1 });
+                Add(new Score { GameID = 3, StudentID = 5, NumberQuestions = 10, NumberCorrect = 4, Time = RandomDayFunc(), TeacherID = 1 });
+                Add(new Score { GameID = 1, StudentID = 1, NumberQuestions = 10, NumberCorrect = 4, Time = RandomDayFunc(), TeacherID = 1 });
+                Add(new Score { GameID = 1, StudentID = 3, NumberQuestions = 10, NumberCorrect = 6, Time = RandomDayFunc(), TeacherID = 1 });
+                Add(new Score { GameID = 2, StudentID = 2, NumberQuestions = 10, NumberCorrect = 3, Time = RandomDayFunc(), TeacherID = 1 });
+                Add(new Score { GameID = 4, StudentID = 3, NumberQuestions = 10, NumberCorrect = 5, Time = RandomDayFunc(), TeacherID = 1 });
+                Add(new Score { GameID = 5, StudentID = 5, NumberQuestions = 10, NumberCorrect = 4, Time = RandomDayFunc(), TeacherID = 1 });
+                Add(new Score { GameID = 6, StudentID = 1, NumberQuestions = 10, NumberCorrect = 4, Time = RandomDayFunc(), TeacherID = 1 });
+            }
+        }
+
+        public DateTime RandomDayFunc()
+        {
+            DateTime from = new DateTime(2017, 3, 1);
+            DateTime to = DateTime.Now;
+            var rnd = new Random();
+            TimeSpan range = new TimeSpan(to.Ticks - from.Ticks);
+            return from + new TimeSpan((long)(range.Ticks * rnd.NextDouble()));
+        }
 
         public IEnumerable<Score> GetAll()
         {
