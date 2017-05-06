@@ -3,14 +3,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using JSON_Student_App.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace JSON_Student_App.Controllers
 {
     [Route("api/[controller]")]
-    public class UserController : Controller
+    public class ScoreController : Controller
     {
+
+        private readonly IScoreRepository _scoreRepository;
+
+        public ScoreController (ScoreRepository scoreRespository)
+        {
+            _scoreRepository = scoreRespository;
+        }
+
+
+        [HttpGet]
+        public IEnumerable<Score> GetAll()
+        {
+            return _scoreRepository.GetAll();
+        }
+
+
         // GET: api/values
         [HttpGet]
         public IEnumerable<string> Get()
@@ -42,9 +59,5 @@ namespace JSON_Student_App.Controllers
         public void Delete(int id)
         {
         }
-
-
-
-
     }
 }

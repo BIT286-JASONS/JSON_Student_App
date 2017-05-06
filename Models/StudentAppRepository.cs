@@ -10,9 +10,9 @@ namespace JSON_Student_App.Models
     public class StudentRepository : IStudentRepository
     {
 
-        private readonly AppContext _context;
+        private readonly StudentAppContext _context;
 
-        public StudentRepository(AppContext context)
+        public StudentRepository(StudentAppContext context)
         {
             _context = context;
 
@@ -103,9 +103,9 @@ namespace JSON_Student_App.Models
 
     public class TeacherRepository : ITeacherRepository
     {
-        private readonly AppContext _context;
+        private readonly StudentAppContext _context;
 
-        public TeacherRepository(AppContext context)
+        public TeacherRepository(StudentAppContext context)
         {
             _context = context;
 
@@ -150,9 +150,9 @@ namespace JSON_Student_App.Models
     }
     public class ScoreRepository : IScoreRepository
     {
-        private readonly AppContext _context;
+        private readonly StudentAppContext _context;
 
-        public ScoreRepository(AppContext context)
+        public ScoreRepository(StudentAppContext context)
         {
             _context = context;
 

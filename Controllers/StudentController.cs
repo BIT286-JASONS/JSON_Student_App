@@ -3,14 +3,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using JSON_Student_App.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace JSON_Student_App.Controllers
 {
     [Route("api/[controller]")]
-    public class GameController : Controller
+    public class StudentController : Controller
     {
+        private readonly IStudentRepository _studentRepository;
+
+        public StudentController(StudentRepository studentRepository)
+        {
+            _studentRepository = studentRepository;
+        }
+
+        [HttpGet]
+        public IEnumerable<Student> GetAll()
+        {
+            return _studentRepository.GetAll();
+        }
+
         // GET: api/values
         [HttpGet]
         public IEnumerable<string> Get()

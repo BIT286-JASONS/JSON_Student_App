@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace JSON_Student_App.Models
 {
    
-        public class AppContext : DbContext
+        public class StudentAppContext : DbContext
         {
-            public AppContext(DbContextOptions<AppContext> options)
+            public StudentAppContext(DbContextOptions<StudentAppContext> options)
             : base(options)
             {
             }

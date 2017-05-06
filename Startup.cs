@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using JSON_Student_App.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace JSON_Student_App
 {
@@ -28,12 +30,12 @@ namespace JSON_Student_App
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddDbContext<AppContext>(opt => opt.UseInMemoryDatabase());
+            services.AddDbContext<Models.StudentAppContext>(opt => opt.UseInMemoryDatabase());
 
             // Add framework services.
             services.AddMvc();
 
-            //services.AddScoped<IStudentRepository, StudentRepository>();
+            services.AddScoped<IStudentRepository, StudentRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
