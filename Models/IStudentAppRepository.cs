@@ -10,6 +10,7 @@ namespace JSON_Student_App.Models
         void Add(Student item);
         IEnumerable<Student> GetAll();
         Student Find(long key);
+        Student Find(string username);
         void Remove(long key);
         void Update(Student item);      
     }
@@ -18,16 +19,18 @@ namespace JSON_Student_App.Models
         void Add(Teacher item);
         IEnumerable<Teacher> GetAll();
         Teacher Find(long key);
+        Teacher Find(string username);
         void Remove(long key);
         void Update(Teacher item);
     }
     public interface IScoreRepository
     {
-        void Add(Scores item);
-        IEnumerable<Scores> GetAll();
-        Scores Find(long key);
+        void Add(Score item);
+        IEnumerable<Score> GetAll();
+        Score Find(long key);
+        List<Score> Find(string teachername);
         void Remove(long key);
-        void Update(Scores item);
+        void Update(Score item);
     }
 
 

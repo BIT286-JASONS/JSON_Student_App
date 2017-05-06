@@ -14,9 +14,8 @@ namespace JSON_Student_App.Models
             {
             }
 
-            public DbSet<Student> Student { get; set; }
-            public DbSet<Shapes_Game> Shapes_Game { get; set; }
-            public DbSet<Teacher> Teacher { get; set; }
-            public DbSet<Scores> Scores { get; set; }
+            public DbSet<Student> Students { get; set; }
+            public DbSet<Teacher> Teachers { get; set; }
+            public DbSet<Score> Scores { get; set; }
         }
 }

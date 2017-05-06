@@ -5,15 +5,18 @@ using System.Threading.Tasks;
 
 namespace JSON_Student_App.Models
 {
+    
+
     public class StudentRepository : IStudentRepository
     {
+
         private readonly AppContext _context;
 
         public StudentRepository(AppContext context)
         {
             _context = context;
 
-            if (_context.Student.Count() == 0)
+            if (_context.Students.Count() == 0)
                 Add(new Student {
                     FirstName = "guy",
                     LastName = "name",
@@ -25,27 +28,32 @@ namespace JSON_Student_App.Models
 
         public IEnumerable<Student> GetAll()
         {
-            return _context.Student.ToList();
+            return _context.Students.ToList();
         }
 
         public void Add(Student item)
         {
-            _context.Student.Add(item);
+            _context.Students.Add(item);
             _context.SaveChanges();
         }
         public Student Find(long key)
         {
-            return _context.Student.FirstOrDefault(t => t.ID == key);
+            return _context.Students.FirstOrDefault(t => t.ID == key);
+        }
+
+        public Student Find(string username)
+        {
+            return _context.Students.FirstOrDefault(u => u.Username == username);
         }
         public void Remove(long key)
         {
-            var entity = _context.Student.First(t => t.ID == key);
-            _context.Student.Remove(entity);
+            var entity = _context.Students.First(t => t.ID == key);
+            _context.Students.Remove(entity);
             _context.SaveChanges();
         }
         public void Update(Student item)
         {
-            _context.Student.Update(item);
+            _context.Students.Update(item);
             _context.SaveChanges();
         }
     }
@@ -64,27 +72,33 @@ namespace JSON_Student_App.Models
 
         public IEnumerable<Teacher> GetAll()
         {
-            return _context.Teacher.ToList();
+            return _context.Teachers.ToList();
         }
 
         public void Add(Teacher item)
         {
-            _context.Teacher.Add(item);
+            _context.Teachers.Add(item);
             _context.SaveChanges();
         }
         public Teacher Find(long key)
         {
-            return _context.Teacher.FirstOrDefault(t => t.ID == key);
+            return _context.Teachers.FirstOrDefault(t => t.ID == key);
         }
+
+        public Teacher Find(string username)
+        {
+            return _context.Teachers.FirstOrDefault(u => u.Username == username);
+        }
+
         public void Remove(long key)
         {
-            var entity = _context.Teacher.First(t => t.ID == key);
-            _context.Teacher.Remove(entity);
+            var entity = _context.Teachers.First(t => t.ID == key);
+            _context.Teachers.Remove(entity);
             _context.SaveChanges();
         }
         public void Update(Teacher item)
         {
-            _context.Teacher.Update(item);
+            _context.Teachers.Update(item);
             _context.SaveChanges();
         }
     }
@@ -100,19 +114,25 @@ namespace JSON_Student_App.Models
         //    //    Add(new Student { Name = "Item1" });
         //}
 
-        public IEnumerable<Scores> GetAll()
+        public IEnumerable<Score> GetAll()
         {
             return _context.Scores.ToList();
         }
 
-        public void Add(Scores item)
+        public void Add(Score item)
         {
             _context.Scores.Add(item);
             _context.SaveChanges();
         }
-        public Scores Find(long key)
+        public Score Find(long key)
         {
             return _context.Scores.FirstOrDefault(t => t.ID == key);
+        }
+
+        public List<Score> Find(string username)
+        {
+            var teacherID = _context.Teachers.FirstOrDefault(t => t.Username == username).ID;
+            return _context.Scores.Where(s => s.TeacherID == teacherID).ToList();
         }
         public void Remove(long key)
         {
@@ -120,7 +140,7 @@ namespace JSON_Student_App.Models
             _context.Scores.Remove(entity);
             _context.SaveChanges();
         }
-        public void Update(Scores item)
+        public void Update(Score item)
         {
             _context.Scores.Update(item);
             _context.SaveChanges();
