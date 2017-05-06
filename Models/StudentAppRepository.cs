@@ -60,7 +60,7 @@ namespace JSON_Student_App.Models
 
         //    //if (_context.Student.Count() == 0)
         //    //    Add(new Student { Name = "Item1" });
-        //}
+        // }
 
         public IEnumerable<Teacher> GetAll()
         {
