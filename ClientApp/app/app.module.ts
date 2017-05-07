@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+﻿import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { UniversalModule } from 'angular2-universal';
 import { FormsModule } from '@angular/forms';
@@ -10,6 +10,7 @@ import { CounterComponent } from './components/counter/counter.component';
 import { LoginComponent } from './components/login/login.component';
 import { NewAccountComponent } from './components/newaccount/newaccount.component';
 import { ChangePasswordComponent } from './components/changepassword/changepassword.component';
+import { ScoreComponent } from './components/score/score.component';
 import { EqualValidator } from './components/changepassword/changepassword.equal-validator.directive'; 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { EqualValidator } from './components/changepassword/changepassword.equal
         NewAccountComponent,
         ChangePasswordComponent,
         HomeComponent,
+        ScoreComponent,
         EqualValidator
     ],
     imports: [
@@ -36,6 +38,7 @@ import { EqualValidator } from './components/changepassword/changepassword.equal
             { path: 'login', component: LoginComponent },
             { path: 'newaccount', component: NewAccountComponent },
             { path: 'changepassword', component: ChangePasswordComponent },
+            { path: 'score', component: ScoreComponent },
             { path: '**', redirectTo: 'home' }
         ])
     ]
