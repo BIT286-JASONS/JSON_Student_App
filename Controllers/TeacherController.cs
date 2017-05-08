@@ -81,7 +81,7 @@ namespace JSON_Student_App.Controllers
             {
                 return BadRequest(); 
             }
-            return CreatedAtRoute("GetByID", new )
+            return CreatedAtRoute("GetByUsername", new { username = user.Username });
         }
 
         // Update method to change the password of a teacher,
