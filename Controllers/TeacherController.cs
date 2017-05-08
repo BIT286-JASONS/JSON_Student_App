@@ -12,19 +12,89 @@ namespace JSON_Student_App.Controllers
     [Route("api/[controller]")]
     public class TeacherController : Controller
     {
+        // initilize list, database or repository will go here when thats being implemented
+        private List<Teacher> list = new List<Teacher>();
 
 
+        // constructor for Teacher Controller, add two teachers to the list
+        public TeacherController()
+            {
+            list.Add(new Teacher { ID = 1, FirstName = "Bob", LastName = "Smith", Username = "mathrules", Password = "password" });
+            list.Add(new Teacher { ID = 2, FirstName = "Sandra", LastName = "Klien", Username = "sandraklien", Password = "password" });
+
+        }
 
 
-
-
+        // basic get method that returns the entire list when it gets a call at /teacher/get
         [HttpGet("[action]")]
         public IEnumerable<Teacher> Get()
         {
-            var list = new List<Teacher>();
-            list.Add(new Teacher { ID = 1, FirstName = "Bob", LastName = "Smith", Username = "mathrules", Password = "password" });
-            list.Add(new Teacher { ID = 2, FirstName = "Sandra", LastName = "Klien", Username = "sandraklien", Password = "password" });
             return list;
+        }
+
+
+        // get method that returns the ID of a teacher object, not sure if this is needed right now
+        //[HttpGet("[action]")]
+        //public int GetID(Teacher teacher)
+        //{
+        //    return list.Find(t => t.ID == teacher.ID).ID;
+        //}
+
+
+        
+        //get method to return an object with given username
+        [HttpGet("[action]")]
+        public IActionResult GetByUsername(string username)
+        {
+            return new ObjectResult(list.Find(t => t.Username == username));
+        }
+
+        // get method that returns a teacher object if the id is known or returns notfound
+        public IActionResult GetByID(int id)
+        {
+            Teacher item = list.Find(t => t.ID == id);
+            if (item == null)
+            {
+                return NotFound();
+            }
+            return new ObjectResult(item);
+        }
+
+        // Creates a new teacher object in the list
+        [HttpPost("[action]")]
+        public IActionResult Create([FromBody] Teacher teacher)
+        {
+            if(teacher == null)
+            {
+                return BadRequest();
+            }
+
+            list.Add(teacher);
+
+            return CreatedAtRoute("GetByID", new { id = teacher.ID }, teacher);
+        }
+
+
+        // Update method to change the password of a teacher,
+        // obviously unsecure as ANYONE can change the password to whatever they like
+
+        [HttpPut("[action]")]
+        public IActionResult Update(int id, [FromBody] Teacher teacher)
+        {
+            if (teacher == null || teacher.ID != id)
+            {
+                return BadRequest();
+            }
+
+            var teachercheck = list.Find(t => t.ID == id);
+            if (teachercheck == null)
+            {
+                return NotFound();
+            }
+
+            teachercheck.Password = teacher.Password; 
+
+            return new NoContentResult();
         }
 
         //// GET: api/values
