@@ -7,6 +7,10 @@ export class CreationService {
 
     constructor(private http: Http) { }
 
+    getTeacher() {
+        return this.http.get('/api/teacher/Get').map((res: Response) => res.json());
+    }
+
     createTeacher(teacher) {
         let headers = new Headers({ 'Content-Type': 'application/json' });
         let options = new RequestOptions({ headers: headers });
