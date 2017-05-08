@@ -3,7 +3,6 @@ import { Password } from './changepassword.password.interface';
 
 
 @Component({
-    moduleId: module.id + '',
     selector: 'changepassword',
     templateUrl: './changepassword.component.html',
     styleUrls: ['./changepassword.component.css']
