@@ -71,6 +71,29 @@ namespace JSON_Student_App.Controllers
             return CreatedAtRoute("GetByID", new { id = teacher.ID }, teacher);
         }
 
+
+        // Update method to change the password of a teacher,
+        // obviously unsecure as ANYONE can change the password to whatever they like
+
+        [HttpPut("[action]")]
+        public IActionResult Update(int id, [FromBody] Teacher teacher)
+        {
+            if (teacher == null || teacher.ID != id)
+            {
+                return BadRequest();
+            }
+
+            var teachercheck = list.Find(t => t.ID == id);
+            if (teachercheck == null)
+            {
+                return NotFound();
+            }
+
+            teachercheck.Password = teacher.Password; 
+
+            return new NoContentResult();
+        }
+
         //// GET: api/values
         //[HttpGet]
         //public IEnumerable<string> Get()
