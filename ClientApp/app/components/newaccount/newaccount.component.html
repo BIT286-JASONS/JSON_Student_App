@@ -6,14 +6,42 @@
 </head>
 <body>
 
-    <form>
-        <input type="text" name="FirstName" />
-        <input type="text" name="LastName" />
-        
-        <input type="text" name="TeacherName" />
-        <input type="checkbox" name="IsTeacher" />
-        <input type="button" onclick="login();" />
+    <form name="NewAccountForm" onsubmit="">
+        <table>
+            <tr>
+                <td>Firstname</td>
+                <td><input type="text" name="FirstName " /></td>
+            <tr>
+                <td>Lastname</td>
+                <td><input type="text" name="FirstName " /></td>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" name="FirstName " /></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="text" name="FirstName " /></td>
+            </tr>
+            <tr>
+                <td>are you a teacher</td>
+                <td><input type="checkbox" name="IsTeacher" /></td>
+            </tr>
+            <tr>
+                <td>who is your teacher</td>
+                <td>
+                    <select>
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </td>
+            </tr>
+
+        </table>
     </form>
+
 
 </body>
 </html>
