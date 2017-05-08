@@ -31,7 +31,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ClientApp\app\components\score\" />
-    <Folder Include="ClientApp\app\models\" />
   </ItemGroup>
   <Target Name="RunWebpack" AfterTargets="ComputeFilesToPublish">
     <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
