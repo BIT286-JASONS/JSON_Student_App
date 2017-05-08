@@ -1,2 +1,38 @@
-﻿body {
+﻿html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+div.form-group {
+    width: 500px;
+    margin-left:   auto;
+    margin-right:  auto;
+    margin-top:    25px;
+    margin-bottom: 25px;
+}
+form {
+    width: 700px;
+    border: solid 2px black;
+    border-radius:10px;
+    background-color: grey;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 35px;
+}
+.btn{
+    align-content:center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.checkbox {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
