@@ -40,6 +40,9 @@ namespace JSON_Student_App.Controllers
         //    return list.Find(t => t.ID == teacher.ID).ID;
         //}
 
+
+        
+        //get method to return an object with given username
         [HttpGet("[action]")]
         public IActionResult GetByUsername(string username)
         {
@@ -49,7 +52,7 @@ namespace JSON_Student_App.Controllers
         // get method that returns a teacher object if the id is known or returns notfound
         public IActionResult GetByID(int id)
         {
-            Teacher item = list.Find(s => s.ID == id);
+            Teacher item = list.Find(t => t.ID == id);
             if (item == null)
             {
                 return NotFound();
