@@ -12,7 +12,6 @@ export class ScoreComponent {
         http.get('/api/Score/Get').subscribe(result => {
             this.scores = result.json() as Score[];
         });
-        console.log(this.scores);
     }
 }
 
