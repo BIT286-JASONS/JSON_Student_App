@@ -21,6 +21,15 @@
     <Content Remove="ClientApp\**" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ClientApp\dist\vendor-manifest.json" />
+    <Content Include="wwwroot\dist\89889688147bd7575d6327160d64e760.svg" />
+    <Content Include="wwwroot\dist\main-client.js" />
+    <Content Include="wwwroot\dist\main-client.js.map" />
+    <Content Include="wwwroot\dist\vendor-manifest.json" />
+    <Content Include="wwwroot\dist\vendor.css" />
+    <Content Include="wwwroot\dist\vendor.js" />
+  </ItemGroup>
+  <ItemGroup>
     <Folder Include="ClientApp\app\components\score\" />
     <Folder Include="ClientApp\app\models\" />
     <Folder Include="ClientApp\app\services\student\" />
