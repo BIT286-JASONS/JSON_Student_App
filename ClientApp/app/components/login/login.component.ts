@@ -1,34 +1,25 @@
 ﻿import { Component } from '@angular/core';
 import { Http } from '@angular/http'
-import { LoginCtrl } from 'login'
+///import { LoginCtrl } from 'login'
 
 @Component({
     selector: 'login',
     templateUrl: './login.component.html'
 })
-export class FetchDataComponent {
-    public teacher: theTeachers[];
+export class loginComponent {
+    public Teachers: Teacher[];
 
     constructor(http: Http) {
         http.get('/api/teachercontrolle/get').subscribe(result => {
-            this.teacher = result.json() as theTeachers[];
+            this.Teachers = result.json() as Teacher[];
         });
     }
-    s
-    //for(theTeacher[])
-    
-    //}
+
 
 
 }
-function login($scope)
-{
-    while ({{ $scope.username }} != {{ this.user }})
-{
-
-}
-}   
-interface theTeachers {
+ 
+interface Teacher {
 
     username: string;
     password: string;
