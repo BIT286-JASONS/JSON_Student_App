@@ -1,23 +1,28 @@
 ﻿import { Component } from '@angular/core';
 import { Http } from '@angular/http'
-///import { LoginCtrl } from 'login'
+//import { teacherModel } from '../../models/teacherModel'
+//import { User } from "../../models/user"
+import { $scope }
 
 @Component({
     selector: 'login',
     templateUrl: './login.component.html'
 })
-export class LoginComponent {
-    public Teachers: Teacher[];
 
+export class loginComponent {
+    //public  Teachers: Teacher[];
+    public data = $scope.fields
+    //this.Teacher.username();
+    
     constructor(http: Http) {
-        http.get('/api/teachercontrolle/get').subscribe(result => {
-            this.Teachers = result.json() as Teacher[];
-        });
+    //$scope.login
+    //Teacher asdf = new Teacher{this.username = $scope.username}
+
+    http.post('api/teachercontroller/check', this.data)
     }
 
-
-
 }
+
  
 interface Teacher {
 

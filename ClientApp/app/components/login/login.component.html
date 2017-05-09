@@ -10,15 +10,15 @@
 </head>
 <body>
     <div ng-controller="LoginCtrl">
-        <form #loginform="ngForm" name="loginForm" ng-submit="login(credentials)" novalidate ng-controller="LoginController">
+        <form #loginform="ngForm" name="loginForm" ng-submit="login()" novalidate ng-form="loginform">
             <table>
                 <tr>
                     <td>Username</td>
-                    <td><input type="text" name="Username" id="username" ng-model="username" /></td>
+                    <td><input type="text" name="Username" id="username" ng-model="fields.username" /></td>
                 </tr>
                 <tr>
                     <td>Password</td>
-                    <td><input type="password" name="Password" id="password" ng-model="password" /></td>
+                    <td><input type="password" name="Password" id="password" ng-model="fields.password" /></td>
                 </tr>
                 <tr>
                     <td><a href="../newaccount/newaccount.component.html">Register</a></td>
