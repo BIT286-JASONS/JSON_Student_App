@@ -29,7 +29,7 @@ export class NewAccountComponent {
             // the second argument is a function which runs on error
             err => console.error(err),
             // the third argument is a function which runs on completion
-            () => console.log('done loading foods')
+            () => console.log('done loading teachers')
         );
     }
 
