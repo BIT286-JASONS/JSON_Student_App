@@ -1,15 +1,30 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app>
 <head>
     <meta charset="utf-8" />
     <title>  
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        
     </title>
 </head>
 <body>
-    <form>
-        <input type="text" name="FirstName" />
-        <input type="text" name="LastName" />
-        <input type="button" onclick="login();" />
-     </form>
+    <div ng-controller="LoginCtrl">
+        <form #loginform="ngForm" name="loginForm" ng-submit="login(credentials)" novalidate ng-controller="LoginController">
+            <table>
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" name="Username" id="username" ng-model="username" /></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="Password" id="password" ng-model="password" /></td>
+                </tr>
+                <tr>
+                    <td><a href="../newaccount/newaccount.component.html">Register</a></td>
+                    <td><input type="button" ng-click="submit();" name="Login" value="Login" /></td>
+                </tr>
+            </table>
+            </form>
+    </div>
 </body>
 </html>
