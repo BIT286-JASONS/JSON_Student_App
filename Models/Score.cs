@@ -1,5 +1,8 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,8 +10,14 @@ namespace JSON_Student_App.Models
 {
     public class Score
     {
-        public int ScoreID { get; set; }
-        public int Questions { get; set; }
-        public int Correct { get; set; }
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int ID { get; set; }
+        public int GameID { get; set; }
+        public int StudentID { get; set; }
+        public int NumberQuestions { get; set; }
+        public int NumberCorrect { get; set; }
+        public DateTime Time {get; set;}  
+        public int TeacherID { get; set; }
     }
 }
