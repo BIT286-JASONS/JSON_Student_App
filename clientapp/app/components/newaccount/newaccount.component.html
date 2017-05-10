@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body class="container-fluid">
+    <div class="container">
+        <form name="NewAccountForm" (ngSubmit)="f.form.valid && onSubmit()">
+
+            <div class="form-group">
+                <label for="FirstName">First Name</label>
+                <input type="text" class="form-control" name="FirstName " id="FirstName" [(ngModel)]="model.FirstName" placeholder="Enter first name" />
+            </div>
+            <div class="form-group">
+                <label for="LastName">Last Name</label>
+                <input type="text" class="form-control" name="LastName " id="LastName" [(ngModel)]="model.LastName" placeholder="Enter Last Name" />
+            </div>
+            <div class="form-group">
+                <label for="UserName">User Name</label>
+                <input type="text" class="form-control" name="UserName " id="UserName" [(ngModel)]="model.UserName" placeholder="Enter userName" />
+            </div>
+            <div class="form-group">
+                <label for="Password">Password</label>
+                <input type="text" class="form-control" name="Password " id="Password" [(ngModel)]="model.Password" placeholder="Enter Password" />
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox">Check if you are a teacher</label>
+            </div>
+            <div class="form-group">
+                <select class="custom-select">
+                    <option selected>choose teacher</option>
+                    <option value="jo">jo</option>
+                    <option value="bob">bob</option>
+                    <option value="betty">betty</option>
+                </select>
+            </div>
+            <button type="button" class="btn">Submit</button>
+
+        </form>
+    </div>
+</body>
+</html>

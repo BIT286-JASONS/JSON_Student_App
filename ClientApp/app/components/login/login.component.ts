@@ -6,7 +6,7 @@ import { Http } from '@angular/http'
     selector: 'login',
     templateUrl: './login.component.html'
 })
-export class loginComponent {
+export class LoginComponent {
     public Teachers: Teacher[];
 
     constructor(http: Http) {
