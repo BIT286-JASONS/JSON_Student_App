@@ -7,8 +7,7 @@ import { Router } from '@angular/router';
 
 @Component({
     selector: 'newaccount',
-    templateUrl: './newaccount.component.html',
-    styleUrls: ['./newaccount.component.css']
+    templateUrl: './newaccount.component.html'
 })
 export class NewAccountComponent {
 
