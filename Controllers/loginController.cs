@@ -6,16 +6,20 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace JSON_Student_App.Controllers
 {
-    public class HomeController : Controller
+    [Route("api/[controller]")]
+    public class loginController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
 
-        public IActionResult Error()
+        public class WeatherForecast
         {
-            return View();
+            int num = 0;
+            while ( { { $scope.username } } != { { theTeachers[num].username } } )
+            {
+                num++;
+            }
         }
     }
+
 }
+
+

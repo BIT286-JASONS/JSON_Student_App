@@ -1,32 +1,26 @@
 ﻿import { Component } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-import { user } from './user'
-
+import { Http } from '@angular/http'
+///import { LoginCtrl } from 'login'
 
 @Component({
     selector: 'login',
     templateUrl: './login.component.html'
 })
-export class LoginComponent {
-    constructor(
-        public username: string,
-        public password: string
+export class loginComponent {
+    public Teachers: Teacher[];
 
-    ) { }
-
-
-
-    onSubmit() {
-        
-
+    constructor(http: Http) {
+        http.get('/api/teachercontrolle/get').subscribe(result => {
+            this.Teachers = result.json() as Teacher[];
+        });
     }
 
 
-    public login()
-    {
 
-    }
+}
+ 
+interface Teacher {
 
-
+    username: string;
+    password: string;
 }
