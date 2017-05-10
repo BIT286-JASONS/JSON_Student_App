@@ -8,6 +8,7 @@ import { HomeComponent } from './components/scores/home/home.component';
 import { IndexComponent } from './components/login/index/index.component';
 import { NewAccountComponent } from './components/login/newaccount/newaccount.component';
 import { ChangePasswordComponent } from './components/scores/changepassword/changepassword.component';
+import { ScoreComponent } from './components/scores/score.component';
 import { EqualValidator } from './components/scores/changepassword/changepassword.equal-validator.directive'; 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { EqualValidator } from './components/scores/changepassword/changepasswor
         NewAccountComponent,
         ChangePasswordComponent,
         HomeComponent,
+        ScoreComponent,
         EqualValidator
     ],
     imports: [
@@ -30,6 +32,7 @@ import { EqualValidator } from './components/scores/changepassword/changepasswor
             { path: 'index', component: IndexComponent },
             { path: 'newaccount', component: NewAccountComponent },
             { path: 'changepassword', component: ChangePasswordComponent },
+            { path: 'score', component: ScoreComponent },
             { path: '**', redirectTo: 'index' }
         ])
     ]
