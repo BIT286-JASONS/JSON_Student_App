@@ -18,7 +18,7 @@ namespace JSON_Student_App.Controllers
 
         // constructor for Teacher Controller, add two teachers to the list
         public TeacherController()
-            {
+        {
             list.Add(new Teacher { ID = 1, FirstName = "Bob", LastName = "Smith", Username = "mathrules", Password = "password" });
             list.Add(new Teacher { ID = 2, FirstName = "Sandra", LastName = "Klien", Username = "sandraklien", Password = "password" });
 
@@ -61,7 +61,7 @@ namespace JSON_Student_App.Controllers
         [HttpPost("[action]")]
         public IActionResult Create([FromBody] Teacher teacher)
         {
-            if(teacher == null)
+            if (teacher == null)
             {
                 return BadRequest();
             }
@@ -71,6 +71,16 @@ namespace JSON_Student_App.Controllers
             return CreatedAtRoute("GetByID", new { id = teacher.ID }, teacher);
         }
 
+        [HttpPost]
+        public IActionResult Check(User user)
+        {
+            var checkinguser = list.FirstOrDefault((t => t.Username == user.Username));
+            if (checkinguser.Password != user.Password || checkinguser == null)
+            {
+                return BadRequest();
+            }
+            return CreatedAtRoute("GetByUsername", new { username = user.Username });
+        }
 
         // Update method to change the password of a teacher,
         // obviously unsecure as ANYONE can change the password to whatever they like
