@@ -6,6 +6,7 @@ import { AppComponent } from './components/app/app.component'
 import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/scores/home/home.component';
 import { IndexComponent } from './components/login/index/index.component';
+import { ScoresListComponent } from './components/scores/scoreslist/scoreslist.component';
 import { NewAccountComponent } from './components/login/newaccount/newaccount.component';
 import { ChangePasswordComponent } from './components/scores/changepassword/changepassword.component';
 import { EqualValidator } from './components/scores/changepassword/changepassword.equal-validator.directive'; 
@@ -19,7 +20,8 @@ import { EqualValidator } from './components/scores/changepassword/changepasswor
         NewAccountComponent,
         ChangePasswordComponent,
         HomeComponent,
-        EqualValidator
+        EqualValidator,
+        ScoresListComponent
     ],
     imports: [
         UniversalModule,
@@ -30,7 +32,9 @@ import { EqualValidator } from './components/scores/changepassword/changepasswor
             { path: 'index', component: IndexComponent },
             { path: 'newaccount', component: NewAccountComponent },
             { path: 'changepassword', component: ChangePasswordComponent },
+            { path: 'list', component: ScoresListComponent },
             { path: '**', redirectTo: 'index' }
+           
         ])
     ]
 })

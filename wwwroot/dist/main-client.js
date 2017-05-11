@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "4f4db34328fd586d8e89"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "a9248bb78f66aecc3398"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -704,7 +704,7 @@
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return hotCreateRequire(89)(__webpack_require__.s = 89);
+/******/ 	return hotCreateRequire(92)(__webpack_require__.s = 92);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -749,7 +749,7 @@ var /** @type {?} */ NG_VALUE_ACCESSOR = new __WEBPACK_IMPORTED_MODULE_0__angula
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_collection__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_lang__ = __webpack_require__(8);
@@ -1698,7 +1698,7 @@ function escapeRegExp(s) {
     return s.replace(/([.*+?^=!:${}()|[\]\/\\])/g, '\\$1');
 }
 //# sourceMappingURL=lang.js.map
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(81)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(83)))
 
 /***/ }),
 /* 9 */
@@ -4007,7 +4007,7 @@ function NgSelectMultipleOption_tsickle_Closure_declarations() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise__ = __webpack_require__(86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_shared__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_async__ = __webpack_require__(7);
@@ -8242,11 +8242,11 @@ module.exports = (__webpack_require__(1))(334)
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-__webpack_require__(85);
+__webpack_require__(88);
 var core_1 = __webpack_require__(0);
 var angular2_universal_1 = __webpack_require__(39);
 var app_module_1 = __webpack_require__(50);
-__webpack_require__(86);
+__webpack_require__(89);
 var rootElemTagName = 'app'; // Update this if you change your root component selector
 // Enable either Hot Module Reloading or production mode
 if (true) {
@@ -8290,7 +8290,7 @@ var options = {
   name: ''
 };
 if (true) {
-  var querystring = __webpack_require__(72);
+  var querystring = __webpack_require__(74);
   var overrides = querystring.parse(__resourceQuery.slice(1));
   if (overrides.path) options.path = overrides.path;
   if (overrides.timeout) options.timeout = overrides.timeout;
@@ -8410,11 +8410,11 @@ if (typeof window !== 'undefined') {
 }
 
 function createReporter() {
-  var strip = __webpack_require__(75);
+  var strip = __webpack_require__(77);
 
   var overlay;
   if (typeof document !== 'undefined' && options.overlay) {
-    overlay = __webpack_require__(79);
+    overlay = __webpack_require__(81);
   }
 
   var styles = {
@@ -8467,7 +8467,7 @@ function createReporter() {
   };
 }
 
-var processUpdate = __webpack_require__(80);
+var processUpdate = __webpack_require__(82);
 
 var customHandler;
 var subscribeAllHandler;
@@ -8532,7 +8532,7 @@ if (module) {
   };
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, "?path=%2F__webpack_hmr", __webpack_require__(88)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, "?path=%2F__webpack_hmr", __webpack_require__(91)(module)))
 
 /***/ }),
 /* 42 */
@@ -9131,13 +9131,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(84);
+var router_1 = __webpack_require__(87);
 var angular2_universal_1 = __webpack_require__(39);
 var forms_1 = __webpack_require__(29);
 var app_component_1 = __webpack_require__(51);
 var navmenu_component_1 = __webpack_require__(54);
 var home_component_1 = __webpack_require__(57);
 var index_component_1 = __webpack_require__(52);
+var scoreslist_component_1 = __webpack_require__(58);
 var newaccount_component_1 = __webpack_require__(53);
 var changepassword_component_1 = __webpack_require__(55);
 var changepassword_equal_validator_directive_1 = __webpack_require__(56);
@@ -9156,7 +9157,8 @@ AppModule = __decorate([
             newaccount_component_1.NewAccountComponent,
             changepassword_component_1.ChangePasswordComponent,
             home_component_1.HomeComponent,
-            changepassword_equal_validator_directive_1.EqualValidator
+            changepassword_equal_validator_directive_1.EqualValidator,
+            scoreslist_component_1.ScoresListComponent
         ],
         imports: [
             angular2_universal_1.UniversalModule,
@@ -9167,6 +9169,7 @@ AppModule = __decorate([
                 { path: 'index', component: index_component_1.IndexComponent },
                 { path: 'newaccount', component: newaccount_component_1.NewAccountComponent },
                 { path: 'changepassword', component: changepassword_component_1.ChangePasswordComponent },
+                { path: 'list', component: scoreslist_component_1.ScoresListComponent },
                 { path: '**', redirectTo: 'index' }
             ])
         ]
@@ -9197,8 +9200,8 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'app',
-        template: __webpack_require__(64),
-        styles: [__webpack_require__(76)]
+        template: __webpack_require__(65),
+        styles: [__webpack_require__(78)]
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
@@ -9218,7 +9221,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-__webpack_require__(73);
+__webpack_require__(75);
 var IndexComponent = (function () {
     function IndexComponent() {
     }
@@ -9227,7 +9230,7 @@ var IndexComponent = (function () {
 IndexComponent = __decorate([
     core_1.Component({
         selector: 'index',
-        template: __webpack_require__(65),
+        template: __webpack_require__(66),
     })
 ], IndexComponent);
 exports.IndexComponent = IndexComponent;
@@ -9304,7 +9307,7 @@ var NewAccountComponent = (function () {
 NewAccountComponent = __decorate([
     core_1.Component({
         selector: 'newaccount',
-        template: __webpack_require__(66)
+        template: __webpack_require__(67)
     })
 ], NewAccountComponent);
 exports.NewAccountComponent = NewAccountComponent;
@@ -9332,8 +9335,8 @@ var NavMenuComponent = (function () {
 NavMenuComponent = __decorate([
     core_1.Component({
         selector: 'nav-menu',
-        template: __webpack_require__(67),
-        styles: [__webpack_require__(77)]
+        template: __webpack_require__(68),
+        styles: [__webpack_require__(79)]
     })
 ], NavMenuComponent);
 exports.NavMenuComponent = NavMenuComponent;
@@ -9356,26 +9359,14 @@ var core_1 = __webpack_require__(0);
 var ChangePasswordComponent = (function () {
     function ChangePasswordComponent() {
     }
-    ChangePasswordComponent.prototype.ngOnInit = function () {
-        // initialize model here
-        this.password = {
-            oldPassword: '',
-            newPassword: '',
-            confirmPassword: ''
-        };
-    };
-    ChangePasswordComponent.prototype.save = function (model, isValid) {
-        // call API to save customer
-        console.log(model, isValid);
-    };
     return ChangePasswordComponent;
 }());
 ChangePasswordComponent = __decorate([
     core_1.Component({
         moduleId: module.i + '',
         selector: 'changepassword',
-        template: __webpack_require__(68),
-        styles: [__webpack_require__(78)]
+        template: __webpack_require__(69),
+        styles: [__webpack_require__(80)]
     })
 ], ChangePasswordComponent);
 exports.ChangePasswordComponent = ChangePasswordComponent;
@@ -9478,7 +9469,7 @@ var HomeComponent = (function () {
 HomeComponent = __decorate([
     core_1.Component({
         selector: 'home',
-        template: __webpack_require__(69)
+        template: __webpack_require__(70)
     })
 ], HomeComponent);
 exports.HomeComponent = HomeComponent;
@@ -9486,6 +9477,44 @@ exports.HomeComponent = HomeComponent;
 
 /***/ }),
 /* 58 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(0);
+var http_1 = __webpack_require__(85);
+var ScoresListComponent = (function () {
+    function ScoresListComponent(http) {
+        var _this = this;
+        http.get('/api/Score/Get').subscribe(function (result) {
+            _this.scores = result.json();
+        });
+        console.log(this.scores);
+    }
+    return ScoresListComponent;
+}());
+ScoresListComponent = __decorate([
+    core_1.Component({
+        selector: 'list',
+        template: __webpack_require__(71)
+    }),
+    __metadata("design:paramtypes", [http_1.Http])
+], ScoresListComponent);
+exports.ScoresListComponent = ScoresListComponent;
+
+
+/***/ }),
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(28)();
@@ -9499,7 +9528,7 @@ exports.push([module.i, "@media (max-width: 767px) {\r\n    /* On small screens,
 
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(28)();
@@ -9513,7 +9542,7 @@ exports.push([module.i, "li .glyphicon {\r\n    margin-right: 10px;\r\n}\r\n\r\n
 
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(28)();
@@ -9527,19 +9556,19 @@ exports.push([module.i, "body {\r\n}\r\n", ""]);
 
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = {
-  XmlEntities: __webpack_require__(63),
-  Html4Entities: __webpack_require__(62),
+  XmlEntities: __webpack_require__(64),
+  Html4Entities: __webpack_require__(63),
   Html5Entities: __webpack_require__(36),
   AllHtmlEntities: __webpack_require__(36)
 };
 
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, exports) {
 
 var HTML_ALPHA = ['apos', 'nbsp', 'iexcl', 'cent', 'pound', 'curren', 'yen', 'brvbar', 'sect', 'uml', 'copy', 'ordf', 'laquo', 'not', 'shy', 'reg', 'macr', 'deg', 'plusmn', 'sup2', 'sup3', 'acute', 'micro', 'para', 'middot', 'cedil', 'sup1', 'ordm', 'raquo', 'frac14', 'frac12', 'frac34', 'iquest', 'Agrave', 'Aacute', 'Acirc', 'Atilde', 'Auml', 'Aring', 'Aelig', 'Ccedil', 'Egrave', 'Eacute', 'Ecirc', 'Euml', 'Igrave', 'Iacute', 'Icirc', 'Iuml', 'ETH', 'Ntilde', 'Ograve', 'Oacute', 'Ocirc', 'Otilde', 'Ouml', 'times', 'Oslash', 'Ugrave', 'Uacute', 'Ucirc', 'Uuml', 'Yacute', 'THORN', 'szlig', 'agrave', 'aacute', 'acirc', 'atilde', 'auml', 'aring', 'aelig', 'ccedil', 'egrave', 'eacute', 'ecirc', 'euml', 'igrave', 'iacute', 'icirc', 'iuml', 'eth', 'ntilde', 'ograve', 'oacute', 'ocirc', 'otilde', 'ouml', 'divide', 'oslash', 'ugrave', 'uacute', 'ucirc', 'uuml', 'yacute', 'thorn', 'yuml', 'quot', 'amp', 'lt', 'gt', 'OElig', 'oelig', 'Scaron', 'scaron', 'Yuml', 'circ', 'tilde', 'ensp', 'emsp', 'thinsp', 'zwnj', 'zwj', 'lrm', 'rlm', 'ndash', 'mdash', 'lsquo', 'rsquo', 'sbquo', 'ldquo', 'rdquo', 'bdquo', 'dagger', 'Dagger', 'permil', 'lsaquo', 'rsaquo', 'euro', 'fnof', 'Alpha', 'Beta', 'Gamma', 'Delta', 'Epsilon', 'Zeta', 'Eta', 'Theta', 'Iota', 'Kappa', 'Lambda', 'Mu', 'Nu', 'Xi', 'Omicron', 'Pi', 'Rho', 'Sigma', 'Tau', 'Upsilon', 'Phi', 'Chi', 'Psi', 'Omega', 'alpha', 'beta', 'gamma', 'delta', 'epsilon', 'zeta', 'eta', 'theta', 'iota', 'kappa', 'lambda', 'mu', 'nu', 'xi', 'omicron', 'pi', 'rho', 'sigmaf', 'sigma', 'tau', 'upsilon', 'phi', 'chi', 'psi', 'omega', 'thetasym', 'upsih', 'piv', 'bull', 'hellip', 'prime', 'Prime', 'oline', 'frasl', 'weierp', 'image', 'real', 'trade', 'alefsym', 'larr', 'uarr', 'rarr', 'darr', 'harr', 'crarr', 'lArr', 'uArr', 'rArr', 'dArr', 'hArr', 'forall', 'part', 'exist', 'empty', 'nabla', 'isin', 'notin', 'ni', 'prod', 'sum', 'minus', 'lowast', 'radic', 'prop', 'infin', 'ang', 'and', 'or', 'cap', 'cup', 'int', 'there4', 'sim', 'cong', 'asymp', 'ne', 'equiv', 'le', 'ge', 'sub', 'sup', 'nsub', 'sube', 'supe', 'oplus', 'otimes', 'perp', 'sdot', 'lceil', 'rceil', 'lfloor', 'rfloor', 'lang', 'rang', 'loz', 'spades', 'clubs', 'hearts', 'diams'];
@@ -9692,7 +9721,7 @@ module.exports = Html4Entities;
 
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, exports) {
 
 var ALPHA_INDEX = {
@@ -9853,43 +9882,49 @@ module.exports = XmlEntities;
 
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class='container-fluid'>\r\n    <div class='row'>\r\n        <div class='col-sm-3'>\r\n            <nav-menu></nav-menu>\r\n        </div>\r\n        <div class='col-sm-9 body-content'>\r\n            <router-outlet></router-outlet>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container\">\r\n    <h1>Login</h1>\r\n    <form #f=\"ngForm\" novalidate (ngSubmit)=\"save(f.value, f.valid)\">\r\n\r\n        <div class=\"form-group\">\r\n            <label for=\"\">Username</label>\r\n            <input type=\"text\" class=\"form-control\" name=\"Username\">\r\n        </div>\r\n\r\n        <div class=\"form-group\">\r\n            <label for=\"\">Password</label>\r\n            <input type=\"password\" class=\"form-control\" name=\"Password\">\r\n         </div>\r\n\r\n\r\n        <button [routerLink]=\"['/home']\" class=\"btn btn-success\" >Submit</button>\r\n        <br />\r\n        <br />\r\n        <br />\r\n        <a [routerLink]=\"['/newaccount']\">Register</a>\r\n        </form>\r\n</div>\r\n\r\n";
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports) {
 
 module.exports = "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <meta charset=\"utf-8\" />\r\n    <title></title>\r\n</head>\r\n<body class=\"container-fluid\">\r\n    <div class=\"container\">\r\n        <h1> Registration </h1>\r\n        <form name=\"NewAccountForm\" #f=\"ngForm\" (ngSubmit)=\"f.form.valid && onSubmit()\">\r\n\r\n            <div class=\"form-group\">\r\n                <label for=\"FirstName\">First Name</label>\r\n                <input type=\"text\" class=\"form-control\" name=\"FirstName \" id=\"FirstName\" [(ngModel)]=\"model.firstname\" placeholder=\"Enter first name\" />\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <label for=\"LastName\">Last Name</label>\r\n                <input type=\"text\" class=\"form-control\" name=\"LastName \" id=\"LastName\" [(ngModel)]=\"model.lastname\" placeholder=\"Enter Last Name\" />\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <label for=\"UserName\">User Name</label>\r\n                <input type=\"text\" class=\"form-control\" name=\"UserName \" id=\"UserName\" [(ngModel)]=\"model.username\" placeholder=\"Enter userName\" />\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <label for=\"Password\">Password</label>\r\n                <input type=\"text\" class=\"form-control\" name=\"Password \" id=\"Password\" [(ngModel)]=\"model.password\" placeholder=\"Enter Password\" />\r\n            </div>\r\n            <div class=\"checkbox\">\r\n                <label><input type=\"checkbox\" name=\"isTeacher\" [(ngModel)]=\"model.isTeacher\">Check if you are a teacher</label>\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <select class=\"custom-select\">\r\n                    <option selected>Choose Teacher</option>\r\n                    <option value=\"bob\">Bob Smith</option>\r\n                    <option value=\"sandra\">Sandra Klien</option>\r\n                </select>\r\n            </div>\r\n            <button type=\"button\" class=\"btn\">Submit</button>\r\n\r\n        </form>\r\n    </div>\r\n</body>\r\n</html>";
 
 /***/ }),
-/* 67 */
-/***/ (function(module, exports) {
-
-module.exports = "<div class='main-nav'>\r\n    <div class='navbar navbar-inverse'>\r\n        <div class='navbar-header'>\r\n            <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>\r\n                <span class='sr-only'>Toggle navigation</span>\r\n                <span class='icon-bar'></span>\r\n                <span class='icon-bar'></span>\r\n                <span class='icon-bar'></span>\r\n            </button>\r\n            <a class='navbar-brand' [routerLink]=\"['/home']\">JSON_Student_App</a>\r\n        </div>\r\n        <div class='clearfix'></div>\r\n        <div class='navbar-collapse collapse'>\r\n            <ul class='nav navbar-nav'>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/home']\">\r\n                        <span class='glyphicon glyphicon-home'></span> Home\r\n                    </a>\r\n                </li>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/changepassword']\">\r\n                        <span class='glyphicon glyphicon-pencil'></span> Change Password\r\n                    </a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
-
-/***/ }),
 /* 68 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <h1>Change Password</h1>\r\n    <form #f=\"ngForm\" novalidate (ngSubmit)=\"save(f.value, f.valid)\">\r\n        <!-- we will place our fields here -->\r\n\r\n        <div class=\"form-group\">\r\n            <label for=\"\">Password</label>\r\n            <input type=\"password\" class=\"form-control\" name=\"oldPassword\"\r\n                   [ngModel]=\"password.oldPassword\" required #oldPassword=\"ngModel\">\r\n            <small [hidden]=\"oldPassword.valid || (oldPassword.pristine && !f.submitted)\"\r\n                   class=\"text-danger\">\r\n                Password is required\r\n            </small>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"\">New Password</label>\r\n            <input type=\"password\" class=\"form-control\" name=\"newPassword\"\r\n                   [ngModel]=\"password.newPassword\" required #newPassword=\"ngModel\"\r\n                   validateEqual=\"confirmPassword\" reverse=\"true\">\r\n            <small [hidden]=\"newPassword.valid || (newPassword.pristine && !f.submitted)\"\r\n                   class=\"text-danger\">\r\n                New password is required\r\n            </small>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"\">Retype password</label>\r\n            <input type=\"password\" class=\"form-control\" name=\"confirmPassword\"\r\n                   [ngModel]=\"password.confirmPassword\" required\r\n                   validateEqual=\"newPassword\" #confirmPassword=\"ngModel\">\r\n            <small [hidden]=\"confirmPassword.valid ||  (confirmPassword.pristine && !f.submitted)\"\r\n                   class=\"text-danger\">\r\n                New passwords mismatch\r\n            </small>\r\n        </div>\r\n        <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"!myForm.valid\">Submit</button>\r\n    </form>\r\n\r\n    </div>>";
+module.exports = "<div class='main-nav'>\r\n    <div class='navbar navbar-inverse'>\r\n        <div class='navbar-header'>\r\n            <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>\r\n                <span class='sr-only'>Toggle navigation</span>\r\n                <span class='icon-bar'></span>\r\n                <span class='icon-bar'></span>\r\n                <span class='icon-bar'></span>\r\n            </button>\r\n            <a class='navbar-brand' [routerLink]=\"['/home']\">JSON_Student_App</a>\r\n        </div>\r\n        <div class='clearfix'></div>\r\n        <div class='navbar-collapse collapse'>\r\n            <ul class='nav navbar-nav'>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/home']\">\r\n                        <span class='glyphicon glyphicon-home'></span> Home\r\n                    </a>\r\n                </li>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/changepassword']\">\r\n                        <span class='glyphicon glyphicon-pencil'></span> Change Password\r\n                    </a>\r\n                </li>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/list']\">\r\n                        <span class='glyphicon glyphicon-list'></span> Score List\r\n                    </a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
 
 /***/ }),
 /* 69 */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Welcome to JSON Student App</h1>\r\n<p>To the left you will find navigation to the other parts of this site</p>\r\n";
+module.exports = "<div class=\"container\">\r\n    <h1>Change Password</h1>\r\n    <form #f=\"ngForm\" novalidate (ngSubmit)=\"save(f.value, f.valid)\">\r\n        <!-- we will place our fields here -->\r\n\r\n        <div class=\"form-group\">\r\n            <label for=\"\">Password</label>\r\n            <input type=\"password\" class=\"form-control\" name=\"oldPassword\" />\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"\">New Password</label>\r\n            <input type=\"password\" class=\"form-control\" name=\"newPassword\" />\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"\">Retype password</label>\r\n            <input type=\"password\" class=\"form-control\" name=\"confirmPassword\" />\r\n        </div>\r\n        <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"!myForm.valid\">Submit</button>\r\n    </form>\r\n\r\n    </div>";
 
 /***/ }),
 /* 70 */
+/***/ (function(module, exports) {
+
+module.exports = "<h1>Welcome to JSON Student App</h1>\r\n<p>To the left you will find navigation to the other parts of this site</p>\r\n";
+
+/***/ }),
+/* 71 */
+/***/ (function(module, exports) {
+
+module.exports = "<h1>Student Score Table</h1>\r\n<p *ngIf=\"!scores\"><em>Loading...</em></p>\r\n<table class='table' *ngIf=\"scores\">\r\n    <thead>\r\n        <tr>\r\n            <th>ID</th>\r\n            <th>Game ID</th>\r\n            <th>Student ID</th>\r\n            <th>Questions Answered</th>\r\n            <th>Correctly Answered</th>\r\n            <th>Time</th>\r\n            <th>Teacher ID</th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n        <tr *ngFor=\"let score of scores\">\r\n            <td>{{ score.id }}</td>\r\n            <td>{{ score.gameID }}</td>\r\n            <td>{{ score.studentID }}</td>\r\n            <td>{{ score.numberQuestions }}</td>\r\n            <td>{{ score.numberCorrect }}</td>\r\n            <td>{{ score.time }}</td>\r\n            <td>{{ score.teacherID }}</td>\r\n        </tr>\r\n    </tbody>\r\n</table>";
+
+/***/ }),
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9980,7 +10015,7 @@ var isArray = Array.isArray || function (xs) {
 
 
 /***/ }),
-/* 71 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10072,34 +10107,34 @@ var objectKeys = Object.keys || function (obj) {
 
 
 /***/ }),
-/* 72 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.decode = exports.parse = __webpack_require__(70);
-exports.encode = exports.stringify = __webpack_require__(71);
-
-
-/***/ }),
-/* 73 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var Observable_1 = __webpack_require__(38);
-var map_1 = __webpack_require__(82);
-Observable_1.Observable.prototype.map = map_1.map;
-//# sourceMappingURL=map.js.map
-
-/***/ }),
 /* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var root_1 = __webpack_require__(87);
+
+exports.decode = exports.parse = __webpack_require__(72);
+exports.encode = exports.stringify = __webpack_require__(73);
+
+
+/***/ }),
+/* 75 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var Observable_1 = __webpack_require__(38);
+var map_1 = __webpack_require__(84);
+Observable_1.Observable.prototype.map = map_1.map;
+//# sourceMappingURL=map.js.map
+
+/***/ }),
+/* 76 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var root_1 = __webpack_require__(90);
 /* tslint:enable:max-line-length */
 /**
  * Converts an Observable sequence to a ES2015 compliant promise.
@@ -10172,7 +10207,7 @@ exports.toPromise = toPromise;
 //# sourceMappingURL=toPromise.js.map
 
 /***/ }),
-/* 75 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10185,21 +10220,7 @@ module.exports = function (str) {
 
 
 /***/ }),
-/* 76 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(58);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -10213,7 +10234,7 @@ module.exports = function (str) {
     
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -10227,7 +10248,21 @@ module.exports = function (str) {
     
 
 /***/ }),
-/* 79 */
+/* 80 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(61);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*eslint-env browser*/
@@ -10271,7 +10306,7 @@ var colors = {
 };
 ansiHTML.setColors(colors);
 
-var Entities = __webpack_require__(61).AllHtmlEntities;
+var Entities = __webpack_require__(62).AllHtmlEntities;
 var entities = new Entities();
 
 exports.showProblems =
@@ -10312,7 +10347,7 @@ function problemType (type) {
 
 
 /***/ }),
-/* 80 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -10450,55 +10485,61 @@ module.exports = function(hash, moduleMap, options) {
 
 
 /***/ }),
-/* 81 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(11)
 
 /***/ }),
-/* 82 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(121)
 
 /***/ }),
-/* 83 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(1))(316)
-
-/***/ }),
-/* 84 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(1))(332)
-
-/***/ }),
 /* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(1))(333)
+module.exports = (__webpack_require__(1))(194)
 
 /***/ }),
 /* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(1))(335)
+module.exports = (__webpack_require__(1))(316)
 
 /***/ }),
 /* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(1))(47)
+module.exports = (__webpack_require__(1))(332)
 
 /***/ }),
 /* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(1))(574)
+module.exports = (__webpack_require__(1))(333)
 
 /***/ }),
 /* 89 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(1))(335)
+
+/***/ }),
+/* 90 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(1))(47)
+
+/***/ }),
+/* 91 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(1))(574)
+
+/***/ }),
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(42);
