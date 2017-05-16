@@ -12,16 +12,10 @@ namespace JSON_Student_App.Controllers
     [Route("api/[controller]")]
     public class ScoreController : Controller
     {
-        // Initializes the List, this is where database initialization will go.
+
         private List<Score> list = new List<Score>();
-        // Initializes Random Variable for Date.
         private Random rnd = new Random();
-        // Initializing Date, Month and Year for Random Day Function 
-        private const int date = 1;
-        private const int month = 3;
-        private const int year = 2017;
-        // This is a constructor for the Controller, right now it initializes the List
-        // Upon Databe Creation, this will be where the Dependency Injection takes place
+
         public ScoreController()
         {
             list.Add(new Score { ID = 1, GameID = 1, StudentID = 4, NumberQuestions = 10, NumberCorrect = 8, Time = RandomDayFunc(), TeacherID = 1 });
@@ -36,13 +30,17 @@ namespace JSON_Student_App.Controllers
             list.Add(new Score { ID = 10, GameID = 5, StudentID = 5, NumberQuestions = 10, NumberCorrect = 4, Time = RandomDayFunc(), TeacherID = 1 });
             list.Add(new Score { ID = 11, GameID = 6, StudentID = 1, NumberQuestions = 10, NumberCorrect = 4, Time = RandomDayFunc(), TeacherID = 1 });
         }
-        // Generic GET Method that returns All Scores
+
+
+
+
         [HttpGet("[action]")]
         public IEnumerable<Score> Get()
         {
             return list;
         }
-        // GET method to return Scores with given Student ID (takes an int)
+
+        //get method to return scores with given student id
         [HttpGet("[action]")]
         public IActionResult GetByStudentID(int id)
         {
@@ -53,7 +51,8 @@ namespace JSON_Student_App.Controllers
             }
             return new ObjectResult(items);
         }
-        // GET method to return Scores within a Teachers Class (takes an int)
+
+        // get method that returns scores with given teacher id
         [HttpGet("[action]")]
         public IActionResult GetByTeacherID(int id)
         {
@@ -64,8 +63,8 @@ namespace JSON_Student_App.Controllers
             }
             return new ObjectResult(items);
         }
-        // GET method to get a score by its ID
-        // Needed for Create
+
+        // get method to get a score by its ID
         [HttpGet("[action]")]
         public IActionResult GetByID(int id)
         {
@@ -76,7 +75,8 @@ namespace JSON_Student_App.Controllers
             }
             return new ObjectResult(item);
         }
-        // Creates a new Score object in the list
+
+        // Creates a new teacher object in the list
         [HttpPost("[action]")]
         public IActionResult Create([FromBody] Score score)
         {
@@ -84,16 +84,53 @@ namespace JSON_Student_App.Controllers
             {
                 return BadRequest();
             }
+
             list.Add(score);
+
             return CreatedAtRoute("GetByID", new { id = score.ID }, score);
         }
-        // Generates a random date between March, 1 2017 and now. 
+
+
+
         public DateTime RandomDayFunc()
         {
-            DateTime from = new DateTime(year, month, date);
+            DateTime from = new DateTime(2017, 3, 1);
             DateTime to = DateTime.Now;
             TimeSpan range = new TimeSpan(to.Ticks - from.Ticks);
             return from + new TimeSpan((long)(range.Ticks * rnd.NextDouble()));
         }
+
+
+        //// GET: api/values
+        //[HttpGet]
+        //public IEnumerable<string> Get()
+        //{
+        //    return new string[] { "value1", "value2" };
+        //}
+
+        //// GET api/values/5
+        //[HttpGet("{id}")]
+        //public string Get(int id)
+        //{
+        //    return "value";
+        //}
+
+        //// POST api/values
+        //[HttpPost]
+        //public void Post([FromBody]string value)
+        //{
+        //}
+
+        //// PUT api/values/5
+        //[HttpPut("{id}")]
+        //public void Put(int id, [FromBody]string value)
+        //{
+        //}
+
+        //// DELETE api/values/5
+        //[HttpDelete("{id}")]
+        //public void Delete(int id)
+        //{
+        //}
     }
 }
