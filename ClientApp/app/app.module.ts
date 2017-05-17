@@ -22,10 +22,12 @@ import { EqualValidator } from './components/scores/changepassword/changepasswor
         NewAccountComponent,
         ChangePasswordComponent,
         HomeComponent,
+
         EqualValidator,
         ScoresListComponent,
         MathBlasterComponent,
         TimeComponent
+
     ],
     imports: [
         UniversalModule,
