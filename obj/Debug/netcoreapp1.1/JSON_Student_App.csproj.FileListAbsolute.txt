@@ -16,3 +16,12 @@ C:\Users\chris\Source\Repos\JSON_Student_App\obj\Debug\netcoreapp1.1\JSON_Studen
 C:\Users\chris\Source\Repos\JSON_Student_App\obj\Debug\netcoreapp1.1\JSON_Student_App.AssemblyInfo.cs
 C:\Users\chris\Source\Repos\JSON_Student_App\obj\Debug\netcoreapp1.1\JSON_Student_App.dll
 C:\Users\chris\Source\Repos\JSON_Student_App\obj\Debug\netcoreapp1.1\JSON_Student_App.pdb
+C:\Users\huda\Source\Repos\JSON_Student_App\bin\Debug\netcoreapp1.1\JSON_Student_App.deps.json
+C:\Users\huda\Source\Repos\JSON_Student_App\bin\Debug\netcoreapp1.1\JSON_Student_App.runtimeconfig.json
+C:\Users\huda\Source\Repos\JSON_Student_App\bin\Debug\netcoreapp1.1\JSON_Student_App.runtimeconfig.dev.json
+C:\Users\huda\Source\Repos\JSON_Student_App\bin\Debug\netcoreapp1.1\JSON_Student_App.dll
+C:\Users\huda\Source\Repos\JSON_Student_App\bin\Debug\netcoreapp1.1\JSON_Student_App.pdb
+C:\Users\huda\Source\Repos\JSON_Student_App\obj\Debug\netcoreapp1.1\JSON_Student_App.csprojResolveAssemblyReference.cache
+C:\Users\huda\Source\Repos\JSON_Student_App\obj\Debug\netcoreapp1.1\JSON_Student_App.AssemblyInfo.cs
+C:\Users\huda\Source\Repos\JSON_Student_App\obj\Debug\netcoreapp1.1\JSON_Student_App.dll
+C:\Users\huda\Source\Repos\JSON_Student_App\obj\Debug\netcoreapp1.1\JSON_Student_App.pdb
