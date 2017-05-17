@@ -9,21 +9,21 @@ import { Password } from './changepassword.password.interface';
     styleUrls: ['./changepassword.component.css']
 })
 
-export class ChangePasswordComponent implements OnInit {
-    public password: Password;
+export class ChangePasswordComponent {
+    //public password: Password;
 
-    ngOnInit() {
-        // initialize model here
-        this.password = {
-            oldPassword: '',
-            newPassword: '',
-            confirmPassword: ''
-        }
-    }
+    //ngOnInit() {
+    //    // initialize model here
+    //    this.password = {
+    //        oldPassword: '',
+    //        newPassword: '',
+    //        confirmPassword: ''
+    //    }
+    //}
 
-    save(model: Password, isValid: boolean) {
-        // call API to save customer
-        console.log(model, isValid);
-    }
+    //save(model: Password, isValid: boolean) {
+    //    // call API to save customer
+    //    console.log(model, isValid);
+    //}
 
 }

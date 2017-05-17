@@ -6,9 +6,10 @@ import { AppComponent } from './components/app/app.component'
 import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/scores/home/home.component';
 import { IndexComponent } from './components/login/index/index.component';
+import { ScoresListComponent } from './components/scores/scoreslist/scoreslist.component';
 import { NewAccountComponent } from './components/login/newaccount/newaccount.component';
 import { ChangePasswordComponent } from './components/scores/changepassword/changepassword.component';
-//import { ScoreComponent } from './components/scores/score.component';
+import { TimeComponent } from './components/games/time/time.component'
 import { EqualValidator } from './components/scores/changepassword/changepassword.equal-validator.directive'; 
 
 @NgModule({
@@ -20,8 +21,11 @@ import { EqualValidator } from './components/scores/changepassword/changepasswor
         NewAccountComponent,
         ChangePasswordComponent,
         HomeComponent,
-        //ScoreComponent,
-        EqualValidator
+
+        EqualValidator,
+        ScoresListComponent,
+        TimeComponent
+
     ],
     imports: [
         UniversalModule,
@@ -32,8 +36,10 @@ import { EqualValidator } from './components/scores/changepassword/changepasswor
             { path: 'index', component: IndexComponent },
             { path: 'newaccount', component: NewAccountComponent },
             { path: 'changepassword', component: ChangePasswordComponent },
-            //{ path: 'score', component: ScoreComponent },
+            { path: 'list', component: ScoresListComponent },
+            { path: 'time', component: TimeComponent },
             { path: '**', redirectTo: 'index' }
+           
         ])
     ]
 })
