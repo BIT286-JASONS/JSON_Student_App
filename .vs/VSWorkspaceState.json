@@ -4,14 +4,10 @@
     "\\ClientApp",
     "\\ClientApp\\app",
     "\\ClientApp\\app\\components",
-    "\\ClientApp\\app\\components\\app\\games\\dice",
-    "\\ClientApp\\app\\components\\app\\games\\time",
-    "\\ClientApp\\app\\components\\home",
     "\\ClientApp\\app\\components\\login",
     "\\ClientApp\\app\\components\\navmenu",
-    "\\Views",
-    "\\Views\\Home"
+    "\\Views"
   ],
-  "SelectedNode": "\\JSON_Student_App.csproj",
+  "SelectedNode": "\\.gitattributes",
   "PreviewInSolutionExplorer": false
 }

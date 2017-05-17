@@ -4721,7 +4721,7 @@
       ]
     },
     "Microsoft.EntityFrameworkCore.Design/1.1.1": {
-      "sha512": "8dEo9oaaq44gFpSFNUotroVvFWessFO+Z0NAdnboDke5Ramfqx+wmD/xSpVWplj+hfjSXZNXjrLbCrT4zI8Mpw==",
+      "sha512": "cvz9z9g+2MliRl+W/hZ6mlu+h7EAXS9Kx63wVpDFrDeqQ/GPeMQY5JrE7q7ldSVe5l1GLGy8dgpJWTrzyGC/fQ==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.design/1.1.1",
       "files": [
@@ -4747,7 +4747,7 @@
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/1.1.1": {
-      "sha512": "OTSPONe0KKXWuMYM659D2tFDFjLc/1YU9QN5kHdufkO5bRS7BplB7CdLY812Hpy8hcPUs2ErhtA7YmF5ui6Eug==",
+      "sha512": "XyOgB/jckxn6Bwhz8V4CQkTM1x3pWSpheQcu0DYWUNI1UkrJEvlOh4rxKYNn8m83gNJ+IU9UM2YHu3G3Al5eqA==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.relational/1.1.1",
       "files": [
@@ -4760,7 +4760,7 @@
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational.Design/1.1.1": {
-      "sha512": "oAb96JUVzk//FC6IhtDhlpj/gqju1Ow2Dh8FzbDWmSknur7XneA9TIpUySSP98UH4BXX7c5dY+LrE/yE+ISXgA==",
+      "sha512": "0rW7QswiOFaNIXN+8WmFIQOSwTNdr9kOUCMHuv4ikViUr0+mtSGFrcGPV+KyaD+byjkkEtEP89+7dMMil9pmEg==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.relational.design/1.1.1",
       "files": [
@@ -6216,7 +6216,7 @@
       ]
     },
     "System.Data.Common/4.3.0": {
-      "sha512": "ZxGkawtrVPQ/gxa9/wkHO49hJ1V/b5PwQTK0khHH3zJuyBOjh+6xZAHbAmTqrc/c/bYjTD1LS0WnIjf1sPcN+w==",
+      "sha512": "1pSJiowzlKMbFQoMA3Ce0LTI+lIGsKV3P/nC+ypzSMDyhefRoc6mWkG3lrbNqZ+Ata3QpBG5VeZkfVN7my8vyA==",
       "type": "package",
       "path": "system.data.common/4.3.0",
       "files": [
@@ -10393,22 +10393,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kirby\\.nuget\\packages\\": {}
+    "C:\\Users\\huda\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kirby\\Google Drive\\GitHub\\JSON_Student_App\\JSON_Student_App.csproj",
+      "projectUniqueName": "C:\\Users\\huda\\Source\\Repos\\JSON_Student_App\\JSON_Student_App.csproj",
       "projectName": "JSON_Student_App",
-      "projectPath": "C:\\Users\\kirby\\Google Drive\\GitHub\\JSON_Student_App\\JSON_Student_App.csproj",
-      "outputPath": "C:\\Users\\kirby\\Google Drive\\GitHub\\JSON_Student_App\\obj\\",
+      "projectPath": "C:\\Users\\huda\\Source\\Repos\\JSON_Student_App\\JSON_Student_App.csproj",
+      "outputPath": "C:\\Users\\huda\\Source\\Repos\\JSON_Student_App\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
-      "files": {
-        "lib/netcoreapp1.1/JSON_Student_App.dll": "C:\\Users\\huda\\Documents\\GitHub\\JSON_Student_App\\bin\\placeholder\\netcoreapp1.1\\JSON_Student_App.dll"
-      },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {}
@@ -10418,15 +10415,36 @@
     "frameworks": {
       "netcoreapp1.1": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
+          "Microsoft.AspNetCore": {
             "target": "Package",
             "version": "1.1.1"
           },
-          "bootstrap": {
+          "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
-            "version": "3.3.7"
+            "version": "1.1.1"
           },
-          "Microsoft.AspNetCore": {
+          "Microsoft.EntityFrameworkCore.InMemory": {
+            "target": "Package",
+            "version": "1.1.1"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "target": "Package",
+            "version": "1.1.1"
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "1.1.1",
+            "autoReferenced": true
+          },
+          "Microsoft.VisualStudio.Web.BrowserLink": {
+            "target": "Package",
+            "version": "1.1.0"
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer": {
+            "target": "Package",
+            "version": "1.1.1"
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer.Design": {
             "target": "Package",
             "version": "1.1.1"
           },
@@ -10442,29 +10460,9 @@
             "target": "Package",
             "version": "1.1.1"
           },
-          "Microsoft.EntityFrameworkCore.Design": {
+          "bootstrap": {
             "target": "Package",
-            "version": "1.1.1"
-          },
-          "Microsoft.EntityFrameworkCore.SqlServer": {
-            "target": "Package",
-            "version": "1.1.1"
-          },
-          "Microsoft.EntityFrameworkCore.SqlServer.Design": {
-            "target": "Package",
-            "version": "1.1.1"
-          },
-          "Microsoft.Extensions.Logging.Debug": {
-            "target": "Package",
-            "version": "1.1.1"
-          },
-          "Microsoft.EntityFrameworkCore.InMemory": {
-            "target": "Package",
-            "version": "1.1.1"
-          },
-          "Microsoft.VisualStudio.Web.BrowserLink": {
-            "target": "Package",
-            "version": "1.1.0"
+            "version": "3.3.7"
           }
         },
         "imports": [
