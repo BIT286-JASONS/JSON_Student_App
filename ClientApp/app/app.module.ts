@@ -10,6 +10,7 @@ import { ScoresListComponent } from './components/scores/scoreslist/scoreslist.c
 import { NewAccountComponent } from './components/login/newaccount/newaccount.component';
 import { ChangePasswordComponent } from './components/scores/changepassword/changepassword.component';
 import { TimeComponent } from './components/games/time/time.component'
+import { MathBlasterComponent } from './components/games/mathblaster/mathblaster.component'
 import { EqualValidator } from './components/scores/changepassword/changepassword.equal-validator.directive'; 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { EqualValidator } from './components/scores/changepassword/changepasswor
 
         EqualValidator,
         ScoresListComponent,
+        MathBlasterComponent,
         TimeComponent
 
     ],
@@ -38,6 +40,7 @@ import { EqualValidator } from './components/scores/changepassword/changepasswor
             { path: 'changepassword', component: ChangePasswordComponent },
             { path: 'list', component: ScoresListComponent },
             { path: 'time', component: TimeComponent },
+            { path: 'mathblaster', component: MathBlasterComponent },
             { path: '**', redirectTo: 'index' }
            
         ])
