@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
 
 namespace JSON_Student_App
 {
@@ -29,7 +30,8 @@ namespace JSON_Student_App
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddDbContext<Models.StudentAppContext>();// fill out from docs on contonso
+            services.AddDbContext<Models.StudentAppContext>(options =>
+        options.UseSqlServer(Configuration.GetConnectionString("jsondb")));
             // Add framework services.
             services.AddMvc();
         }
