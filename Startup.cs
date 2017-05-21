@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
+using JSON_Student_App.Models;
 
 namespace JSON_Student_App
 {
@@ -30,9 +31,9 @@ namespace JSON_Student_App
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddDbContext<Models.StudentAppContext>(options =>
-        options.UseSqlServer(Configuration.GetConnectionString("jsondb")));
-            // Add framework services.
+            var connection = @"Server=tcp:jsondb.database.windows.net,1433;Initial Catalog=json_app_db;Persist Security Info=False;User ID='JSONDB';Password='BIT286JSON!';MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            services.AddDbContext<json_app_dbContext>(options => options.UseSqlServer(connection));
+
             services.AddMvc();
         }
 
