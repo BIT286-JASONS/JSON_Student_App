@@ -9,18 +9,22 @@ import { Observable } from 'rxjs'
 
 export class TimeComponent {
 
-    guess: number = this.getRandom();
+    // taking out guess for now
+    //guess: number = this.getRandom();
     clock = Observable
         .interval(1000)
         .map(() => new Date());
 
-    
-    getRandom() {
-        const hr = Math.floor(Math.random() * (24 - 1) + 1);
-        const randTime = Math.random() >= 0.5;
-        const min = randTime ? 0 : 30;
-        return new Date().setHours(hr, min, 0);
-    }
+    public hourguess: number = Math.floor(Math.random() * (12 - 1) + 1);
+    public minguess: number = Math.random() >= 0.5 ? 0 : 30;
+
+    // implemented directly so not needed, but will be needed to initialize random minutes other than 0 and 30 for 2nd graders
+    //getRandom() {
+    //    const hr = Math.floor(Math.random() * (24 - 1) + 1);
+    //    const randTime = Math.random() >= 0.5;
+    //    const min = randTime ? 0 : 30;
+    //    return new Date().setHours(hr, min, 0);
+    //}
 
     context: CanvasRenderingContext2D;
     @ViewChild("myCanvas") myCanvas;
