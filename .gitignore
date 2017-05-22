@@ -251,3 +251,4 @@ obj/project.assets.json
 bin/Debug/netcoreapp1.1/JSON_Student_App.runtimeconfig.dev.json
 obj/Debug/netcoreapp1.1/JSON_Student_App.csprojResolveAssemblyReference.cache
 obj/Debug/netcoreapp1.1/JSON_Student_App.pdb
+obj/Debug/netcoreapp1.1/CoreCompileInputs.cache
