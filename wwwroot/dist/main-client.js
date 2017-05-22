@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "3f2965218360209b8689"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "5c97dae46dc2b70da8aa"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -12669,6 +12669,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(3);
 var rxjs_1 = __webpack_require__(137);
@@ -12680,13 +12683,116 @@ var TimeComponent = (function () {
             .map(function () { return new Date(); });
     }
     TimeComponent.prototype.getRandom = function () {
-        var randHour = Math.floor(Math.random() * (24 - 1) + 1);
+        var hr = Math.floor(Math.random() * (24 - 1) + 1);
         var randTime = Math.random() >= 0.5;
-        var minutes = randTime ? 0 : 30;
-        return new Date().setHours(randHour, minutes, 0);
+        var min = randTime ? 0 : 30;
+        return new Date().setHours(hr, min, 0);
+    };
+    TimeComponent.prototype.ngAfterViewInit = function () {
+        var canvas = this.myCanvas.nativeElement;
+        this.context = canvas.getContext("2d");
+        this.drawclock();
+    };
+    TimeComponent.prototype.drawclock = function () {
+        var now = new Date();
+        //var canvas = document.getElementById("canvas");
+        //var ctx = document.getElementById('canvas').getContext('2d');
+        //let ctx: CanvasRenderingContext2D = this.myCanvas.nativeElement.getContext('2d');
+        //this.ctx = element[0].getContext('2d');
+        //this.ctx = this.canvas.getContext('2d');
+        //var canvas = <HTMLCanvasElement> $('#myCanvas').find('canvas').get(0);
+        //var ctx: CanvasRenderingContext2D = canvas.getContext("2d");
+        alert('things');
+        var c = this.context;
+        c.save();
+        c.clearRect(0, 0, 150, 150);
+        c.translate(75, 75);
+        c.scale(0.4, 0.4);
+        c.rotate(-Math.PI / 2);
+        c.strokeStyle = 'black';
+        c.fillStyle = 'white';
+        c.lineWidth = 8;
+        c.lineCap = 'round';
+        // Hour marks
+        c.save();
+        for (var i = 0; i < 12; i++) {
+            c.beginPath();
+            c.rotate(Math.PI / 6);
+            c.moveTo(100, 0);
+            c.lineTo(120, 0);
+            c.stroke();
+        }
+        c.restore();
+        // Minute marks
+        c.save();
+        c.lineWidth = 5;
+        for (i = 0; i < 60; i++) {
+            if (i % 5 != 0) {
+                c.beginPath();
+                c.moveTo(117, 0);
+                c.lineTo(120, 0);
+                c.stroke();
+            }
+            c.rotate(Math.PI / 30);
+        }
+        c.restore();
+        var sec = 0;
+        var min = 30;
+        var hr = 5;
+        hr = hr >= 12 ? hr - 12 : hr;
+        c.fillStyle = 'black';
+        // write Hours
+        c.save();
+        c.rotate(hr * (Math.PI / 6) + (Math.PI / 360) * min + (Math.PI / 21600) * sec);
+        c.lineWidth = 14;
+        c.beginPath();
+        c.moveTo(-20, 0);
+        c.lineTo(80, 0);
+        c.stroke();
+        c.restore();
+        // write Minutes
+        c.save();
+        c.rotate((Math.PI / 30) * min + (Math.PI / 1800) * sec);
+        c.lineWidth = 10;
+        c.beginPath();
+        c.moveTo(-28, 0);
+        c.lineTo(112, 0);
+        c.stroke();
+        c.restore();
+        // Write seconds
+        c.save();
+        c.rotate(sec * Math.PI / 30);
+        c.strokeStyle = '#D40000';
+        c.fillStyle = '#D40000';
+        c.lineWidth = 6;
+        c.beginPath();
+        c.moveTo(-30, 0);
+        c.lineTo(83, 0);
+        c.stroke();
+        c.beginPath();
+        c.arc(0, 0, 10, 0, Math.PI * 2, true);
+        c.fill();
+        c.beginPath();
+        c.arc(95, 0, 10, 0, Math.PI * 2, true);
+        c.stroke();
+        c.fillStyle = 'rgba(0, 0, 0, 0)';
+        c.arc(0, 0, 3, 0, Math.PI * 2, true);
+        c.fill();
+        c.restore();
+        c.beginPath();
+        c.lineWidth = 14;
+        c.strokeStyle = '#325FA2';
+        c.arc(0, 0, 142, 0, Math.PI * 2, true);
+        c.stroke();
+        c.restore();
+        //window.requestAnimationFrame(clock);
     };
     return TimeComponent;
 }());
+__decorate([
+    core_1.ViewChild("myCanvas"),
+    __metadata("design:type", Object)
+], TimeComponent.prototype, "myCanvas", void 0);
 TimeComponent = __decorate([
     core_1.Component({
         selector: 'time',
@@ -13400,7 +13506,7 @@ module.exports = "<div class=\"jumbotron\">\r\n    <h2>Math Blaster Game</h2>\r\
 /* 127 */
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\r\n\r\n<html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<!--<head>\r\n    <script type=\"text/javascript\">\r\n        function clock() {\r\n            var now = new Date();\r\n            var ctx = document.getElementById('canvas').getContext('2d');\r\n            ctx.save();\r\n            ctx.clearRect(0, 0, 150, 150);\r\n            ctx.translate(75, 75);\r\n            ctx.scale(0.4, 0.4);\r\n            ctx.rotate(-Math.PI / 2);\r\n            ctx.strokeStyle = 'black';\r\n            ctx.fillStyle = 'white';\r\n            ctx.lineWidth = 8;\r\n            ctx.lineCap = 'round';\r\n\r\n            // Hour marks\r\n            ctx.save();\r\n            for (var i = 0; i < 12; i++) {\r\n                ctx.beginPath();\r\n                ctx.rotate(Math.PI / 6);\r\n                ctx.moveTo(100, 0);\r\n                ctx.lineTo(120, 0);\r\n                ctx.stroke();\r\n            }\r\n            ctx.restore();\r\n\r\n            // Minute marks\r\n            ctx.save();\r\n            ctx.lineWidth = 5;\r\n            for (i = 0; i < 60; i++) {\r\n                if (i % 5 != 0) {\r\n                    ctx.beginPath();\r\n                    ctx.moveTo(117, 0);\r\n                    ctx.lineTo(120, 0);\r\n                    ctx.stroke();\r\n                }\r\n                ctx.rotate(Math.PI / 30);\r\n            }\r\n            ctx.restore();\r\n\r\n            var sec = 0;\r\n            var min = 30;\r\n            var hr = 3;\r\n            hr = hr >= 12 ? hr - 12 : hr;\r\n\r\n            ctx.fillStyle = 'black';\r\n\r\n            // write Hours\r\n            ctx.save();\r\n            ctx.rotate(hr * (Math.PI / 6) + (Math.PI / 360) * min + (Math.PI / 21600) * sec);\r\n            ctx.lineWidth = 14;\r\n            ctx.beginPath();\r\n            ctx.moveTo(-20, 0);\r\n            ctx.lineTo(80, 0);\r\n            ctx.stroke();\r\n            ctx.restore();\r\n\r\n            // write Minutes\r\n            ctx.save();\r\n            ctx.rotate((Math.PI / 30) * min + (Math.PI / 1800) * sec);\r\n            ctx.lineWidth = 10;\r\n            ctx.beginPath();\r\n            ctx.moveTo(-28, 0);\r\n            ctx.lineTo(112, 0);\r\n            ctx.stroke();\r\n            ctx.restore();\r\n\r\n            // Write seconds\r\n            ctx.save();\r\n            ctx.rotate(sec * Math.PI / 30);\r\n            ctx.strokeStyle = '#D40000';\r\n            ctx.fillStyle = '#D40000';\r\n            ctx.lineWidth = 6;\r\n            ctx.beginPath();\r\n            ctx.moveTo(-30, 0);\r\n            ctx.lineTo(83, 0);\r\n            ctx.stroke();\r\n            ctx.beginPath();\r\n            ctx.arc(0, 0, 10, 0, Math.PI * 2, true);\r\n            ctx.fill();\r\n            ctx.beginPath();\r\n            ctx.arc(95, 0, 10, 0, Math.PI * 2, true);\r\n            ctx.stroke();\r\n            ctx.fillStyle = 'rgba(0, 0, 0, 0)';\r\n            ctx.arc(0, 0, 3, 0, Math.PI * 2, true);\r\n            ctx.fill();\r\n            ctx.restore();\r\n\r\n            ctx.beginPath();\r\n            ctx.lineWidth = 14;\r\n            ctx.strokeStyle = '#325FA2';\r\n            ctx.arc(0, 0, 142, 0, Math.PI * 2, true);\r\n            ctx.stroke();\r\n\r\n            ctx.restore();\r\n\r\n            window.requestAnimationFrame(clock);\r\n        }\r\n\r\n        window.requestAnimationFrame(clock);\r\n\r\n    </script>\r\n    <meta charset=\"utf-8\" />\r\n    <title></title>\r\n</head>-->\r\n<body>\r\n    <!--<canvas id=\"canvas\" width=\"400\" height=\"400\"\r\n            style=\"\"></canvas>-->\r\n    \r\n    <div class=\"jumbotron\">\r\n        <div class=\"container\">\r\n            <h2> What time is this? {{guess | date: 'shortTime'}} </h2>\r\n            <input type=\"text\" text=\"Enter Answer\">\r\n        </div>\r\n        <div>\r\n            <input type=\"button\" text=\"submit\">\r\n        </div>\r\n        <div>\r\n            <h2> Heres A hint:</h2>\r\n            <h3> Current Time Is: {{ clock | async }}  </h3>\r\n        </div>\r\n    </div>\r\n\r\n\r\n</body>\r\n</html>";
+module.exports = "<!DOCTYPE html>\r\n\r\n<html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n    \r\n    <meta charset=\"utf-8\" />\r\n    <title></title>\r\n</head>-->\r\n<body>\r\n    <!---->\r\n    \r\n    <div class=\"jumbotron\">\r\n        <div class=\"container\">\r\n            <h2> What time is this? {{guess | date: 'shortTime'}} </h2>\r\n            <canvas id=\"myCanvas\" #myCanvas width=\"150\" height=\"150\"></canvas>\r\n            <input type=\"text\" text=\"Enter Answer\">\r\n        </div>\r\n        <div>\r\n            <input type=\"button\" text=\"submit\">\r\n        </div>\r\n        <div>\r\n            <h2> Heres A hint:</h2>\r\n            <h3> Current Time Is: {{ clock | async }}  </h3>\r\n        </div>\r\n    </div>\r\n\r\n\r\n</body>\r\n</html>";
 
 /***/ }),
 /* 128 */
