@@ -4,10 +4,12 @@
     "\\ClientApp",
     "\\ClientApp\\app",
     "\\ClientApp\\app\\components",
+    "\\ClientApp\\app\\components\\games",
+    "\\ClientApp\\app\\components\\games\\mathblaster",
     "\\ClientApp\\app\\components\\login",
     "\\ClientApp\\app\\components\\navmenu",
     "\\Views"
   ],
-  "SelectedNode": "\\.gitattributes",
+  "SelectedNode": "\\ClientApp\\app\\components\\navmenu",
   "PreviewInSolutionExplorer": false
 }

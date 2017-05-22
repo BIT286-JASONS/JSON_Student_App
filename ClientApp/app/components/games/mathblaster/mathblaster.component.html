@@ -1,11 +1,11 @@
 ﻿<div class="jumbotron">
     <h2>Math Blaster Game</h2>
     <!-- Here we are declaring a local variable called “form” and setting it to an instance of ngForm. This is very important. Now our local form variable becomes of type FormGroup allowing us access to the FormGroup API’s on this local variable. We use this in the ngSubmit event where we send the value of the form via form.value -->
-    <ul>
-        <li *ngFor="let item of items">
-            OH NO AN ALIEN
-        </li>
-    </ul>
+    
+   <div *ngFor="let item of items">
+       <img src={{alien}}>
+   </div>
+    
     <form #form="ngForm" (ngSubmit)="submitForm(form.value)">
         <div class="form-group">
             <label>Your Guess:</label>

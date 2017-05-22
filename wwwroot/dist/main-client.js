@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "3f2965218360209b8689"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "911b04200a6277937500"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -12634,6 +12634,7 @@ var MathBlasterComponent = (function () {
     function MathBlasterComponent() {
         this.guess = this.getNumber();
         this.items = this.createArray(this.guess);
+        this.alien = '../../../assets/images/Spaceship.png';
     }
     MathBlasterComponent.prototype.getNumber = function () {
         return Math.floor(Math.random() * (20 - 1) + 1);
@@ -13394,7 +13395,7 @@ module.exports = "<div class='container-fluid'>\r\n    <div class='row'>\r\n    
 /* 126 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"jumbotron\">\r\n    <h2>Math Blaster Game</h2>\r\n    <!-- Here we are declaring a local variable called “form” and setting it to an instance of ngForm. This is very important. Now our local form variable becomes of type FormGroup allowing us access to the FormGroup API’s on this local variable. We use this in the ngSubmit event where we send the value of the form via form.value -->\r\n    <ul>\r\n        <li *ngFor=\"let item of items\">\r\n            OH NO AN ALIEN\r\n        </li>\r\n    </ul>\r\n    <form #form=\"ngForm\" (ngSubmit)=\"submitForm(form.value)\">\r\n        <div class=\"form-group\">\r\n            <label>Your Guess:</label>\r\n            <!-- Since we are working with template driven forms, we can use the ngModel directive to capture the values of our forms. One thing to note if you are coming from Angular 1.x. Using ngModel as shown below creates a one-way data binding, so once we hit submit the data is only sent to the controller. If we wanted to use two-way data binding, we would have to wrap the ngModel in [()] and assign an attribute to it. Also the name of the field corresponds to the name attribute so our first input will be firstName. -->\r\n            <input type=\"text\" class=\"form-control\" placeholder=\"Guess Here\" name=\"Guess\" ngModel required>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <button type=\"submit\" class=\"btn btn-default\">Submit</button>\r\n        </div>\r\n    </form>\r\n</div>";
+module.exports = "<div class=\"jumbotron\">\r\n    <h2>Math Blaster Game</h2>\r\n    <!-- Here we are declaring a local variable called “form” and setting it to an instance of ngForm. This is very important. Now our local form variable becomes of type FormGroup allowing us access to the FormGroup API’s on this local variable. We use this in the ngSubmit event where we send the value of the form via form.value -->\r\n    \r\n   <div *ngFor=\"let item of items\">\r\n       <img [src]=\"alien\">\r\n   </div>\r\n    \r\n    <form #form=\"ngForm\" (ngSubmit)=\"submitForm(form.value)\">\r\n        <div class=\"form-group\">\r\n            <label>Your Guess:</label>\r\n            <!-- Since we are working with template driven forms, we can use the ngModel directive to capture the values of our forms. One thing to note if you are coming from Angular 1.x. Using ngModel as shown below creates a one-way data binding, so once we hit submit the data is only sent to the controller. If we wanted to use two-way data binding, we would have to wrap the ngModel in [()] and assign an attribute to it. Also the name of the field corresponds to the name attribute so our first input will be firstName. -->\r\n            <input type=\"text\" class=\"form-control\" placeholder=\"Guess Here\" name=\"Guess\" ngModel required>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <button type=\"submit\" class=\"btn btn-default\">Submit</button>\r\n        </div>\r\n    </form>\r\n</div>";
 
 /***/ }),
 /* 127 */
