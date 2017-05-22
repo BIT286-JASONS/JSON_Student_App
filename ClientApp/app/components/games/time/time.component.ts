@@ -33,7 +33,6 @@ export class TimeComponent {
        
         let canvas = this.myCanvas.nativeElement;
         this.context = canvas.getContext("2d");
-
         this.drawclock();
     }
     drawclock() {
