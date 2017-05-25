@@ -86,8 +86,8 @@ export class TimeComponent {
         c.restore();
 
         var sec = 0;
-        var min = this.minguess;
-        var hr = this.hourguess;
+        var min = 30;
+        var hr = 5;
         hr = hr >= 12 ? hr - 12 : hr;
 
         c.fillStyle = 'black';
