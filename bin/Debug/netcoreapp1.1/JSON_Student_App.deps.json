@@ -3808,9 +3808,15 @@
     "microsoft.entityframeworkcore.inmemory/1.1.2": {
       "type": "package",
       "serviceable": true,
+<<<<<<< HEAD
       "sha512": "sha512-p/MB8Yh5Y+oVboCb3hQF2JyAzMJi+O8hNFktE4nv4CAq1/1Ee0kjqpvA/buvMMGm6PUUufC+ZKoz8A+PKL7RMA==",
       "path": "microsoft.entityframeworkcore.inmemory/1.1.2",
       "hashPath": "microsoft.entityframeworkcore.inmemory.1.1.2.nupkg.sha512"
+=======
+      "sha512": "sha512-8dEo9oaaq44gFpSFNUotroVvFWessFO+Z0NAdnboDke5Ramfqx+wmD/xSpVWplj+hfjSXZNXjrLbCrT4zI8Mpw==",
+      "path": "microsoft.entityframeworkcore.design/1.1.1",
+      "hashPath": "microsoft.entityframeworkcore.design.1.1.1.nupkg.sha512"
+>>>>>>> master
     },
     "microsoft.entityframeworkcore.relational/1.1.2": {
       "type": "package",
@@ -3822,16 +3828,28 @@
     "microsoft.entityframeworkcore.relational.design/1.1.2": {
       "type": "package",
       "serviceable": true,
+<<<<<<< HEAD
       "sha512": "sha512-pu2Jxndzv3slY6Ch9mdqVfL3AFhH5XzM02Rrnf9h5lKoViprYx1O+nNqT3BxmGrPkYadY9OddG2b9+sUO3Xuzw==",
       "path": "microsoft.entityframeworkcore.relational.design/1.1.2",
       "hashPath": "microsoft.entityframeworkcore.relational.design.1.1.2.nupkg.sha512"
+=======
+      "sha512": "sha512-OTSPONe0KKXWuMYM659D2tFDFjLc/1YU9QN5kHdufkO5bRS7BplB7CdLY812Hpy8hcPUs2ErhtA7YmF5ui6Eug==",
+      "path": "microsoft.entityframeworkcore.relational/1.1.1",
+      "hashPath": "microsoft.entityframeworkcore.relational.1.1.1.nupkg.sha512"
+>>>>>>> master
     },
     "microsoft.entityframeworkcore.sqlserver/1.1.2": {
       "type": "package",
       "serviceable": true,
+<<<<<<< HEAD
       "sha512": "sha512-/PpnI2G7zitSAjCtDqVjElhKM3Gpxc+9Su6OhYqYavZS/Ouc/bNAWsoWEj/tbeYSGMUdZyjeAm9xKKJSF/h3Dw==",
       "path": "microsoft.entityframeworkcore.sqlserver/1.1.2",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.1.1.2.nupkg.sha512"
+=======
+      "sha512": "sha512-oAb96JUVzk//FC6IhtDhlpj/gqju1Ow2Dh8FzbDWmSknur7XneA9TIpUySSP98UH4BXX7c5dY+LrE/yE+ISXgA==",
+      "path": "microsoft.entityframeworkcore.relational.design/1.1.1",
+      "hashPath": "microsoft.entityframeworkcore.relational.design.1.1.1.nupkg.sha512"
+>>>>>>> master
     },
     "microsoft.entityframeworkcore.sqlserver.design/1.1.2": {
       "type": "package",
@@ -4186,7 +4204,7 @@
     "system.data.common/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1pSJiowzlKMbFQoMA3Ce0LTI+lIGsKV3P/nC+ypzSMDyhefRoc6mWkG3lrbNqZ+Ata3QpBG5VeZkfVN7my8vyA==",
+      "sha512": "sha512-ZxGkawtrVPQ/gxa9/wkHO49hJ1V/b5PwQTK0khHH3zJuyBOjh+6xZAHbAmTqrc/c/bYjTD1LS0WnIjf1sPcN+w==",
       "path": "system.data.common/4.3.0",
       "hashPath": "system.data.common.4.3.0.nupkg.sha512"
     },
