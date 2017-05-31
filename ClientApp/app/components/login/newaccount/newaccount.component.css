@@ -1,2 +1,68 @@
-﻿body {
+﻿
+option {
+    font: 24px Arial, Trebuchet MS, Verdana;
+}
+#colors {
+    width: 350px;   
+}
+
+
+option.blue {
+    background-color:blue;
+    color:black;
+}
+option.green {
+    background-color: green;
+    color: black;
+}
+option.red {
+    background-color: red;
+    color: black;
+}
+option.black {
+    color:white;
+    background-color: black;
+}
+option.white {
+    background-color: White;
+    color: black;
+}
+option.yellow {
+    background-color: yellow;
+    color: black;
+}
+option.gray {
+    background-color: gray;
+    color: black;
+}
+option.orange {
+    background-color: orange;
+    color: black;
+}
+option.purple {
+    background-color: purple;
+    color: black;
+}
+option.pink {
+    background-color: pink;
+    color: black;
+}
+option.brown {
+    background-color: brown;
+    color: black;
+}
+option.violet {
+    background-color: violet;
+    color: black;
+}
+option.tan {
+    background-color: tan;
+    color: black;
+}
+body#account_box.container-fluid {
+    width: 750px;
+    height: 800px;
+    background-color: dimgray;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
