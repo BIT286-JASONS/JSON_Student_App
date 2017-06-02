@@ -1,23 +1,25 @@
-﻿<div class="container">
-    <h1>Login</h1>
-    <form #f="ngForm" novalidate (ngSubmit)="save(f.value, f.valid)">
+﻿<div class="container" style="width:90%; height:80%; ">
+    <h1 id="login">Login</h1>
+    <div id="login_wrap" style="margin-top:75px;">
+        <form #f="ngForm" novalidate (ngSubmit)="save(f.value, f.valid)">
 
-        <div class="form-group">
-            <label for="">Username</label>
-            <input type="text" class="form-control" name="Username">
-        </div>
+            <div class="form-group" id="userName_group">
+                
+                <input id="enter" type="text" class="form-control" name="Username" placeholder="UserName">
+            </div>
 
-        <div class="form-group">
-            <label for="">Password</label>
-            <input type="password" class="form-control" name="Password">
-         </div>
+            <div class="form-group" id="password_group">
+                
+                <input id="enter" type="password" class="form-control" name="Password" placeholder="Color">
+             </div>
 
 
-        <button [routerLink]="['/home']" class="btn btn-success" >Submit</button>
-        <br />
-        <br />
-        <br />
-        <a [routerLink]="['/newaccount']">Register</a>
+            <button [routerLink]="['/home']" class="btn btn-success" >Submit</button>
+            <br />
+            <br />
+            <br />
+            <a [routerLink]="['/newaccount']">Register</a>
         </form>
+    </div>
 </div>
 

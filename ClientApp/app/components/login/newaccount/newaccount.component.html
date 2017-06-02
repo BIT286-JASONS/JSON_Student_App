@@ -4,10 +4,10 @@
     <meta charset="utf-8" />
     <title></title>
 </head>
-<body class="container-fluid">
-    <div class="container">
+<body class="container-fluid" id="account_box">
+    <div class="container-fluid" >
         <h1> Registration </h1>
-        <form name="NewAccountForm" #f="ngForm" (ngSubmit)="f.form.valid && onSubmit()">
+        <form class="container-fluid" name="NewAccountForm" #f="ngForm" (ngSubmit)="f.form.valid && onSubmit()">
 
             <div class="form-group">
                 <label for="FirstName">First Name</label>
@@ -18,12 +18,27 @@
                 <input type="text" class="form-control" name="LastName " id="LastName" [(ngModel)]="model.lastname" placeholder="Enter Last Name" />
             </div>
             <div class="form-group">
-                <label for="UserName">User Name</label>
-                <input type="text" class="form-control" name="UserName " id="UserName" [(ngModel)]="model.username" placeholder="Enter userName" />
+                <label for="UserName">User Image</label>
+                <input type="text" class="form-control" name="UserName " id="LastName" [(ngModel)]="model.username" placeholder="Enter user name" />
             </div>
             <div class="form-group">
-                <label for="Password">Password</label>
-                <input type="text" class="form-control" name="Password " id="Password" [(ngModel)]="model.password" placeholder="Enter Password" />
+                <label for="colors">User Color</label> 
+                <select class="form-control" id="colors" > 
+                    <option style="color:gray;" value="null">select color</option>
+                    <option class="blue" value="blue">Blue</option> 
+                    <option class="green" value="green" >Green</option>
+                    <option class="red" value="red">Red</option>
+                    <option class="black" value="black">Black</option>
+                    <option class="white" value="white">White</option>
+                    <option class="yellow" value="yellow">Yellow</option>
+                    <option class="gray" value="gray">Gray</option>
+                    <option class="orange" value="orange">Orange</option>
+                    <option class="purple" value="purple">Purple</option>
+                    <option class="pink" value="pink">Pink</option>
+                    <option class="brown" value="brown">Brown</option>
+                    <option class="violet" value="violet">Violet</option>
+                    <option class="tan" value="tan">Tan</option>
+                </select>
             </div>
             <div class="checkbox">
                 <label><input type="checkbox" name="isTeacher" [(ngModel)]="model.isTeacher">Check if you are a teacher</label>

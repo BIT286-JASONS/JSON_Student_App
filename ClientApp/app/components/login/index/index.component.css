@@ -1,2 +1,17 @@
 ﻿body {
 }
+input#enter.form-control{
+    box-sizing: border-box;
+}
+h1 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font: 30px Arial, Trebuchet MS, Verdana;
+    color:white;
+}
+input#userName_group.form-group {
+    margin-top: 50px;
+}
+div#login_wrap {
+    margin-top:25px;
+}

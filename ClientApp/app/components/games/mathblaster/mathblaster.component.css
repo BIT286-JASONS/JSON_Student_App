@@ -1,0 +1,17 @@
+div#spaceship {
+    position: relative;
+    padding-top: 0;
+    height:50px;
+    width:70px;
+}
+img{
+    display:inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+div#gameRow {
+height:400px;
+background-color:gray;
+}

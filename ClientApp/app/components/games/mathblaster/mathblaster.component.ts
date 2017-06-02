@@ -9,6 +9,9 @@ export class MathBlasterComponent {
     guess = this.getNumber();
     items = this.createArray(this.guess);
 
+    
+    public alien: string = 'assets/images/Spaceship.png';
+
     getNumber() {
         return Math.floor(Math.random() * (20 - 1) + 1);
     }
