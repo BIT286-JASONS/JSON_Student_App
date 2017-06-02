@@ -244,3 +244,10 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+obj/Debug/netcoreapp1.1/CoreCompileInputs.cache
+obj/JSON_Student_App.csproj.nuget.g.props
+obj/Debug/netcoreapp1.1/CoreCompileInputs.cache
+obj/project.assets.json
+bin/Debug/netcoreapp1.1/JSON_Student_App.runtimeconfig.dev.json
+obj/Debug/netcoreapp1.1/JSON_Student_App.csprojResolveAssemblyReference.cache
+obj/Debug/netcoreapp1.1/JSON_Student_App.pdb

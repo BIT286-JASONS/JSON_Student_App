@@ -21,7 +21,7 @@ export class IndexComponent {
     //    private route: ActivatedRoute,
     //    private router: Router) { }
 
-    //ngOnInit() {
+    //ngOnInit () {
     //    // reset login status
     //    this.logout();
     //    }
