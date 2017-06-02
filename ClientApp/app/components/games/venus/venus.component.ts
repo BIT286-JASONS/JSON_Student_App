@@ -8,9 +8,9 @@ import { Observable } from 'rxjs'
 
 
 export class venusComponent {
-    
-    one: Number =Math.floor((Math.random() * 10) + 1);
-    two: Number = Math.floor((Math.random() * 10) + 1);
+    //1 - 15
+    one: Number = Math.floor((Math.random() * 10) + 1 + ((Math.random() * 10) + 1 / 2));
+    two: Number = Math.floor((Math.random() * 10) + 1 + ((Math.random() * 10) + 1 / 2));
 
 
     ngAfterViewInit() {

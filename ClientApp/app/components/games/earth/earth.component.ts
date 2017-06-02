@@ -8,9 +8,9 @@ import { Observable } from 'rxjs'
 
 
 export class earthComponent {
-    
-    one: Number =Math.floor((Math.random() * 10) + 1);
-    two: Number = Math.floor((Math.random() * 10) + 1);
+    //// 1 - 20
+    one: Number = Math.floor((Math.random() * 10) + 1 + (Math.random() * 10) + 1);
+    two: Number = Math.floor((Math.random() * 10) + 1 + (Math.random() * 10) + 1);
 
 
     ngAfterViewInit() {
