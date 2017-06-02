@@ -9,7 +9,7 @@ import { Observable } from 'rxjs'
 
 export class saturnComponent {
     
-    one: Number =Math.floor((Math.random() * 10) + 1);
+    one: Number = Math.floor((Math.random() * 10) + 1);
     two: Number = Math.floor((Math.random() * 10) + 1);
 
 
