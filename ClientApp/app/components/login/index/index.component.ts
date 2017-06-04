@@ -9,6 +9,7 @@ import 'rxjs/add/operator/map'
 @Component({
     selector: 'index',
     templateUrl: './index.component.html',
+    styleUrls: ['./index.component.css']
 })
 
 
