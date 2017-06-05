@@ -1,0 +1,73 @@
+﻿body {
+}
+div#page_wrap {
+    background: url("http://i.imgur.com/SsUrSRA.png") ;
+    
+    background-size: auto 100%;
+    /*width: 100%;
+    height: 100%;*/
+}
+div#home_wrap.row {
+    height:90%;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px ;
+    
+}
+div#logo_wrap {
+    height:20%;
+    background-color:none;
+    margin:45px 0px 0px 0px ;
+}
+div#logo1 {
+    height: 100%;
+    background-color: none;
+}
+div#logo2 {
+    height: 100%;
+    background-color: none;
+}
+div#logo3 {
+    height: 100%;
+    background-color: none;
+}
+div#system_wrap {
+    height: 50%;
+    margin: 25px 50px 0px 50px;
+    background-color: none;
+}
+
+
+div#mercury {
+    background-color: none;
+    height: 100%
+}
+div#venus {
+    background-color: none;
+    height: 100%
+}
+div#earth {
+    background-color: none;
+    height: 100%
+}
+div#mars {
+    background-color: none;
+    height: 100%
+}
+div#jupiter {
+    background-color: none;
+    height: 100%
+}
+div#saturn {
+    background-color: none;
+    height: 100%
+}
+div#uranus {
+    background-color: none;
+    height: 100%
+}
+div#neptune {
+    background-color: none;
+    height: 100%
+}
+
+
