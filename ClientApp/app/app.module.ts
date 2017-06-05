@@ -11,7 +11,8 @@ import { NewAccountComponent } from './components/login/newaccount/newaccount.co
 import { ChangePasswordComponent } from './components/scores/changepassword/changepassword.component';
 import { TimeComponent } from './components/games/time/time.component'
 import { MathBlasterComponent } from './components/games/mathblaster/mathblaster.component'
-import { EqualValidator } from './components/scores/changepassword/changepassword.equal-validator.directive'; 
+import { EqualValidator } from './components/scores/changepassword/equal-validator.directive'; 
+import { ChangePasswordModule } from './components/scores/changepassword/changepassword.module';
 
 @NgModule({
     bootstrap: [ AppComponent ],
