@@ -32,3 +32,5 @@ C:\Users\huda\Source\Repos\JSON_Student_App2\obj\Debug\netcoreapp1.1\JSON_Studen
 C:\Users\huda\Source\Repos\JSON_Student_App2\obj\Debug\netcoreapp1.1\JSON_Student_App.AssemblyInfo.cs
 C:\Users\huda\Source\Repos\JSON_Student_App2\obj\Debug\netcoreapp1.1\JSON_Student_App.dll
 C:\Users\huda\Source\Repos\JSON_Student_App2\obj\Debug\netcoreapp1.1\JSON_Student_App.pdb
+C:\Users\huda\Source\Repos\JSON_Student_App2\bin\Debug\netcoreapp1.1\JSON_Student_App.dll
+C:\Users\huda\Source\Repos\JSON_Student_App2\bin\Debug\netcoreapp1.1\JSON_Student_App.pdb
