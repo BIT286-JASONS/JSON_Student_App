@@ -17,7 +17,7 @@ namespace JSON_Student_App.Models
         public string Username { get; set; }
         public string StudentPassword { get; set; }
         public string StudentIp { get; set; }
-        public byte[] StudentImage { get; set; }
+        public string StudentImage { get; set; }
         public int? SpacePennies { get; set; }
         public int? RocketType { get; set; }
 
