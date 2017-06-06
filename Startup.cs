@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using JSON_Student_App.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace JSON_Student_App
 {
@@ -28,10 +30,9 @@ namespace JSON_Student_App
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-            services.AddDbContext<Models.StudentAppContext>();// fill out from docs on contonso
-            // Add framework services.
             services.AddMvc();
+            var connection = "Server=tcp:jsondb.database.windows.net,1433;Initial Catalog=json_app_db;Persist Security Info=False;User ID='JSONDB';Password='BIT286JSON!';MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            services.AddDbContext<json_app_dbContext>(options => options.UseSqlServer(connection));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
