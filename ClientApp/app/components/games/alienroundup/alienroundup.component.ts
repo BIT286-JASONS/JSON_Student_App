@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'mathblaster',
-    templateUrl: './mathblaster.component.html',
-    styleUrls: ['./mathblaster.component.css']
+    selector: 'alienroundup',
+    templateUrl: './alienroundup.component.html',
+    styleUrls: ['./alienroundup.component.css']
 })
-export class MathBlasterComponent {
+export class AlienRoundupComponent {
     guess = this.getNumber();
     items = this.createArray(this.guess);
 

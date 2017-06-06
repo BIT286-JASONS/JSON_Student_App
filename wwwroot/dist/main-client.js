@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "3db49f386f1d6b975b6c"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "ab40ba9f5cde05fedfa3"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -704,7 +704,7 @@
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return hotCreateRequire(434)(__webpack_require__.s = 434);
+/******/ 	return hotCreateRequire(433)(__webpack_require__.s = 433);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -6281,7 +6281,7 @@ var queue_1 = __webpack_require__(81);
 var Subscription_1 = __webpack_require__(7);
 var observeOn_1 = __webpack_require__(95);
 var ObjectUnsubscribedError_1 = __webpack_require__(91);
-var SubjectSubscription_1 = __webpack_require__(427);
+var SubjectSubscription_1 = __webpack_require__(426);
 /**
  * @class ReplaySubject<T>
  */
@@ -10643,7 +10643,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var FromObservable_1 = __webpack_require__(428);
+var FromObservable_1 = __webpack_require__(427);
 var isArray_1 = __webpack_require__(21);
 var OuterSubscriber_1 = __webpack_require__(4);
 var subscribeToResult_1 = __webpack_require__(5);
@@ -11645,11 +11645,11 @@ module.exports = (__webpack_require__(1))(569);
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-__webpack_require__(425);
+__webpack_require__(424);
 var core_1 = __webpack_require__(3);
 var angular2_universal_1 = __webpack_require__(93);
 var app_module_1 = __webpack_require__(107);
-__webpack_require__(426);
+__webpack_require__(425);
 var rootElemTagName = 'app'; // Update this if you change your root component selector
 // Enable either Hot Module Reloading or production mode
 if (true) {
@@ -11935,7 +11935,7 @@ if (module) {
   };
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, "?path=%2F__webpack_hmr", __webpack_require__(431)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, "?path=%2F__webpack_hmr", __webpack_require__(430)(module)))
 
 /***/ }),
 /* 99 */
@@ -12534,7 +12534,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(3);
-var router_1 = __webpack_require__(424);
+var router_1 = __webpack_require__(423);
 var angular2_universal_1 = __webpack_require__(93);
 var forms_1 = __webpack_require__(58);
 var app_component_1 = __webpack_require__(108);
@@ -12545,7 +12545,7 @@ var scoreslist_component_1 = __webpack_require__(117);
 var newaccount_component_1 = __webpack_require__(112);
 var changepassword_component_1 = __webpack_require__(114);
 var time_component_1 = __webpack_require__(110);
-var mathblaster_component_1 = __webpack_require__(109);
+var alienroundup_component_1 = __webpack_require__(109);
 var changepassword_equal_validator_directive_1 = __webpack_require__(115);
 var AppModule = (function () {
     function AppModule() {
@@ -12564,7 +12564,7 @@ AppModule = __decorate([
             home_component_1.HomeComponent,
             changepassword_equal_validator_directive_1.EqualValidator,
             scoreslist_component_1.ScoresListComponent,
-            mathblaster_component_1.MathBlasterComponent,
+            alienroundup_component_1.AlienRoundupComponent,
             time_component_1.TimeComponent
         ],
         imports: [
@@ -12578,7 +12578,7 @@ AppModule = __decorate([
                 { path: 'changepassword', component: changepassword_component_1.ChangePasswordComponent },
                 { path: 'list', component: scoreslist_component_1.ScoresListComponent },
                 { path: 'time', component: time_component_1.TimeComponent },
-                { path: 'mathblaster', component: mathblaster_component_1.MathBlasterComponent },
+                { path: 'alienroundup', component: alienroundup_component_1.AlienRoundupComponent },
                 { path: '**', redirectTo: 'index' }
             ])
         ]
@@ -12630,32 +12630,32 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(3);
-var MathBlasterComponent = (function () {
-    function MathBlasterComponent() {
+var AlienRoundupComponent = (function () {
+    function AlienRoundupComponent() {
         this.guess = this.getNumber();
         this.items = this.createArray(this.guess);
         this.alien = 'assets/images/Spaceship.png';
     }
-    MathBlasterComponent.prototype.getNumber = function () {
+    AlienRoundupComponent.prototype.getNumber = function () {
         return Math.floor(Math.random() * (20 - 1) + 1);
     };
-    MathBlasterComponent.prototype.createArray = function (num) {
+    AlienRoundupComponent.prototype.createArray = function (num) {
         return new Array(num);
     };
-    MathBlasterComponent.prototype.submitForm = function (form) {
+    AlienRoundupComponent.prototype.submitForm = function (form) {
         console.log('Form Data: ');
         console.log(form);
     };
-    return MathBlasterComponent;
+    return AlienRoundupComponent;
 }());
-MathBlasterComponent = __decorate([
+AlienRoundupComponent = __decorate([
     core_1.Component({
-        selector: 'mathblaster',
+        selector: 'alienroundup',
         template: __webpack_require__(129),
         styles: [__webpack_require__(405)]
     })
-], MathBlasterComponent);
-exports.MathBlasterComponent = MathBlasterComponent;
+], AlienRoundupComponent);
+exports.AlienRoundupComponent = AlienRoundupComponent;
 
 
 /***/ }),
@@ -12984,19 +12984,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(3);
-var http_1 = __webpack_require__(417);
 var ScoresListComponent = (function () {
-    function ScoresListComponent(http) {
-        var _this = this;
-        http.get('/api/Score/Get').subscribe(function (result) {
-            _this.scores = result.json();
-        });
-        console.log(this.scores);
+    function ScoresListComponent() {
     }
     return ScoresListComponent;
 }());
@@ -13004,8 +12995,7 @@ ScoresListComponent = __decorate([
     core_1.Component({
         selector: 'list',
         template: __webpack_require__(136)
-    }),
-    __metadata("design:paramtypes", [http_1.Http])
+    })
 ], ScoresListComponent);
 exports.ScoresListComponent = ScoresListComponent;
 
@@ -13047,7 +13037,7 @@ exports = module.exports = __webpack_require__(18)();
 
 
 // module
-exports.push([module.i, "body {\r}\r\rdiv.jumbotron {\rmargin:0px 0px 0px 0px;\rpadding:0px 0px 0px 0px;\rborder:none;\rbackground-color:black;\r}\rh1#login_title {\r    margin-top: 10px;\r    margin-bottom: 10px;\r    font: 50px Arial, Trebuchet MS, Verdana;\r    font-weight: normal;\r    text-align: center;\r}\rdiv.login_content {\r    \r     height:75%;\r     width:100%;\r\r}\rdiv.login_elements {\r    display:inline-block;\r       \r}\rdiv.student {\r    height:110px;\r    background-color: lightgray;\r    box-sizing: border-box;\r    border: 2px solid;\r    border-color: black;\r    margin-top: 2px;\r}\rdiv#picture_grid {\r    max-width:700px;\r    height:98%;\r    background-color: none;\r    box-sizing:border-box;\r    padding:0px 0px 0px 10px ;\r}\rdiv#index_A {\r    background-image: url(\"http://i.imgur.com/orANXsm.png\");\r    width: 100%;\r    height: 100%;\r    background-size: cover;\r}\rdiv#color_select {\r    /*width: 25%;*/\r    height: 98%;\r    background-color: none;\r    box-sizing:border-box;\r    padding:0px 0px 0px 0px;\r}\rdiv#login_wrap {\r    margin-top:5%;\r    margin-right:auto;\r    margin-left:auto;\r    width:70%;\r    height:85%;\r    background-color:none;\r    border: 2px solid;\r    border-color: dimgray;\r    border-radius: 20px;\r    padding-left: 0px;\r    padding-right: 0px;\r    padding-top: 0px;\r    padding-bottom: 0px;\r    max-width:1054.5px;\r    max-height:650px;\r}\rli {\r    list-style-type: none;\r    border-radius: 2px;\r    border: .1px solid;\r    border-color: dimgray;\r    margin: 4px 10px 2px 0px;\r    width: 100%;\r    height: 25px;\r    box-sizing: border-box;\r}\r\r    li.blue {\r        background-color: blue;\r        color: black;\r        cursor: pointer;\r    }\rul#color_list {\r    padding:0px 10px 0px 5px;\r\r}\r\rli.green {\r    background-color: green;\r    color: black;\r    cursor: pointer;\r}\r\rli.red {\r    background-color: red;\r    color: black;\r    cursor: pointer;\r}\r\rli.black {\r    color: white;\r    background-color: black;\r    cursor: pointer;\r}\r\rli.white {\r    background-color: White;\r    color: black;\r    cursor: pointer;\r}\r\rli.yellow {\r    background-color: yellow;\r    color: black;\r    cursor: pointer;\r}\r\rli.gray {\r    background-color: gray;\r    color: black;\r    cursor: pointer;\r}\r\rli.orange {\r    background-color: orange;\r    color: black;\r    cursor: pointer;\r}\r\rli.purple {\r    background-color: purple;\r    color: black;\r    cursor: pointer;\r}\r\rli.pink {\r    background-color: pink;\r    color: black;\r    cursor: pointer;\r}\r\rli.brown {\r    background-color: brown;\r    color: black;\r    cursor: pointer;\r}\r\rli.violet {\r    background-color: violet;\r    color: black;\r    cursor: pointer;\r}\r\rli.tan {\r    background-color: tan;\r    color: black;\r    cursor: pointer;\r}\ra {\r    margin:0px 0px 0px 0px;\r    padding:0px 0px 0px 0px;\r}\r\rbutton.btn:active {\r    background-color: #3e8e41;\r    transform: translateY(2px);\r}\r\rbutton.btn:hover {\r    background-color: #3d475c\r}\rbutton.btn {\r    width: 200px;\r    height: 40px;\r    margin: 0px 0px 0px 200px;\r    padding: 0px 0px 0px 0px;\r    font: 20px Arial, Trebuchet MS, Verdana;\r    background-color: #808080;\r    color: white;\r    border: 1px solid #c2d1f0;\r    cursor: pointer;\r\r}\rdiv#button_block {\r    \r}\r\rdiv#input_row {\r    margin:0px 0px 25px 0px;\r}\r\r", ""]);
+exports.push([module.i, "body {\r}\r\rdiv.jumbotron {\rmargin:0px 0px 0px 0px;\rpadding:0px 0px 0px 0px;\rborder:none;\rbackground-color:black;\r}\rh1#login_title {\r    margin-top: 10px;\r    margin-bottom: 10px;\r    font: 50px Arial, Trebuchet MS, Verdana;\r    font-weight: normal;\r    text-align: center;\r}\rdiv.login_content {\r    \r     height:75%;\r     width:100%;\r\r}\rdiv.login_elements {\r    display:inline-block;\r       \r}\rdiv.student {\r    height:110px;\r    background-color: lightgray;\r    box-sizing: border-box;\r    border: 2px solid;\r    border-color: black;\r    margin-top: 2px;\r}\rdiv#picture_grid {\r    max-width:700px;\r    min-width:700px;\r    height:98%;\r    background-color: none;\r    box-sizing:border-box;\r    padding:0px 0px 0px 10px ;\r}\rdiv#index_A {\r    background-image: url(\"http://i.imgur.com/orANXsm.png\");\r    width: 100%;\r    height: 100%;\r    background-size: cover;\r}\rdiv#color_select {\r    /*width: 25%;*/\r    height: 98%;\r    background-color: none;\r    box-sizing:border-box;\r    padding:0px 0px 0px 0px;\r}\rdiv#login_wrap {\r    margin-top:5%;\r    margin-right:auto;\r    margin-left:auto;\r    width:70%;\r    height:85%;\r    background-color:none;\r    border: 2px solid;\r    border-color: dimgray;\r    border-radius: 20px;\r    padding-left: 0px;\r    padding-right: 0px;\r    padding-top: 0px;\r    padding-bottom: 0px;\r    max-width:1054.5px;\r    max-height:650px;\r}\rli {\r    list-style-type: none;\r    border-radius: 2px;\r    border: .1px solid;\r    border-color: dimgray;\r    margin: 4px 10px 2px 0px;\r    width: 100%;\r    height: 25px;\r    box-sizing: border-box;\r}\r\r    li.blue {\r        background-color: blue;\r        color: black;\r        cursor: pointer;\r    }\rul#color_list {\r    padding:0px 10px 0px 5px;\r\r}\r\rli.green {\r    background-color: green;\r    color: black;\r    cursor: pointer;\r}\r\rli.red {\r    background-color: red;\r    color: black;\r    cursor: pointer;\r}\r\rli.black {\r    color: white;\r    background-color: black;\r    cursor: pointer;\r}\r\rli.white {\r    background-color: White;\r    color: black;\r    cursor: pointer;\r}\r\rli.yellow {\r    background-color: yellow;\r    color: black;\r    cursor: pointer;\r}\r\rli.gray {\r    background-color: gray;\r    color: black;\r    cursor: pointer;\r}\r\rli.orange {\r    background-color: orange;\r    color: black;\r    cursor: pointer;\r}\r\rli.purple {\r    background-color: purple;\r    color: black;\r    cursor: pointer;\r}\r\rli.pink {\r    background-color: pink;\r    color: black;\r    cursor: pointer;\r}\r\rli.brown {\r    background-color: brown;\r    color: black;\r    cursor: pointer;\r}\r\rli.violet {\r    background-color: violet;\r    color: black;\r    cursor: pointer;\r}\r\rli.tan {\r    background-color: tan;\r    color: black;\r    cursor: pointer;\r}\ra {\r    margin:0px 0px 0px 0px;\r    padding:0px 0px 0px 0px;\r}\r\rbutton.btn:active {\r    background-color: #3e8e41;\r    transform: translateY(2px);\r}\r\rbutton.btn:hover {\r    background-color: #3d475c\r}\rbutton.btn {\r    width: 200px;\r    height: 40px;\r    margin: 0px 0px 0px 200px;\r    padding: 0px 0px 0px 0px;\r    font: 20px Arial, Trebuchet MS, Verdana;\r    background-color: #808080;\r    color: white;\r    border: 1px solid #c2d1f0;\r    cursor: pointer;\r\r}\rdiv#button_block {\r    \r}\r\rdiv#input_row {\r    margin:0px 0px 25px 0px;\r}\r\r", ""]);
 
 // exports
 
@@ -13103,7 +13093,7 @@ exports = module.exports = __webpack_require__(18)();
 
 
 // module
-exports.push([module.i, "body {\r\n}\r\ndiv#page_wrap {\r\n    background-image: url(\"http://i.imgur.com/SsUrSRA.png\");\r\n    \r\n    width: 100%;\r\n    height: 100%;\r\n    background-size: cover;\r\n}\r\ndiv#home_wrap.row {\r\n    height:90%;\r\n    margin:0px 0px 0px 0px;\r\n    padding:0px 0px 0px 0px ;\r\n    \r\n}\r\ndiv#logo_wrap {\r\n    height:24%;\r\n    background-color:none;\r\n    margin:85px 0px 45px 0px ;\r\n}\r\ndiv#logo1 {\r\n    height: 100%;\r\n    background-color: none;\r\n}\r\ndiv#logo2 {   \r\n    height: 100%;\r\n    background-color: none;\r\n    padding:0px 47px 0px 47px ;\r\n}\r\ndiv#logo3 {\r\n    height: 100%;\r\n    background-color: none;\r\n}\r\ndiv#system_wrap {\r\n    height: 25%;\r\n    margin: 15% 0px 0px 15%;\r\n    background-color: none;\r\n    \r\n}\r\nimg#logo_img {\r\n    width:100%;\r\n    height:100%;\r\n\r\n}\r\n\r\ndiv#mercury {\r\n    margin: 0px 4% 0px 0px;\r\n    height: 100%;\r\n    max-width:67px;\r\n    padding:0px 0px 0px 0px;\r\n}\r\nimg#mercury_img {\r\n    width: 65px;\r\n    height: 65px;\r\n    margin: 0px 0px 0px 0px;\r\n    display: flex;\r\n    align-items: center;\r\n    cursor: pointer;\r\n}\r\ndiv#venus {\r\n    margin: 0px 4% 0px 0px;\r\n    height: 100%;\r\n    max-width: 87px;\r\n    padding: 0px 0px 0px 0px;\r\n}\r\nimg#venus_img {\r\n    width: 85px;\r\n    height: 85px;\r\n    margin: 0px 0px 0px 0px;\r\n    cursor: pointer;\r\n}\r\ndiv#earth {\r\n    height: 100%;\r\n    margin: 0px 4% 0px 0px;\r\n    max-width: 122px;\r\n    min-width:120px;\r\n    padding: 0px 0px 0px 0px;\r\n}\r\nimg#earth_img {\r\n    width: 120px;\r\n    height: 170px;\r\n    margin: 0px 0px 0px 0px;\r\n    cursor: pointer;\r\n}\r\ndiv#mars {\r\n    background-color: none;\r\n    height: 100%;\r\n    margin: 0px 0px 0px 0px;\r\n    max-width: 77px;\r\n    padding: 0px 0px 0px 0px;\r\n}\r\nimg#mars_img {\r\n    width: 75px;\r\n    height: 75px;\r\n    margin: 0px 0px 0px 0px;\r\n    cursor: pointer;\r\n}\r\ndiv#jupiter {\r\n    background-color: none;\r\n    height: 100%;\r\n    margin: 0px 0px 0px 2.5%;\r\n    padding: 0px 0px 0px 0px;\r\n    max-width:152px;\r\n}\r\nimg#jupiter_img {\r\n    width: 150px;\r\n    height: 149px;\r\n    margin: 0px 0px 0px 0px;\r\n    cursor: pointer;\r\n}\r\ndiv#saturn {\r\n    background-color: none;\r\n    height: 100% ;\r\n    padding:0px 0px 0px 2.5%;\r\n    min-width:260px;\r\n}\r\nimg#saturn_img {\r\n    width: 270px;\r\n    height: 105px;\r\n    margin: 0px 0px 0px 0px;\r\n    -ms-transform: rotate(30deg);\r\n    -webkit-transform: rotate(30deg);\r\n    transform: rotate(30deg);\r\n    cursor: pointer;\r\n}\r\ndiv#uranus {\r\n    background-color: none;\r\n    height: 100%;\r\n    padding: 0px 0px 0px 0px;\r\n    margin:0px 0px 0px 4%;\r\n    max-width:87px;\r\n}\r\nimg#uranus_img {\r\n    width: 85px;\r\n    height: 85px;\r\n    margin: 0px 0px 0px 0px;\r\n    cursor: pointer;\r\n}\r\ndiv#neptune {\r\n    background-color: none;\r\n    height: 100%;\r\n    padding: 0px 0px 0px 0px;\r\n    margin:0px 0px 0px 4%;\r\n    min-width:87px;\r\n}\r\nimg#neptune_img {\r\n    width: 85px;\r\n    height: 85px;\r\n    margin: 0px 0px 0px 0px;\r\n    cursor: pointer;\r\n}\r\n  \r\n\r\n\r\n", ""]);
+exports.push([module.i, "body {\r\n}\r\ndiv#page_wrap {\r\n    background-image: url(\"http://i.imgur.com/SsUrSRA.png\");\r\n    \r\n    width: 100%;\r\n    height: 100%;\r\n    background-size: cover;\r\n}\r\ndiv#home_wrap.row {\r\n    height:90%;\r\n    margin:0px 0px 0px 0px;\r\n    padding:0px 0px 0px 0px ;\r\n    \r\n}\r\ndiv#logo_wrap {\r\n    height:24%;\r\n    background-color:none;\r\n    margin:85px 0px 45px 0px ;\r\n}\r\ndiv#logo1 {\r\n    height: 100%;\r\n    background-color: none;\r\n}\r\ndiv#logo2 {   \r\n    height: 100%;\r\n    background-color: none;\r\n    padding:0px 47px 0px 47px ;\r\n}\r\ndiv#logo3 {\r\n    height: 100%;\r\n    background-color: none;\r\n}\r\ndiv#system_wrap {\r\n    height: 25%;\r\n    margin: 15% 0px 0px 15%;\r\n    background-color: none;\r\n    \r\n}\r\nimg#logo_img {\r\n    width:100%;\r\n    height:100%;\r\n}\r\n\r\ndiv#mercury {\r\n    margin: 0px 4% 0px 0px;\r\n    height: 100%;\r\n    max-width:67px;\r\n    padding:0px 0px 0px 0px;\r\n}\r\nimg#mercury_img {\r\n    width: 65px;\r\n    height: 65px;\r\n    margin: 0px 0px 0px 0px;\r\n    display: flex;\r\n    align-items: center;\r\n    cursor: pointer;\r\n}\r\ndiv#venus {\r\n    margin: 0px 4% 0px 0px;\r\n    height: 100%;\r\n    max-width: 87px;\r\n    padding: 0px 0px 0px 0px;\r\n}\r\nimg#venus_img {\r\n    width: 85px;\r\n    height: 85px;\r\n    margin: 0px 0px 0px 0px;\r\n    cursor: pointer;\r\n}\r\ndiv#earth {\r\n    height: 100%;\r\n    margin: 0px 4% 0px 0px;\r\n    max-width: 122px;\r\n    min-width:120px;\r\n    padding: 0px 0px 0px 0px;\r\n}\r\nimg#earth_img {\r\n    width: 120px;\r\n    height: 170px;\r\n    margin: 0px 0px 0px 0px;\r\n    cursor: pointer;\r\n}\r\ndiv#mars {\r\n    background-color: none;\r\n    height: 100%;\r\n    margin: 0px 0px 0px 0px;\r\n    max-width: 77px;\r\n    padding: 0px 0px 0px 0px;\r\n}\r\nimg#mars_img {\r\n    width: 75px;\r\n    height: 75px;\r\n    margin: 0px 0px 0px 0px;\r\n    cursor: pointer;\r\n}\r\ndiv#jupiter {\r\n    background-color: none;\r\n    height: 100%;\r\n    margin: 0px 0px 0px 2.5%;\r\n    padding: 0px 0px 0px 0px;\r\n    max-width:152px;\r\n}\r\nimg#jupiter_img {\r\n    width: 150px;\r\n    height: 149px;\r\n    margin: 0px 0px 0px 0px;\r\n    cursor: pointer;\r\n}\r\ndiv#saturn {\r\n    background-color: none;\r\n    height: 100% ;\r\n    padding:0px 0px 0px 2.5%;\r\n    min-width:260px;\r\n}\r\nimg#saturn_img {\r\n    width: 270px;\r\n    height: 105px;\r\n    margin: 0px 0px 0px 0px;\r\n    -ms-transform: rotate(30deg);\r\n    -webkit-transform: rotate(30deg);\r\n    transform: rotate(30deg);\r\n    cursor: pointer;\r\n}\r\ndiv#uranus {\r\n    background-color: none;\r\n    height: 100%;\r\n    padding: 0px 0px 0px 0px;\r\n    margin:0px 0px 0px 4%;\r\n    max-width:87px;\r\n}\r\nimg#uranus_img {\r\n    width: 85px;\r\n    height: 85px;\r\n    margin: 0px 0px 0px 0px;\r\n    cursor: pointer;\r\n}\r\ndiv#neptune {\r\n    background-color: none;\r\n    height: 100%;\r\n    padding: 0px 0px 0px 0px;\r\n    margin:0px 0px 0px 4%;\r\n    min-width:87px;\r\n}\r\nimg#neptune_img {\r\n    width: 85px;\r\n    height: 85px;\r\n    margin: 0px 0px 0px 0px;\r\n    cursor: pointer;\r\n}\r\n  \r\n\r\n\r\n", ""]);
 
 // exports
 
@@ -13444,7 +13434,7 @@ module.exports = "<div class=\"<!--container conntainer-table--> \" style=\"widt
 /* 129 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"jumbotron\">\r\n    <h2>Math Blaster Game</h2>\r\n    <!-- Here we are declaring a local variable called “form” and setting it to an instance of ngForm. This is very important. Now our local form variable becomes of type FormGroup allowing us access to the FormGroup API’s on this local variable. We use this in the ngSubmit event where we send the value of the form via form.value -->\r\n   <div class=\"row\" id=\"gameRow\"> \r\n       \r\n        <div  id=\"spaceship\"  *ngFor=\"let item of items\">\r\n           <img id=\"alien \"src={{alien}}>\r\n        </div>\r\n       \r\n   </div > \r\n    <form #form=\"ngForm\" (ngSubmit)=\"submitForm(form.value)\">\r\n        <div class=\"form-group\">\r\n            <label>Your Guess:</label>\r\n            <!-- Since we are working with template driven forms, we can use the ngModel directive to capture the values of our forms. One thing to note if you are coming from Angular 1.x. Using ngModel as shown below creates a one-way data binding, so once we hit submit the data is only sent to the controller. If we wanted to use two-way data binding, we would have to wrap the ngModel in [()] and assign an attribute to it. Also the name of the field corresponds to the name attribute so our first input will be firstName. -->\r\n            <input type=\"text\" class=\"form-control\" placeholder=\"Guess Here\" name=\"Guess\" ngModel required>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <button type=\"submit\" class=\"btn btn-default\">Submit</button>\r\n        </div>\r\n    </form>\r\n</div>";
+module.exports = "<div class=\"jumbotron\">\r\n    <h2>Alien Roundup</h2>\r\n    <!-- Here we are declaring a local variable called “form” and setting it to an instance of ngForm. This is very important. Now our local form variable becomes of type FormGroup allowing us access to the FormGroup API’s on this local variable. We use this in the ngSubmit event where we send the value of the form via form.value -->\r\n   <div class=\"row\" id=\"gameRow\"> \r\n       \r\n        <div  id=\"spaceship\"  *ngFor=\"let item of items\">\r\n           <img id=\"alien \"src={{alien}}>\r\n        </div>\r\n       \r\n   </div > \r\n    <form #form=\"ngForm\" (ngSubmit)=\"submitForm(form.value)\">\r\n        <div class=\"form-group\">\r\n            <label>Your Guess:</label>\r\n            <!-- Since we are working with template driven forms, we can use the ngModel directive to capture the values of our forms. One thing to note if you are coming from Angular 1.x. Using ngModel as shown below creates a one-way data binding, so once we hit submit the data is only sent to the controller. If we wanted to use two-way data binding, we would have to wrap the ngModel in [()] and assign an attribute to it. Also the name of the field corresponds to the name attribute so our first input will be firstName. -->\r\n            <input type=\"text\" class=\"form-control\" placeholder=\"Guess Here\" name=\"Guess\" ngModel required>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <button type=\"submit\" class=\"btn btn-default\">Submit</button>\r\n        </div>\r\n    </form>\r\n</div>";
 
 /***/ }),
 /* 130 */
@@ -13456,7 +13446,7 @@ module.exports = "<!DOCTYPE html>\r\n\r\n<html lang=\"en\" xmlns=\"http://www.w3
 /* 131 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container \" id=\"index_A\" style=\"width:100%; height:100%; \">\r\n    <div id=\"login_wrap\">\r\n        <h1 id=\"login_title\">Login</h1>\r\n        <div class=\" row login_content\">\r\n            <div class=\"col-xs-8 login_elements\" id=\"picture_grid\">\r\n                <div class=\"jumbotron\">\r\n                <div class=\"row\" id=\"picture_wrap\">\r\n                    <div class=\"col-xs-2 student\" id=\"s1\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s2\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s3\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s4\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s5\"> </div>\r\n                    <div class=\"col-xs-2 student \" id=\"s6\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s1\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s2\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s3\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s4\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s5\"> </div>\r\n                    <div class=\"col-xs-2 student \" id=\"s6\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s1\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s2\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s3\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s4\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s5\"> </div>\r\n                    <div class=\"col-xs-2 student \" id=\"s6\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s1\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s2\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s3\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s4\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s5\"> </div>\r\n                    <div class=\"col-xs-2 student \" id=\"s6\"> </div>      \r\n                </div>  \r\n                </div>\r\n            </div>\r\n                <div class=\"col-xs-4  login_elements\" id=\"color_select\">\r\n                    <ul id=\"color_list\">\r\n                        <li class=\"blue\" value=\"blue\">Blue</li>\r\n                        <li class=\"green\" value=\"green\">Green</li>\r\n                        <li class=\"red\" value=\"red\">Red</li>\r\n                        <li class=\"black\" value=\"black\">Black</li>\r\n                        <li class=\"white\" value=\"white\">White</li>\r\n                        <li class=\"yellow\" value=\"yellow\">Yellow</li>\r\n                        <li class=\"gray\" value=\"gray\">Gray</li>\r\n                        <li class=\"orange\" value=\"orange\">Orange</li>\r\n                        <li class=\"purple\" value=\"purple\">Purple</li>\r\n                        <li class=\"pink\" value=\"pink\">Pink</li>\r\n                        <li class=\"brown\" value=\"brown\">Brown</li>\r\n                        <li class=\"violet\" value=\"violet\">Violet</li>\r\n                        <li class=\"tan\" value=\"tan\">Tan</li>\r\n                    </ul>\r\n                </div>       \r\n        </div>\r\n        <div class=\"row\" id=\"input_row\">\r\n            <div class=\"col-xs-3\">\r\n\r\n            </div>\r\n            <div class=\"col-xs-6\" id=\"buttons_block\">\r\n                <a [routerLink]=\"['/newaccount']\">Register</a>\r\n                <button type=\"button\" class=\"btn\">Login</button>\r\n            </div>\r\n            <div class=\"col-xs-3\">\r\n\r\n            </div>\r\n        </div>\r\n     </div>\r\n </div>\r\n\r\n";
+module.exports = "<div class=\"container \" id=\"index_A\" style=\"width:100%; height:100%; \">\r\n    <div id=\"login_wrap\">\r\n        <h1 id=\"login_title\">Login</h1>\r\n        <div class=\" row login_content\">\r\n            <div class=\"col-xs-8 login_elements\" id=\"picture_grid\">\r\n                <div class=\"jumbotron\">\r\n                <div class=\"row\" id=\"picture_wrap\">\r\n                    <div class=\"col-xs-2 student\" id=\"s1\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s2\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s3\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s4\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s5\"> </div>\r\n                    <div class=\"col-xs-2 student \" id=\"s6\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s7\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s8\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s9\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s10\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s11\"> </div>\r\n                    <div class=\"col-xs-2 student \" id=\"s12\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s13\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s14\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s15\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s16\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s17\"> </div>\r\n                    <div class=\"col-xs-2 student \" id=\"s18\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s19\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s20\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s21\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s22\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s23\"> </div>\r\n                    <div class=\"col-xs-2 student \" id=\"s24\"> </div>      \r\n                </div>  \r\n                </div>\r\n            </div>\r\n                <div class=\"col-xs-4  login_elements\" id=\"color_select\">\r\n                    <ul id=\"color_list\">\r\n                        <li class=\"blue\" value=\"blue\">Blue</li>\r\n                        <li class=\"green\" value=\"green\">Green</li>\r\n                        <li class=\"red\" value=\"red\">Red</li>\r\n                        <li class=\"black\" value=\"black\">Black</li>\r\n                        <li class=\"white\" value=\"white\">White</li>\r\n                        <li class=\"yellow\" value=\"yellow\">Yellow</li>\r\n                        <li class=\"gray\" value=\"gray\">Gray</li>\r\n                        <li class=\"orange\" value=\"orange\">Orange</li>\r\n                        <li class=\"purple\" value=\"purple\">Purple</li>\r\n                        <li class=\"pink\" value=\"pink\">Pink</li>\r\n                        <li class=\"brown\" value=\"brown\">Brown</li>\r\n                        <li class=\"violet\" value=\"violet\">Violet</li>\r\n                        <li class=\"tan\" value=\"tan\">Tan</li>\r\n                    </ul>\r\n                </div>       \r\n        </div>\r\n        <div class=\"row\" id=\"input_row\">\r\n            <div class=\"col-xs-3\">\r\n                <a [routerLink]=\"['/newaccount']\">Register</a>\r\n            </div>\r\n            <div class=\"col-xs-6\" id=\"buttons_block\">               \r\n                <button type=\"button\" class=\"btn\">Login</button>\r\n            </div>\r\n            <div class=\"col-xs-3\">\r\n                <a [routerLink]=\"['/teacherlogin']\">Teacher Login</a>\r\n            </div>\r\n        </div>\r\n     </div>\r\n </div>\r\n\r\n";
 
 /***/ }),
 /* 132 */
@@ -13480,13 +13470,13 @@ module.exports = "<div class=\"container\">\r\n    <h1>Change Password</h1>\r\n 
 /* 135 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\" container\" id=\"page_wrap\">\r\n    <div class=\"row\" id=\"home_wrap\">\r\n        <div class=\"row\" id=\"logo_wrap\">\r\n              <div class=\" col-lg-4\" id=\"logo1\">\r\n\r\n              </div> \r\n              <div class=\" col-lg-4\" id=\"logo2\">\r\n                  <img  src=\"http://i.imgur.com/wehmORA.png\" id=\"logo_img\" alt=\"Logo\" >\r\n              </div>\r\n              <div class=\" col-lg-4\" id=\"logo3\">\r\n\r\n              </div>\r\n\r\n        </div>\r\n        <div class=\"flex-row\" id=\"system_wrap\">\r\n            \r\n            <div class=\"col-lg-1\" id=\"mercury\">\r\n                <img src=\"http://i.imgur.com/fmnKsIJ.png\" id=\"mercury_img\" alt=\"murcury\" >\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"venus\">\r\n                <img src=\"http://i.imgur.com/cm5ZcFi.png\" id=\"venus_img\" alt=\"venus\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"earth\">\r\n                <img src=\"http://i.imgur.com/D03gV5K.png \" id=\"earth_img\" alt=\"earth\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"mars\">\r\n                <img src=\"http://i.imgur.com/PjwNk7K.png \" id=\"mars_img\" alt=\"mars\">\r\n            </div>\r\n            <div class=\"col-lg-2\" id=\"jupiter\">\r\n                <img src=\"http://i.imgur.com/ErtUG9c.png\" id=\"jupiter_img\" alt=\"jupiter\">\r\n            </div>\r\n            <div class=\"col-lg-2\" id=\"saturn\">\r\n                <img src=\"http://i.imgur.com/tDzCYWv.png\" id=\"saturn_img\" alt=\"saturn\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"uranus\">\r\n                <img src=\"http://i.imgur.com/i3BOMxT.png\" id=\"uranus_img\" alt=\"uranus\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"neptune\">\r\n               <img src=\"http://i.imgur.com/PLieBrN.png\" id=\"neptune_img\" alt=\"neptune\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
+module.exports = "<div class=\" container\" id=\"page_wrap\">\r\n    <div class=\"row\" id=\"home_wrap\">\r\n        <div class=\"row\" id=\"logo_wrap\">\r\n              <div class=\" col-lg-4\" id=\"logo1\">\r\n\r\n              </div> \r\n              <div class=\" col-lg-4\" id=\"logo2\">\r\n                  <img  src=\"http://i.imgur.com/wehmORA.png\" id=\"logo_img\" alt=\"Logo\" >\r\n              </div>\r\n              <div class=\" col-lg-4\" id=\"logo3\">\r\n\r\n              </div>\r\n\r\n        </div>\r\n        <div class=\"flex-row\" id=\"system_wrap\">\r\n            \r\n            <div class=\"col-lg-1\" id=\"mercury\" [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/fmnKsIJ.png\" id=\"mercury_img\" alt=\"murcury\"  [routerLink]=\"['/mathblaster']\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"venus\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/cm5ZcFi.png\" id=\"venus_img\" alt=\"venus\"  [routerLink]=\"['/time']\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"earth\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/D03gV5K.png \" id=\"earth_img\" alt=\"earth\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"mars\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/PjwNk7K.png \" id=\"mars_img\" alt=\"mars\">\r\n            </div>\r\n            <div class=\"col-lg-2\" id=\"jupiter\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/ErtUG9c.png\" id=\"jupiter_img\" alt=\"jupiter\">\r\n            </div>\r\n            <div class=\"col-lg-2\" id=\"saturn\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/tDzCYWv.png\" id=\"saturn_img\" alt=\"saturn\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"uranus\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/i3BOMxT.png\" id=\"uranus_img\" alt=\"uranus\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"neptune\"  [routerLinkActive]=\"['link-active']\">\r\n               <img src=\"http://i.imgur.com/PLieBrN.png\" id=\"neptune_img\" alt=\"neptune\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
 
 /***/ }),
 /* 136 */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Student Score Table</h1>\r\n<p *ngIf=\"!scores\"><em>Loading...</em></p>\r\n<table class='table' *ngIf=\"scores\">\r\n    <thead>\r\n        <tr>\r\n            <th>ID</th>\r\n            <th>Game ID</th>\r\n            <th>Student ID</th>\r\n            <th>Questions Answered</th>\r\n            <th>Correctly Answered</th>\r\n            <th>Time</th>\r\n            <th>Teacher ID</th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n        <tr *ngFor=\"let score of scores\">\r\n            <td>{{ score.id }}</td>\r\n            <td>{{ score.gameID }}</td>\r\n            <td>{{ score.studentID }}</td>\r\n            <td>{{ score.numberQuestions }}</td>\r\n            <td>{{ score.numberCorrect }}</td>\r\n            <td>{{ score.time }}</td>\r\n            <td>{{ score.teacherID }}</td>\r\n        </tr>\r\n    </tbody>\r\n</table>";
+module.exports = "<h1>Student Score Table</h1>\r\n<!--<p *ngIf=\"!scores\"><em>Loading...</em></p>\r\n<table class='table' *ngIf=\"scores\">\r\n    <thead>\r\n        <tr>\r\n            <th>ID</th>\r\n            <th>Game ID</th>\r\n            <th>Student ID</th>\r\n            <th>Questions Answered</th>\r\n            <th>Correctly Answered</th>\r\n            <th>Time</th>\r\n            <th>Teacher ID</th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n        <tr *ngFor=\"let score of scores\">\r\n        \r\n        </tr>\r\n    </tbody>\r\n</table>-->";
 
 /***/ }),
 /* 137 */
@@ -13854,7 +13844,7 @@ var ObjectUnsubscribedError_1 = __webpack_require__(91);
 exports.ObjectUnsubscribedError = ObjectUnsubscribedError_1.ObjectUnsubscribedError;
 var TimeoutError_1 = __webpack_require__(84);
 exports.TimeoutError = TimeoutError_1.TimeoutError;
-var UnsubscriptionError_1 = __webpack_require__(430);
+var UnsubscriptionError_1 = __webpack_require__(429);
 exports.UnsubscriptionError = UnsubscriptionError_1.UnsubscriptionError;
 var timeInterval_1 = __webpack_require__(76);
 exports.TimeInterval = timeInterval_1.TimeInterval;
@@ -14177,7 +14167,7 @@ Observable_1.Observable.never = never_1.never;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var of_1 = __webpack_require__(432);
+var of_1 = __webpack_require__(431);
 Observable_1.Observable.of = of_1.of;
 //# sourceMappingURL=of.js.map
 
@@ -14353,7 +14343,7 @@ Observable_1.Observable.prototype.bufferWhen = bufferWhen_1.bufferWhen;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var catch_1 = __webpack_require__(419);
+var catch_1 = __webpack_require__(418);
 Observable_1.Observable.prototype.catch = catch_1._catch;
 Observable_1.Observable.prototype._catch = catch_1._catch;
 //# sourceMappingURL=catch.js.map
@@ -14398,7 +14388,7 @@ Observable_1.Observable.prototype.concat = concat_1.concat;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var concatAll_1 = __webpack_require__(420);
+var concatAll_1 = __webpack_require__(419);
 Observable_1.Observable.prototype.concatAll = concatAll_1.concatAll;
 //# sourceMappingURL=concatAll.js.map
 
@@ -14409,7 +14399,7 @@ Observable_1.Observable.prototype.concatAll = concatAll_1.concatAll;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var concatMap_1 = __webpack_require__(421);
+var concatMap_1 = __webpack_require__(420);
 Observable_1.Observable.prototype.concatMap = concatMap_1.concatMap;
 //# sourceMappingURL=concatMap.js.map
 
@@ -14564,7 +14554,7 @@ Observable_1.Observable.prototype.elementAt = elementAt_1.elementAt;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var every_1 = __webpack_require__(422);
+var every_1 = __webpack_require__(421);
 Observable_1.Observable.prototype.every = every_1.every;
 //# sourceMappingURL=every.js.map
 
@@ -14653,7 +14643,7 @@ Observable_1.Observable.prototype.findIndex = findIndex_1.findIndex;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var first_1 = __webpack_require__(423);
+var first_1 = __webpack_require__(422);
 Observable_1.Observable.prototype.first = first_1.first;
 //# sourceMappingURL=first.js.map
 
@@ -14697,7 +14687,7 @@ Observable_1.Observable.prototype.isEmpty = isEmpty_1.isEmpty;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var last_1 = __webpack_require__(429);
+var last_1 = __webpack_require__(428);
 Observable_1.Observable.prototype.last = last_1.last;
 //# sourceMappingURL=last.js.map
 
@@ -14775,7 +14765,7 @@ Observable_1.Observable.prototype.mergeAll = mergeAll_1.mergeAll;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var mergeMap_1 = __webpack_require__(433);
+var mergeMap_1 = __webpack_require__(432);
 Observable_1.Observable.prototype.mergeMap = mergeMap_1.mergeMap;
 Observable_1.Observable.prototype.flatMap = mergeMap_1.mergeMap;
 //# sourceMappingURL=mergeMap.js.map
@@ -23192,7 +23182,7 @@ var SkipWhileSubscriber = (function (_super) {
 "use strict";
 
 var ArrayObservable_1 = __webpack_require__(20);
-var ScalarObservable_1 = __webpack_require__(418);
+var ScalarObservable_1 = __webpack_require__(417);
 var EmptyObservable_1 = __webpack_require__(24);
 var concat_1 = __webpack_require__(53);
 var isScheduler_1 = __webpack_require__(16);
@@ -26817,106 +26807,100 @@ module.exports = (__webpack_require__(1))(190);
 /* 417 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(1))(194);
+module.exports = (__webpack_require__(1))(315);
 
 /***/ }),
 /* 418 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(1))(315);
+module.exports = (__webpack_require__(1))(317);
 
 /***/ }),
 /* 419 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(1))(317);
+module.exports = (__webpack_require__(1))(318);
 
 /***/ }),
 /* 420 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(1))(318);
+module.exports = (__webpack_require__(1))(319);
 
 /***/ }),
 /* 421 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(1))(319);
+module.exports = (__webpack_require__(1))(320);
 
 /***/ }),
 /* 422 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(1))(320);
+module.exports = (__webpack_require__(1))(321);
 
 /***/ }),
 /* 423 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(1))(321);
+module.exports = (__webpack_require__(1))(332);
 
 /***/ }),
 /* 424 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(1))(332);
+module.exports = (__webpack_require__(1))(333);
 
 /***/ }),
 /* 425 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(1))(333);
+module.exports = (__webpack_require__(1))(335);
 
 /***/ }),
 /* 426 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(1))(335);
+module.exports = (__webpack_require__(1))(551);
 
 /***/ }),
 /* 427 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(1))(551);
+module.exports = (__webpack_require__(1))(553);
 
 /***/ }),
 /* 428 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(1))(553);
+module.exports = (__webpack_require__(1))(556);
 
 /***/ }),
 /* 429 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(1))(556);
+module.exports = (__webpack_require__(1))(559);
 
 /***/ }),
 /* 430 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(1))(559);
+module.exports = (__webpack_require__(1))(574);
 
 /***/ }),
 /* 431 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(1))(574);
+module.exports = (__webpack_require__(1))(58);
 
 /***/ }),
 /* 432 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(1))(58);
-
-/***/ }),
-/* 433 */
-/***/ (function(module, exports, __webpack_require__) {
-
 module.exports = (__webpack_require__(1))(83);
 
 /***/ }),
-/* 434 */
+/* 433 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(99);
