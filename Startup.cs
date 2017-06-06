@@ -29,7 +29,7 @@ namespace JSON_Student_App
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddDbContext<Models.StudentAppContext>();// fill out from docs on contonso
+            // services.AddDbContext<Models.StudentAppContext>();// fill out from docs on contonso
             // Add framework services.
             services.AddMvc();
         }

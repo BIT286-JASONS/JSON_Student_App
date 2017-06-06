@@ -8,12 +8,12 @@ import { Http } from '@angular/http';
 export class ScoresListComponent {
     public scores: Score[];
 
-    constructor(http: Http) {
-        http.get('/api/Score/Get').subscribe(result => {
-            this.scores = result.json() as Score[];
-        });
-        console.log(this.scores);
-    }
+    //constructor(http: Http) {
+    //    http.get('/api/Score/Get').subscribe(result => {
+    //        this.scores = result.json() as Score[];
+    //    });
+    //    console.log(this.scores);
+    //}
 }
 
 interface Score {
