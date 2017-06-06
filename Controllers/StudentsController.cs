@@ -20,7 +20,11 @@ namespace JSON_Student_App.Controllers
             _context = context;
         }
 
-
+        [HttpGet("[action]")]
+        public IEnumerable<string> Pics()
+        {
+            return _context.Students.Select(i => i.StudentImage);
+        }
 
         [HttpGet("[action]")]
         public IEnumerable<Students> Get()
