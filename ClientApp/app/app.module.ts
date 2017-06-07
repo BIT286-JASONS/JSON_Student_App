@@ -6,6 +6,7 @@ import { AppComponent } from './components/app/app.component'
 import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/scores/home/home.component';
 import { IndexComponent } from './components/login/index/index.component';
+import { TeacherLoginComponent } from './components/login/teacherlogin/teacherlogin.component';
 import { ScoresListComponent } from './components/scores/scoreslist/scoreslist.component';
 import { NewAccountComponent } from './components/login/newaccount/newaccount.component';
 import { ChangePasswordComponent } from './components/scores/changepassword/changepassword.component';
@@ -23,7 +24,7 @@ import { EqualValidator } from './components/scores/changepassword/changepasswor
         NewAccountComponent,
         ChangePasswordComponent,
         HomeComponent,
-
+        TeacherLoginComponent,
         EqualValidator,
         ScoresListComponent,
         AlienRoundupComponent,
@@ -42,6 +43,7 @@ import { EqualValidator } from './components/scores/changepassword/changepasswor
             { path: 'changepassword', component: ChangePasswordComponent },
             { path: 'list', component: ScoresListComponent },
             { path: 'time', component: TimeComponent },
+            { path: 'teacherlogin', component: TeacherLoginComponent },
             { path: 'alienroundup', component: AlienRoundupComponent },
             { path: 'flashcards', component: flashcardsComponent },
             { path: '**', redirectTo: 'index' }

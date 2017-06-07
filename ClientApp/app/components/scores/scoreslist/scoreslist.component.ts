@@ -24,5 +24,7 @@ interface Score {
     attemptTime: string;
     numberQuestions: number;
     numberCorrect: number;
-    difficulty: number
+    difficulty: number;
+    student: any;
+    teacher: any
 }
