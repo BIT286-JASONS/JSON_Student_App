@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "d64ae78310ec701b592e"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "bca072cedfe472d46bdb"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -704,7 +704,7 @@
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return hotCreateRequire(106)(__webpack_require__.s = 106);
+/******/ 	return hotCreateRequire(108)(__webpack_require__.s = 108);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -752,11 +752,11 @@ var /** @type {?} */ NG_VALUE_ACCESSOR = new __WEBPACK_IMPORTED_MODULE_0__angula
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NG_ASYNC_VALIDATORS; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return Validators; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_collection__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_collection__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_lang__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__private_import_core__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__private_import_core__ = __webpack_require__(36);
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -1038,7 +1038,7 @@ function ControlContainer_tsickle_Closure_declarations() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__validators__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__checkbox_value_accessor__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__default_value_accessor__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__normalize_validator__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__normalize_validator__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__number_value_accessor__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__radio_control_value_accessor__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__range_value_accessor__ = __webpack_require__(26);
@@ -1404,9 +1404,9 @@ function NgControl_tsickle_Closure_declarations() {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EventEmitter; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
 /* unused harmony reexport Observable */
 /* unused harmony reexport Subject */
@@ -1754,7 +1754,7 @@ function escapeRegExp(s) {
     return s.replace(/([.*+?^=!:${}()|[\]\/\\])/g, '\\$1');
 }
 //# sourceMappingURL=lang.js.map
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(97)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(101)))
 
 /***/ }),
 /* 10 */
@@ -2415,7 +2415,7 @@ function RadioControlValueAccessor_tsickle_Closure_declarations() {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FormGroupDirective; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_async__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_collection__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_collection__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__validators__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__control_container__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__reactive_errors__ = __webpack_require__(18);
@@ -3249,7 +3249,7 @@ function DefaultValueAccessor_tsickle_Closure_declarations() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__abstract_form_group_directive__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__control_container__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ng_form__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__template_driven_errors__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__template_driven_errors__ = __webpack_require__(32);
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -3354,7 +3354,7 @@ function NgModelGroup_tsickle_Closure_declarations() {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReactiveErrors; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__error_examples__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__error_examples__ = __webpack_require__(31);
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -4071,11 +4071,11 @@ function NgSelectMultipleOption_tsickle_Closure_declarations() {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return FormControl; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return FormGroup; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return FormArray; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_shared__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_async__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__private_import_core__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__private_import_core__ = __webpack_require__(36);
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -6140,7 +6140,7 @@ function NgControlStatusGroup_tsickle_Closure_declarations() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ng_form__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ng_model_group__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__shared__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__template_driven_errors__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__template_driven_errors__ = __webpack_require__(32);
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -7159,11 +7159,17 @@ function FormControlName_tsickle_Closure_declarations() {
 
 /***/ }),
 /* 29 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(1))(194);
+
+/***/ }),
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_forms__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_forms__ = __webpack_require__(49);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "AbstractControlDirective", function() { return __WEBPACK_IMPORTED_MODULE_0__src_forms__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "AbstractFormGroupDirective", function() { return __WEBPACK_IMPORTED_MODULE_0__src_forms__["b"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "CheckboxControlValueAccessor", function() { return __WEBPACK_IMPORTED_MODULE_0__src_forms__["c"]; });
@@ -7217,7 +7223,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7239,12 +7245,12 @@ var /** @type {?} */ FormErrorExamples = {
 //# sourceMappingURL=error_examples.js.map
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TemplateDrivenErrors; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__error_examples__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__error_examples__ = __webpack_require__(31);
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -7285,7 +7291,7 @@ var TemplateDrivenErrors = (function () {
 //# sourceMappingURL=template_driven_errors.js.map
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7678,7 +7684,7 @@ function PatternValidator_tsickle_Closure_declarations() {
 //# sourceMappingURL=validators.js.map
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7861,7 +7867,7 @@ function iterateListLike(obj, fn) {
 //# sourceMappingURL=collection.js.map
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8002,7 +8008,7 @@ function FormBuilder_tsickle_Closure_declarations() {
 //# sourceMappingURL=form_builder.js.map
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8022,7 +8028,7 @@ var /** @type {?} */ isObservable = __WEBPACK_IMPORTED_MODULE_0__angular_core__[
 //# sourceMappingURL=private_import_core.js.map
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports) {
 
 var ENTITIES = [['Aacute', [193]], ['aacute', [225]], ['Abreve', [258]], ['abreve', [259]], ['ac', [8766]], ['acd', [8767]], ['acE', [8766, 819]], ['Acirc', [194]], ['acirc', [226]], ['acute', [180]], ['Acy', [1040]], ['acy', [1072]], ['AElig', [198]], ['aelig', [230]], ['af', [8289]], ['Afr', [120068]], ['afr', [120094]], ['Agrave', [192]], ['agrave', [224]], ['alefsym', [8501]], ['aleph', [8501]], ['Alpha', [913]], ['alpha', [945]], ['Amacr', [256]], ['amacr', [257]], ['amalg', [10815]], ['amp', [38]], ['AMP', [38]], ['andand', [10837]], ['And', [10835]], ['and', [8743]], ['andd', [10844]], ['andslope', [10840]], ['andv', [10842]], ['ang', [8736]], ['ange', [10660]], ['angle', [8736]], ['angmsdaa', [10664]], ['angmsdab', [10665]], ['angmsdac', [10666]], ['angmsdad', [10667]], ['angmsdae', [10668]], ['angmsdaf', [10669]], ['angmsdag', [10670]], ['angmsdah', [10671]], ['angmsd', [8737]], ['angrt', [8735]], ['angrtvb', [8894]], ['angrtvbd', [10653]], ['angsph', [8738]], ['angst', [197]], ['angzarr', [9084]], ['Aogon', [260]], ['aogon', [261]], ['Aopf', [120120]], ['aopf', [120146]], ['apacir', [10863]], ['ap', [8776]], ['apE', [10864]], ['ape', [8778]], ['apid', [8779]], ['apos', [39]], ['ApplyFunction', [8289]], ['approx', [8776]], ['approxeq', [8778]], ['Aring', [197]], ['aring', [229]], ['Ascr', [119964]], ['ascr', [119990]], ['Assign', [8788]], ['ast', [42]], ['asymp', [8776]], ['asympeq', [8781]], ['Atilde', [195]], ['atilde', [227]], ['Auml', [196]], ['auml', [228]], ['awconint', [8755]], ['awint', [10769]], ['backcong', [8780]], ['backepsilon', [1014]], ['backprime', [8245]], ['backsim', [8765]], ['backsimeq', [8909]], ['Backslash', [8726]], ['Barv', [10983]], ['barvee', [8893]], ['barwed', [8965]], ['Barwed', [8966]], ['barwedge', [8965]], ['bbrk', [9141]], ['bbrktbrk', [9142]], ['bcong', [8780]], ['Bcy', [1041]], ['bcy', [1073]], ['bdquo', [8222]], ['becaus', [8757]], ['because', [8757]], ['Because', [8757]], ['bemptyv', [10672]], ['bepsi', [1014]], ['bernou', [8492]], ['Bernoullis', [8492]], ['Beta', [914]], ['beta', [946]], ['beth', [8502]], ['between', [8812]], ['Bfr', [120069]], ['bfr', [120095]], ['bigcap', [8898]], ['bigcirc', [9711]], ['bigcup', [8899]], ['bigodot', [10752]], ['bigoplus', [10753]], ['bigotimes', [10754]], ['bigsqcup', [10758]], ['bigstar', [9733]], ['bigtriangledown', [9661]], ['bigtriangleup', [9651]], ['biguplus', [10756]], ['bigvee', [8897]], ['bigwedge', [8896]], ['bkarow', [10509]], ['blacklozenge', [10731]], ['blacksquare', [9642]], ['blacktriangle', [9652]], ['blacktriangledown', [9662]], ['blacktriangleleft', [9666]], ['blacktriangleright', [9656]], ['blank', [9251]], ['blk12', [9618]], ['blk14', [9617]], ['blk34', [9619]], ['block', [9608]], ['bne', [61, 8421]], ['bnequiv', [8801, 8421]], ['bNot', [10989]], ['bnot', [8976]], ['Bopf', [120121]], ['bopf', [120147]], ['bot', [8869]], ['bottom', [8869]], ['bowtie', [8904]], ['boxbox', [10697]], ['boxdl', [9488]], ['boxdL', [9557]], ['boxDl', [9558]], ['boxDL', [9559]], ['boxdr', [9484]], ['boxdR', [9554]], ['boxDr', [9555]], ['boxDR', [9556]], ['boxh', [9472]], ['boxH', [9552]], ['boxhd', [9516]], ['boxHd', [9572]], ['boxhD', [9573]], ['boxHD', [9574]], ['boxhu', [9524]], ['boxHu', [9575]], ['boxhU', [9576]], ['boxHU', [9577]], ['boxminus', [8863]], ['boxplus', [8862]], ['boxtimes', [8864]], ['boxul', [9496]], ['boxuL', [9563]], ['boxUl', [9564]], ['boxUL', [9565]], ['boxur', [9492]], ['boxuR', [9560]], ['boxUr', [9561]], ['boxUR', [9562]], ['boxv', [9474]], ['boxV', [9553]], ['boxvh', [9532]], ['boxvH', [9578]], ['boxVh', [9579]], ['boxVH', [9580]], ['boxvl', [9508]], ['boxvL', [9569]], ['boxVl', [9570]], ['boxVL', [9571]], ['boxvr', [9500]], ['boxvR', [9566]], ['boxVr', [9567]], ['boxVR', [9568]], ['bprime', [8245]], ['breve', [728]], ['Breve', [728]], ['brvbar', [166]], ['bscr', [119991]], ['Bscr', [8492]], ['bsemi', [8271]], ['bsim', [8765]], ['bsime', [8909]], ['bsolb', [10693]], ['bsol', [92]], ['bsolhsub', [10184]], ['bull', [8226]], ['bullet', [8226]], ['bump', [8782]], ['bumpE', [10926]], ['bumpe', [8783]], ['Bumpeq', [8782]], ['bumpeq', [8783]], ['Cacute', [262]], ['cacute', [263]], ['capand', [10820]], ['capbrcup', [10825]], ['capcap', [10827]], ['cap', [8745]], ['Cap', [8914]], ['capcup', [10823]], ['capdot', [10816]], ['CapitalDifferentialD', [8517]], ['caps', [8745, 65024]], ['caret', [8257]], ['caron', [711]], ['Cayleys', [8493]], ['ccaps', [10829]], ['Ccaron', [268]], ['ccaron', [269]], ['Ccedil', [199]], ['ccedil', [231]], ['Ccirc', [264]], ['ccirc', [265]], ['Cconint', [8752]], ['ccups', [10828]], ['ccupssm', [10832]], ['Cdot', [266]], ['cdot', [267]], ['cedil', [184]], ['Cedilla', [184]], ['cemptyv', [10674]], ['cent', [162]], ['centerdot', [183]], ['CenterDot', [183]], ['cfr', [120096]], ['Cfr', [8493]], ['CHcy', [1063]], ['chcy', [1095]], ['check', [10003]], ['checkmark', [10003]], ['Chi', [935]], ['chi', [967]], ['circ', [710]], ['circeq', [8791]], ['circlearrowleft', [8634]], ['circlearrowright', [8635]], ['circledast', [8859]], ['circledcirc', [8858]], ['circleddash', [8861]], ['CircleDot', [8857]], ['circledR', [174]], ['circledS', [9416]], ['CircleMinus', [8854]], ['CirclePlus', [8853]], ['CircleTimes', [8855]], ['cir', [9675]], ['cirE', [10691]], ['cire', [8791]], ['cirfnint', [10768]], ['cirmid', [10991]], ['cirscir', [10690]], ['ClockwiseContourIntegral', [8754]], ['clubs', [9827]], ['clubsuit', [9827]], ['colon', [58]], ['Colon', [8759]], ['Colone', [10868]], ['colone', [8788]], ['coloneq', [8788]], ['comma', [44]], ['commat', [64]], ['comp', [8705]], ['compfn', [8728]], ['complement', [8705]], ['complexes', [8450]], ['cong', [8773]], ['congdot', [10861]], ['Congruent', [8801]], ['conint', [8750]], ['Conint', [8751]], ['ContourIntegral', [8750]], ['copf', [120148]], ['Copf', [8450]], ['coprod', [8720]], ['Coproduct', [8720]], ['copy', [169]], ['COPY', [169]], ['copysr', [8471]], ['CounterClockwiseContourIntegral', [8755]], ['crarr', [8629]], ['cross', [10007]], ['Cross', [10799]], ['Cscr', [119966]], ['cscr', [119992]], ['csub', [10959]], ['csube', [10961]], ['csup', [10960]], ['csupe', [10962]], ['ctdot', [8943]], ['cudarrl', [10552]], ['cudarrr', [10549]], ['cuepr', [8926]], ['cuesc', [8927]], ['cularr', [8630]], ['cularrp', [10557]], ['cupbrcap', [10824]], ['cupcap', [10822]], ['CupCap', [8781]], ['cup', [8746]], ['Cup', [8915]], ['cupcup', [10826]], ['cupdot', [8845]], ['cupor', [10821]], ['cups', [8746, 65024]], ['curarr', [8631]], ['curarrm', [10556]], ['curlyeqprec', [8926]], ['curlyeqsucc', [8927]], ['curlyvee', [8910]], ['curlywedge', [8911]], ['curren', [164]], ['curvearrowleft', [8630]], ['curvearrowright', [8631]], ['cuvee', [8910]], ['cuwed', [8911]], ['cwconint', [8754]], ['cwint', [8753]], ['cylcty', [9005]], ['dagger', [8224]], ['Dagger', [8225]], ['daleth', [8504]], ['darr', [8595]], ['Darr', [8609]], ['dArr', [8659]], ['dash', [8208]], ['Dashv', [10980]], ['dashv', [8867]], ['dbkarow', [10511]], ['dblac', [733]], ['Dcaron', [270]], ['dcaron', [271]], ['Dcy', [1044]], ['dcy', [1076]], ['ddagger', [8225]], ['ddarr', [8650]], ['DD', [8517]], ['dd', [8518]], ['DDotrahd', [10513]], ['ddotseq', [10871]], ['deg', [176]], ['Del', [8711]], ['Delta', [916]], ['delta', [948]], ['demptyv', [10673]], ['dfisht', [10623]], ['Dfr', [120071]], ['dfr', [120097]], ['dHar', [10597]], ['dharl', [8643]], ['dharr', [8642]], ['DiacriticalAcute', [180]], ['DiacriticalDot', [729]], ['DiacriticalDoubleAcute', [733]], ['DiacriticalGrave', [96]], ['DiacriticalTilde', [732]], ['diam', [8900]], ['diamond', [8900]], ['Diamond', [8900]], ['diamondsuit', [9830]], ['diams', [9830]], ['die', [168]], ['DifferentialD', [8518]], ['digamma', [989]], ['disin', [8946]], ['div', [247]], ['divide', [247]], ['divideontimes', [8903]], ['divonx', [8903]], ['DJcy', [1026]], ['djcy', [1106]], ['dlcorn', [8990]], ['dlcrop', [8973]], ['dollar', [36]], ['Dopf', [120123]], ['dopf', [120149]], ['Dot', [168]], ['dot', [729]], ['DotDot', [8412]], ['doteq', [8784]], ['doteqdot', [8785]], ['DotEqual', [8784]], ['dotminus', [8760]], ['dotplus', [8724]], ['dotsquare', [8865]], ['doublebarwedge', [8966]], ['DoubleContourIntegral', [8751]], ['DoubleDot', [168]], ['DoubleDownArrow', [8659]], ['DoubleLeftArrow', [8656]], ['DoubleLeftRightArrow', [8660]], ['DoubleLeftTee', [10980]], ['DoubleLongLeftArrow', [10232]], ['DoubleLongLeftRightArrow', [10234]], ['DoubleLongRightArrow', [10233]], ['DoubleRightArrow', [8658]], ['DoubleRightTee', [8872]], ['DoubleUpArrow', [8657]], ['DoubleUpDownArrow', [8661]], ['DoubleVerticalBar', [8741]], ['DownArrowBar', [10515]], ['downarrow', [8595]], ['DownArrow', [8595]], ['Downarrow', [8659]], ['DownArrowUpArrow', [8693]], ['DownBreve', [785]], ['downdownarrows', [8650]], ['downharpoonleft', [8643]], ['downharpoonright', [8642]], ['DownLeftRightVector', [10576]], ['DownLeftTeeVector', [10590]], ['DownLeftVectorBar', [10582]], ['DownLeftVector', [8637]], ['DownRightTeeVector', [10591]], ['DownRightVectorBar', [10583]], ['DownRightVector', [8641]], ['DownTeeArrow', [8615]], ['DownTee', [8868]], ['drbkarow', [10512]], ['drcorn', [8991]], ['drcrop', [8972]], ['Dscr', [119967]], ['dscr', [119993]], ['DScy', [1029]], ['dscy', [1109]], ['dsol', [10742]], ['Dstrok', [272]], ['dstrok', [273]], ['dtdot', [8945]], ['dtri', [9663]], ['dtrif', [9662]], ['duarr', [8693]], ['duhar', [10607]], ['dwangle', [10662]], ['DZcy', [1039]], ['dzcy', [1119]], ['dzigrarr', [10239]], ['Eacute', [201]], ['eacute', [233]], ['easter', [10862]], ['Ecaron', [282]], ['ecaron', [283]], ['Ecirc', [202]], ['ecirc', [234]], ['ecir', [8790]], ['ecolon', [8789]], ['Ecy', [1069]], ['ecy', [1101]], ['eDDot', [10871]], ['Edot', [278]], ['edot', [279]], ['eDot', [8785]], ['ee', [8519]], ['efDot', [8786]], ['Efr', [120072]], ['efr', [120098]], ['eg', [10906]], ['Egrave', [200]], ['egrave', [232]], ['egs', [10902]], ['egsdot', [10904]], ['el', [10905]], ['Element', [8712]], ['elinters', [9191]], ['ell', [8467]], ['els', [10901]], ['elsdot', [10903]], ['Emacr', [274]], ['emacr', [275]], ['empty', [8709]], ['emptyset', [8709]], ['EmptySmallSquare', [9723]], ['emptyv', [8709]], ['EmptyVerySmallSquare', [9643]], ['emsp13', [8196]], ['emsp14', [8197]], ['emsp', [8195]], ['ENG', [330]], ['eng', [331]], ['ensp', [8194]], ['Eogon', [280]], ['eogon', [281]], ['Eopf', [120124]], ['eopf', [120150]], ['epar', [8917]], ['eparsl', [10723]], ['eplus', [10865]], ['epsi', [949]], ['Epsilon', [917]], ['epsilon', [949]], ['epsiv', [1013]], ['eqcirc', [8790]], ['eqcolon', [8789]], ['eqsim', [8770]], ['eqslantgtr', [10902]], ['eqslantless', [10901]], ['Equal', [10869]], ['equals', [61]], ['EqualTilde', [8770]], ['equest', [8799]], ['Equilibrium', [8652]], ['equiv', [8801]], ['equivDD', [10872]], ['eqvparsl', [10725]], ['erarr', [10609]], ['erDot', [8787]], ['escr', [8495]], ['Escr', [8496]], ['esdot', [8784]], ['Esim', [10867]], ['esim', [8770]], ['Eta', [919]], ['eta', [951]], ['ETH', [208]], ['eth', [240]], ['Euml', [203]], ['euml', [235]], ['euro', [8364]], ['excl', [33]], ['exist', [8707]], ['Exists', [8707]], ['expectation', [8496]], ['exponentiale', [8519]], ['ExponentialE', [8519]], ['fallingdotseq', [8786]], ['Fcy', [1060]], ['fcy', [1092]], ['female', [9792]], ['ffilig', [64259]], ['fflig', [64256]], ['ffllig', [64260]], ['Ffr', [120073]], ['ffr', [120099]], ['filig', [64257]], ['FilledSmallSquare', [9724]], ['FilledVerySmallSquare', [9642]], ['fjlig', [102, 106]], ['flat', [9837]], ['fllig', [64258]], ['fltns', [9649]], ['fnof', [402]], ['Fopf', [120125]], ['fopf', [120151]], ['forall', [8704]], ['ForAll', [8704]], ['fork', [8916]], ['forkv', [10969]], ['Fouriertrf', [8497]], ['fpartint', [10765]], ['frac12', [189]], ['frac13', [8531]], ['frac14', [188]], ['frac15', [8533]], ['frac16', [8537]], ['frac18', [8539]], ['frac23', [8532]], ['frac25', [8534]], ['frac34', [190]], ['frac35', [8535]], ['frac38', [8540]], ['frac45', [8536]], ['frac56', [8538]], ['frac58', [8541]], ['frac78', [8542]], ['frasl', [8260]], ['frown', [8994]], ['fscr', [119995]], ['Fscr', [8497]], ['gacute', [501]], ['Gamma', [915]], ['gamma', [947]], ['Gammad', [988]], ['gammad', [989]], ['gap', [10886]], ['Gbreve', [286]], ['gbreve', [287]], ['Gcedil', [290]], ['Gcirc', [284]], ['gcirc', [285]], ['Gcy', [1043]], ['gcy', [1075]], ['Gdot', [288]], ['gdot', [289]], ['ge', [8805]], ['gE', [8807]], ['gEl', [10892]], ['gel', [8923]], ['geq', [8805]], ['geqq', [8807]], ['geqslant', [10878]], ['gescc', [10921]], ['ges', [10878]], ['gesdot', [10880]], ['gesdoto', [10882]], ['gesdotol', [10884]], ['gesl', [8923, 65024]], ['gesles', [10900]], ['Gfr', [120074]], ['gfr', [120100]], ['gg', [8811]], ['Gg', [8921]], ['ggg', [8921]], ['gimel', [8503]], ['GJcy', [1027]], ['gjcy', [1107]], ['gla', [10917]], ['gl', [8823]], ['glE', [10898]], ['glj', [10916]], ['gnap', [10890]], ['gnapprox', [10890]], ['gne', [10888]], ['gnE', [8809]], ['gneq', [10888]], ['gneqq', [8809]], ['gnsim', [8935]], ['Gopf', [120126]], ['gopf', [120152]], ['grave', [96]], ['GreaterEqual', [8805]], ['GreaterEqualLess', [8923]], ['GreaterFullEqual', [8807]], ['GreaterGreater', [10914]], ['GreaterLess', [8823]], ['GreaterSlantEqual', [10878]], ['GreaterTilde', [8819]], ['Gscr', [119970]], ['gscr', [8458]], ['gsim', [8819]], ['gsime', [10894]], ['gsiml', [10896]], ['gtcc', [10919]], ['gtcir', [10874]], ['gt', [62]], ['GT', [62]], ['Gt', [8811]], ['gtdot', [8919]], ['gtlPar', [10645]], ['gtquest', [10876]], ['gtrapprox', [10886]], ['gtrarr', [10616]], ['gtrdot', [8919]], ['gtreqless', [8923]], ['gtreqqless', [10892]], ['gtrless', [8823]], ['gtrsim', [8819]], ['gvertneqq', [8809, 65024]], ['gvnE', [8809, 65024]], ['Hacek', [711]], ['hairsp', [8202]], ['half', [189]], ['hamilt', [8459]], ['HARDcy', [1066]], ['hardcy', [1098]], ['harrcir', [10568]], ['harr', [8596]], ['hArr', [8660]], ['harrw', [8621]], ['Hat', [94]], ['hbar', [8463]], ['Hcirc', [292]], ['hcirc', [293]], ['hearts', [9829]], ['heartsuit', [9829]], ['hellip', [8230]], ['hercon', [8889]], ['hfr', [120101]], ['Hfr', [8460]], ['HilbertSpace', [8459]], ['hksearow', [10533]], ['hkswarow', [10534]], ['hoarr', [8703]], ['homtht', [8763]], ['hookleftarrow', [8617]], ['hookrightarrow', [8618]], ['hopf', [120153]], ['Hopf', [8461]], ['horbar', [8213]], ['HorizontalLine', [9472]], ['hscr', [119997]], ['Hscr', [8459]], ['hslash', [8463]], ['Hstrok', [294]], ['hstrok', [295]], ['HumpDownHump', [8782]], ['HumpEqual', [8783]], ['hybull', [8259]], ['hyphen', [8208]], ['Iacute', [205]], ['iacute', [237]], ['ic', [8291]], ['Icirc', [206]], ['icirc', [238]], ['Icy', [1048]], ['icy', [1080]], ['Idot', [304]], ['IEcy', [1045]], ['iecy', [1077]], ['iexcl', [161]], ['iff', [8660]], ['ifr', [120102]], ['Ifr', [8465]], ['Igrave', [204]], ['igrave', [236]], ['ii', [8520]], ['iiiint', [10764]], ['iiint', [8749]], ['iinfin', [10716]], ['iiota', [8489]], ['IJlig', [306]], ['ijlig', [307]], ['Imacr', [298]], ['imacr', [299]], ['image', [8465]], ['ImaginaryI', [8520]], ['imagline', [8464]], ['imagpart', [8465]], ['imath', [305]], ['Im', [8465]], ['imof', [8887]], ['imped', [437]], ['Implies', [8658]], ['incare', [8453]], ['in', [8712]], ['infin', [8734]], ['infintie', [10717]], ['inodot', [305]], ['intcal', [8890]], ['int', [8747]], ['Int', [8748]], ['integers', [8484]], ['Integral', [8747]], ['intercal', [8890]], ['Intersection', [8898]], ['intlarhk', [10775]], ['intprod', [10812]], ['InvisibleComma', [8291]], ['InvisibleTimes', [8290]], ['IOcy', [1025]], ['iocy', [1105]], ['Iogon', [302]], ['iogon', [303]], ['Iopf', [120128]], ['iopf', [120154]], ['Iota', [921]], ['iota', [953]], ['iprod', [10812]], ['iquest', [191]], ['iscr', [119998]], ['Iscr', [8464]], ['isin', [8712]], ['isindot', [8949]], ['isinE', [8953]], ['isins', [8948]], ['isinsv', [8947]], ['isinv', [8712]], ['it', [8290]], ['Itilde', [296]], ['itilde', [297]], ['Iukcy', [1030]], ['iukcy', [1110]], ['Iuml', [207]], ['iuml', [239]], ['Jcirc', [308]], ['jcirc', [309]], ['Jcy', [1049]], ['jcy', [1081]], ['Jfr', [120077]], ['jfr', [120103]], ['jmath', [567]], ['Jopf', [120129]], ['jopf', [120155]], ['Jscr', [119973]], ['jscr', [119999]], ['Jsercy', [1032]], ['jsercy', [1112]], ['Jukcy', [1028]], ['jukcy', [1108]], ['Kappa', [922]], ['kappa', [954]], ['kappav', [1008]], ['Kcedil', [310]], ['kcedil', [311]], ['Kcy', [1050]], ['kcy', [1082]], ['Kfr', [120078]], ['kfr', [120104]], ['kgreen', [312]], ['KHcy', [1061]], ['khcy', [1093]], ['KJcy', [1036]], ['kjcy', [1116]], ['Kopf', [120130]], ['kopf', [120156]], ['Kscr', [119974]], ['kscr', [120000]], ['lAarr', [8666]], ['Lacute', [313]], ['lacute', [314]], ['laemptyv', [10676]], ['lagran', [8466]], ['Lambda', [923]], ['lambda', [955]], ['lang', [10216]], ['Lang', [10218]], ['langd', [10641]], ['langle', [10216]], ['lap', [10885]], ['Laplacetrf', [8466]], ['laquo', [171]], ['larrb', [8676]], ['larrbfs', [10527]], ['larr', [8592]], ['Larr', [8606]], ['lArr', [8656]], ['larrfs', [10525]], ['larrhk', [8617]], ['larrlp', [8619]], ['larrpl', [10553]], ['larrsim', [10611]], ['larrtl', [8610]], ['latail', [10521]], ['lAtail', [10523]], ['lat', [10923]], ['late', [10925]], ['lates', [10925, 65024]], ['lbarr', [10508]], ['lBarr', [10510]], ['lbbrk', [10098]], ['lbrace', [123]], ['lbrack', [91]], ['lbrke', [10635]], ['lbrksld', [10639]], ['lbrkslu', [10637]], ['Lcaron', [317]], ['lcaron', [318]], ['Lcedil', [315]], ['lcedil', [316]], ['lceil', [8968]], ['lcub', [123]], ['Lcy', [1051]], ['lcy', [1083]], ['ldca', [10550]], ['ldquo', [8220]], ['ldquor', [8222]], ['ldrdhar', [10599]], ['ldrushar', [10571]], ['ldsh', [8626]], ['le', [8804]], ['lE', [8806]], ['LeftAngleBracket', [10216]], ['LeftArrowBar', [8676]], ['leftarrow', [8592]], ['LeftArrow', [8592]], ['Leftarrow', [8656]], ['LeftArrowRightArrow', [8646]], ['leftarrowtail', [8610]], ['LeftCeiling', [8968]], ['LeftDoubleBracket', [10214]], ['LeftDownTeeVector', [10593]], ['LeftDownVectorBar', [10585]], ['LeftDownVector', [8643]], ['LeftFloor', [8970]], ['leftharpoondown', [8637]], ['leftharpoonup', [8636]], ['leftleftarrows', [8647]], ['leftrightarrow', [8596]], ['LeftRightArrow', [8596]], ['Leftrightarrow', [8660]], ['leftrightarrows', [8646]], ['leftrightharpoons', [8651]], ['leftrightsquigarrow', [8621]], ['LeftRightVector', [10574]], ['LeftTeeArrow', [8612]], ['LeftTee', [8867]], ['LeftTeeVector', [10586]], ['leftthreetimes', [8907]], ['LeftTriangleBar', [10703]], ['LeftTriangle', [8882]], ['LeftTriangleEqual', [8884]], ['LeftUpDownVector', [10577]], ['LeftUpTeeVector', [10592]], ['LeftUpVectorBar', [10584]], ['LeftUpVector', [8639]], ['LeftVectorBar', [10578]], ['LeftVector', [8636]], ['lEg', [10891]], ['leg', [8922]], ['leq', [8804]], ['leqq', [8806]], ['leqslant', [10877]], ['lescc', [10920]], ['les', [10877]], ['lesdot', [10879]], ['lesdoto', [10881]], ['lesdotor', [10883]], ['lesg', [8922, 65024]], ['lesges', [10899]], ['lessapprox', [10885]], ['lessdot', [8918]], ['lesseqgtr', [8922]], ['lesseqqgtr', [10891]], ['LessEqualGreater', [8922]], ['LessFullEqual', [8806]], ['LessGreater', [8822]], ['lessgtr', [8822]], ['LessLess', [10913]], ['lesssim', [8818]], ['LessSlantEqual', [10877]], ['LessTilde', [8818]], ['lfisht', [10620]], ['lfloor', [8970]], ['Lfr', [120079]], ['lfr', [120105]], ['lg', [8822]], ['lgE', [10897]], ['lHar', [10594]], ['lhard', [8637]], ['lharu', [8636]], ['lharul', [10602]], ['lhblk', [9604]], ['LJcy', [1033]], ['ljcy', [1113]], ['llarr', [8647]], ['ll', [8810]], ['Ll', [8920]], ['llcorner', [8990]], ['Lleftarrow', [8666]], ['llhard', [10603]], ['lltri', [9722]], ['Lmidot', [319]], ['lmidot', [320]], ['lmoustache', [9136]], ['lmoust', [9136]], ['lnap', [10889]], ['lnapprox', [10889]], ['lne', [10887]], ['lnE', [8808]], ['lneq', [10887]], ['lneqq', [8808]], ['lnsim', [8934]], ['loang', [10220]], ['loarr', [8701]], ['lobrk', [10214]], ['longleftarrow', [10229]], ['LongLeftArrow', [10229]], ['Longleftarrow', [10232]], ['longleftrightarrow', [10231]], ['LongLeftRightArrow', [10231]], ['Longleftrightarrow', [10234]], ['longmapsto', [10236]], ['longrightarrow', [10230]], ['LongRightArrow', [10230]], ['Longrightarrow', [10233]], ['looparrowleft', [8619]], ['looparrowright', [8620]], ['lopar', [10629]], ['Lopf', [120131]], ['lopf', [120157]], ['loplus', [10797]], ['lotimes', [10804]], ['lowast', [8727]], ['lowbar', [95]], ['LowerLeftArrow', [8601]], ['LowerRightArrow', [8600]], ['loz', [9674]], ['lozenge', [9674]], ['lozf', [10731]], ['lpar', [40]], ['lparlt', [10643]], ['lrarr', [8646]], ['lrcorner', [8991]], ['lrhar', [8651]], ['lrhard', [10605]], ['lrm', [8206]], ['lrtri', [8895]], ['lsaquo', [8249]], ['lscr', [120001]], ['Lscr', [8466]], ['lsh', [8624]], ['Lsh', [8624]], ['lsim', [8818]], ['lsime', [10893]], ['lsimg', [10895]], ['lsqb', [91]], ['lsquo', [8216]], ['lsquor', [8218]], ['Lstrok', [321]], ['lstrok', [322]], ['ltcc', [10918]], ['ltcir', [10873]], ['lt', [60]], ['LT', [60]], ['Lt', [8810]], ['ltdot', [8918]], ['lthree', [8907]], ['ltimes', [8905]], ['ltlarr', [10614]], ['ltquest', [10875]], ['ltri', [9667]], ['ltrie', [8884]], ['ltrif', [9666]], ['ltrPar', [10646]], ['lurdshar', [10570]], ['luruhar', [10598]], ['lvertneqq', [8808, 65024]], ['lvnE', [8808, 65024]], ['macr', [175]], ['male', [9794]], ['malt', [10016]], ['maltese', [10016]], ['Map', [10501]], ['map', [8614]], ['mapsto', [8614]], ['mapstodown', [8615]], ['mapstoleft', [8612]], ['mapstoup', [8613]], ['marker', [9646]], ['mcomma', [10793]], ['Mcy', [1052]], ['mcy', [1084]], ['mdash', [8212]], ['mDDot', [8762]], ['measuredangle', [8737]], ['MediumSpace', [8287]], ['Mellintrf', [8499]], ['Mfr', [120080]], ['mfr', [120106]], ['mho', [8487]], ['micro', [181]], ['midast', [42]], ['midcir', [10992]], ['mid', [8739]], ['middot', [183]], ['minusb', [8863]], ['minus', [8722]], ['minusd', [8760]], ['minusdu', [10794]], ['MinusPlus', [8723]], ['mlcp', [10971]], ['mldr', [8230]], ['mnplus', [8723]], ['models', [8871]], ['Mopf', [120132]], ['mopf', [120158]], ['mp', [8723]], ['mscr', [120002]], ['Mscr', [8499]], ['mstpos', [8766]], ['Mu', [924]], ['mu', [956]], ['multimap', [8888]], ['mumap', [8888]], ['nabla', [8711]], ['Nacute', [323]], ['nacute', [324]], ['nang', [8736, 8402]], ['nap', [8777]], ['napE', [10864, 824]], ['napid', [8779, 824]], ['napos', [329]], ['napprox', [8777]], ['natural', [9838]], ['naturals', [8469]], ['natur', [9838]], ['nbsp', [160]], ['nbump', [8782, 824]], ['nbumpe', [8783, 824]], ['ncap', [10819]], ['Ncaron', [327]], ['ncaron', [328]], ['Ncedil', [325]], ['ncedil', [326]], ['ncong', [8775]], ['ncongdot', [10861, 824]], ['ncup', [10818]], ['Ncy', [1053]], ['ncy', [1085]], ['ndash', [8211]], ['nearhk', [10532]], ['nearr', [8599]], ['neArr', [8663]], ['nearrow', [8599]], ['ne', [8800]], ['nedot', [8784, 824]], ['NegativeMediumSpace', [8203]], ['NegativeThickSpace', [8203]], ['NegativeThinSpace', [8203]], ['NegativeVeryThinSpace', [8203]], ['nequiv', [8802]], ['nesear', [10536]], ['nesim', [8770, 824]], ['NestedGreaterGreater', [8811]], ['NestedLessLess', [8810]], ['nexist', [8708]], ['nexists', [8708]], ['Nfr', [120081]], ['nfr', [120107]], ['ngE', [8807, 824]], ['nge', [8817]], ['ngeq', [8817]], ['ngeqq', [8807, 824]], ['ngeqslant', [10878, 824]], ['nges', [10878, 824]], ['nGg', [8921, 824]], ['ngsim', [8821]], ['nGt', [8811, 8402]], ['ngt', [8815]], ['ngtr', [8815]], ['nGtv', [8811, 824]], ['nharr', [8622]], ['nhArr', [8654]], ['nhpar', [10994]], ['ni', [8715]], ['nis', [8956]], ['nisd', [8954]], ['niv', [8715]], ['NJcy', [1034]], ['njcy', [1114]], ['nlarr', [8602]], ['nlArr', [8653]], ['nldr', [8229]], ['nlE', [8806, 824]], ['nle', [8816]], ['nleftarrow', [8602]], ['nLeftarrow', [8653]], ['nleftrightarrow', [8622]], ['nLeftrightarrow', [8654]], ['nleq', [8816]], ['nleqq', [8806, 824]], ['nleqslant', [10877, 824]], ['nles', [10877, 824]], ['nless', [8814]], ['nLl', [8920, 824]], ['nlsim', [8820]], ['nLt', [8810, 8402]], ['nlt', [8814]], ['nltri', [8938]], ['nltrie', [8940]], ['nLtv', [8810, 824]], ['nmid', [8740]], ['NoBreak', [8288]], ['NonBreakingSpace', [160]], ['nopf', [120159]], ['Nopf', [8469]], ['Not', [10988]], ['not', [172]], ['NotCongruent', [8802]], ['NotCupCap', [8813]], ['NotDoubleVerticalBar', [8742]], ['NotElement', [8713]], ['NotEqual', [8800]], ['NotEqualTilde', [8770, 824]], ['NotExists', [8708]], ['NotGreater', [8815]], ['NotGreaterEqual', [8817]], ['NotGreaterFullEqual', [8807, 824]], ['NotGreaterGreater', [8811, 824]], ['NotGreaterLess', [8825]], ['NotGreaterSlantEqual', [10878, 824]], ['NotGreaterTilde', [8821]], ['NotHumpDownHump', [8782, 824]], ['NotHumpEqual', [8783, 824]], ['notin', [8713]], ['notindot', [8949, 824]], ['notinE', [8953, 824]], ['notinva', [8713]], ['notinvb', [8951]], ['notinvc', [8950]], ['NotLeftTriangleBar', [10703, 824]], ['NotLeftTriangle', [8938]], ['NotLeftTriangleEqual', [8940]], ['NotLess', [8814]], ['NotLessEqual', [8816]], ['NotLessGreater', [8824]], ['NotLessLess', [8810, 824]], ['NotLessSlantEqual', [10877, 824]], ['NotLessTilde', [8820]], ['NotNestedGreaterGreater', [10914, 824]], ['NotNestedLessLess', [10913, 824]], ['notni', [8716]], ['notniva', [8716]], ['notnivb', [8958]], ['notnivc', [8957]], ['NotPrecedes', [8832]], ['NotPrecedesEqual', [10927, 824]], ['NotPrecedesSlantEqual', [8928]], ['NotReverseElement', [8716]], ['NotRightTriangleBar', [10704, 824]], ['NotRightTriangle', [8939]], ['NotRightTriangleEqual', [8941]], ['NotSquareSubset', [8847, 824]], ['NotSquareSubsetEqual', [8930]], ['NotSquareSuperset', [8848, 824]], ['NotSquareSupersetEqual', [8931]], ['NotSubset', [8834, 8402]], ['NotSubsetEqual', [8840]], ['NotSucceeds', [8833]], ['NotSucceedsEqual', [10928, 824]], ['NotSucceedsSlantEqual', [8929]], ['NotSucceedsTilde', [8831, 824]], ['NotSuperset', [8835, 8402]], ['NotSupersetEqual', [8841]], ['NotTilde', [8769]], ['NotTildeEqual', [8772]], ['NotTildeFullEqual', [8775]], ['NotTildeTilde', [8777]], ['NotVerticalBar', [8740]], ['nparallel', [8742]], ['npar', [8742]], ['nparsl', [11005, 8421]], ['npart', [8706, 824]], ['npolint', [10772]], ['npr', [8832]], ['nprcue', [8928]], ['nprec', [8832]], ['npreceq', [10927, 824]], ['npre', [10927, 824]], ['nrarrc', [10547, 824]], ['nrarr', [8603]], ['nrArr', [8655]], ['nrarrw', [8605, 824]], ['nrightarrow', [8603]], ['nRightarrow', [8655]], ['nrtri', [8939]], ['nrtrie', [8941]], ['nsc', [8833]], ['nsccue', [8929]], ['nsce', [10928, 824]], ['Nscr', [119977]], ['nscr', [120003]], ['nshortmid', [8740]], ['nshortparallel', [8742]], ['nsim', [8769]], ['nsime', [8772]], ['nsimeq', [8772]], ['nsmid', [8740]], ['nspar', [8742]], ['nsqsube', [8930]], ['nsqsupe', [8931]], ['nsub', [8836]], ['nsubE', [10949, 824]], ['nsube', [8840]], ['nsubset', [8834, 8402]], ['nsubseteq', [8840]], ['nsubseteqq', [10949, 824]], ['nsucc', [8833]], ['nsucceq', [10928, 824]], ['nsup', [8837]], ['nsupE', [10950, 824]], ['nsupe', [8841]], ['nsupset', [8835, 8402]], ['nsupseteq', [8841]], ['nsupseteqq', [10950, 824]], ['ntgl', [8825]], ['Ntilde', [209]], ['ntilde', [241]], ['ntlg', [8824]], ['ntriangleleft', [8938]], ['ntrianglelefteq', [8940]], ['ntriangleright', [8939]], ['ntrianglerighteq', [8941]], ['Nu', [925]], ['nu', [957]], ['num', [35]], ['numero', [8470]], ['numsp', [8199]], ['nvap', [8781, 8402]], ['nvdash', [8876]], ['nvDash', [8877]], ['nVdash', [8878]], ['nVDash', [8879]], ['nvge', [8805, 8402]], ['nvgt', [62, 8402]], ['nvHarr', [10500]], ['nvinfin', [10718]], ['nvlArr', [10498]], ['nvle', [8804, 8402]], ['nvlt', [60, 8402]], ['nvltrie', [8884, 8402]], ['nvrArr', [10499]], ['nvrtrie', [8885, 8402]], ['nvsim', [8764, 8402]], ['nwarhk', [10531]], ['nwarr', [8598]], ['nwArr', [8662]], ['nwarrow', [8598]], ['nwnear', [10535]], ['Oacute', [211]], ['oacute', [243]], ['oast', [8859]], ['Ocirc', [212]], ['ocirc', [244]], ['ocir', [8858]], ['Ocy', [1054]], ['ocy', [1086]], ['odash', [8861]], ['Odblac', [336]], ['odblac', [337]], ['odiv', [10808]], ['odot', [8857]], ['odsold', [10684]], ['OElig', [338]], ['oelig', [339]], ['ofcir', [10687]], ['Ofr', [120082]], ['ofr', [120108]], ['ogon', [731]], ['Ograve', [210]], ['ograve', [242]], ['ogt', [10689]], ['ohbar', [10677]], ['ohm', [937]], ['oint', [8750]], ['olarr', [8634]], ['olcir', [10686]], ['olcross', [10683]], ['oline', [8254]], ['olt', [10688]], ['Omacr', [332]], ['omacr', [333]], ['Omega', [937]], ['omega', [969]], ['Omicron', [927]], ['omicron', [959]], ['omid', [10678]], ['ominus', [8854]], ['Oopf', [120134]], ['oopf', [120160]], ['opar', [10679]], ['OpenCurlyDoubleQuote', [8220]], ['OpenCurlyQuote', [8216]], ['operp', [10681]], ['oplus', [8853]], ['orarr', [8635]], ['Or', [10836]], ['or', [8744]], ['ord', [10845]], ['order', [8500]], ['orderof', [8500]], ['ordf', [170]], ['ordm', [186]], ['origof', [8886]], ['oror', [10838]], ['orslope', [10839]], ['orv', [10843]], ['oS', [9416]], ['Oscr', [119978]], ['oscr', [8500]], ['Oslash', [216]], ['oslash', [248]], ['osol', [8856]], ['Otilde', [213]], ['otilde', [245]], ['otimesas', [10806]], ['Otimes', [10807]], ['otimes', [8855]], ['Ouml', [214]], ['ouml', [246]], ['ovbar', [9021]], ['OverBar', [8254]], ['OverBrace', [9182]], ['OverBracket', [9140]], ['OverParenthesis', [9180]], ['para', [182]], ['parallel', [8741]], ['par', [8741]], ['parsim', [10995]], ['parsl', [11005]], ['part', [8706]], ['PartialD', [8706]], ['Pcy', [1055]], ['pcy', [1087]], ['percnt', [37]], ['period', [46]], ['permil', [8240]], ['perp', [8869]], ['pertenk', [8241]], ['Pfr', [120083]], ['pfr', [120109]], ['Phi', [934]], ['phi', [966]], ['phiv', [981]], ['phmmat', [8499]], ['phone', [9742]], ['Pi', [928]], ['pi', [960]], ['pitchfork', [8916]], ['piv', [982]], ['planck', [8463]], ['planckh', [8462]], ['plankv', [8463]], ['plusacir', [10787]], ['plusb', [8862]], ['pluscir', [10786]], ['plus', [43]], ['plusdo', [8724]], ['plusdu', [10789]], ['pluse', [10866]], ['PlusMinus', [177]], ['plusmn', [177]], ['plussim', [10790]], ['plustwo', [10791]], ['pm', [177]], ['Poincareplane', [8460]], ['pointint', [10773]], ['popf', [120161]], ['Popf', [8473]], ['pound', [163]], ['prap', [10935]], ['Pr', [10939]], ['pr', [8826]], ['prcue', [8828]], ['precapprox', [10935]], ['prec', [8826]], ['preccurlyeq', [8828]], ['Precedes', [8826]], ['PrecedesEqual', [10927]], ['PrecedesSlantEqual', [8828]], ['PrecedesTilde', [8830]], ['preceq', [10927]], ['precnapprox', [10937]], ['precneqq', [10933]], ['precnsim', [8936]], ['pre', [10927]], ['prE', [10931]], ['precsim', [8830]], ['prime', [8242]], ['Prime', [8243]], ['primes', [8473]], ['prnap', [10937]], ['prnE', [10933]], ['prnsim', [8936]], ['prod', [8719]], ['Product', [8719]], ['profalar', [9006]], ['profline', [8978]], ['profsurf', [8979]], ['prop', [8733]], ['Proportional', [8733]], ['Proportion', [8759]], ['propto', [8733]], ['prsim', [8830]], ['prurel', [8880]], ['Pscr', [119979]], ['pscr', [120005]], ['Psi', [936]], ['psi', [968]], ['puncsp', [8200]], ['Qfr', [120084]], ['qfr', [120110]], ['qint', [10764]], ['qopf', [120162]], ['Qopf', [8474]], ['qprime', [8279]], ['Qscr', [119980]], ['qscr', [120006]], ['quaternions', [8461]], ['quatint', [10774]], ['quest', [63]], ['questeq', [8799]], ['quot', [34]], ['QUOT', [34]], ['rAarr', [8667]], ['race', [8765, 817]], ['Racute', [340]], ['racute', [341]], ['radic', [8730]], ['raemptyv', [10675]], ['rang', [10217]], ['Rang', [10219]], ['rangd', [10642]], ['range', [10661]], ['rangle', [10217]], ['raquo', [187]], ['rarrap', [10613]], ['rarrb', [8677]], ['rarrbfs', [10528]], ['rarrc', [10547]], ['rarr', [8594]], ['Rarr', [8608]], ['rArr', [8658]], ['rarrfs', [10526]], ['rarrhk', [8618]], ['rarrlp', [8620]], ['rarrpl', [10565]], ['rarrsim', [10612]], ['Rarrtl', [10518]], ['rarrtl', [8611]], ['rarrw', [8605]], ['ratail', [10522]], ['rAtail', [10524]], ['ratio', [8758]], ['rationals', [8474]], ['rbarr', [10509]], ['rBarr', [10511]], ['RBarr', [10512]], ['rbbrk', [10099]], ['rbrace', [125]], ['rbrack', [93]], ['rbrke', [10636]], ['rbrksld', [10638]], ['rbrkslu', [10640]], ['Rcaron', [344]], ['rcaron', [345]], ['Rcedil', [342]], ['rcedil', [343]], ['rceil', [8969]], ['rcub', [125]], ['Rcy', [1056]], ['rcy', [1088]], ['rdca', [10551]], ['rdldhar', [10601]], ['rdquo', [8221]], ['rdquor', [8221]], ['CloseCurlyDoubleQuote', [8221]], ['rdsh', [8627]], ['real', [8476]], ['realine', [8475]], ['realpart', [8476]], ['reals', [8477]], ['Re', [8476]], ['rect', [9645]], ['reg', [174]], ['REG', [174]], ['ReverseElement', [8715]], ['ReverseEquilibrium', [8651]], ['ReverseUpEquilibrium', [10607]], ['rfisht', [10621]], ['rfloor', [8971]], ['rfr', [120111]], ['Rfr', [8476]], ['rHar', [10596]], ['rhard', [8641]], ['rharu', [8640]], ['rharul', [10604]], ['Rho', [929]], ['rho', [961]], ['rhov', [1009]], ['RightAngleBracket', [10217]], ['RightArrowBar', [8677]], ['rightarrow', [8594]], ['RightArrow', [8594]], ['Rightarrow', [8658]], ['RightArrowLeftArrow', [8644]], ['rightarrowtail', [8611]], ['RightCeiling', [8969]], ['RightDoubleBracket', [10215]], ['RightDownTeeVector', [10589]], ['RightDownVectorBar', [10581]], ['RightDownVector', [8642]], ['RightFloor', [8971]], ['rightharpoondown', [8641]], ['rightharpoonup', [8640]], ['rightleftarrows', [8644]], ['rightleftharpoons', [8652]], ['rightrightarrows', [8649]], ['rightsquigarrow', [8605]], ['RightTeeArrow', [8614]], ['RightTee', [8866]], ['RightTeeVector', [10587]], ['rightthreetimes', [8908]], ['RightTriangleBar', [10704]], ['RightTriangle', [8883]], ['RightTriangleEqual', [8885]], ['RightUpDownVector', [10575]], ['RightUpTeeVector', [10588]], ['RightUpVectorBar', [10580]], ['RightUpVector', [8638]], ['RightVectorBar', [10579]], ['RightVector', [8640]], ['ring', [730]], ['risingdotseq', [8787]], ['rlarr', [8644]], ['rlhar', [8652]], ['rlm', [8207]], ['rmoustache', [9137]], ['rmoust', [9137]], ['rnmid', [10990]], ['roang', [10221]], ['roarr', [8702]], ['robrk', [10215]], ['ropar', [10630]], ['ropf', [120163]], ['Ropf', [8477]], ['roplus', [10798]], ['rotimes', [10805]], ['RoundImplies', [10608]], ['rpar', [41]], ['rpargt', [10644]], ['rppolint', [10770]], ['rrarr', [8649]], ['Rrightarrow', [8667]], ['rsaquo', [8250]], ['rscr', [120007]], ['Rscr', [8475]], ['rsh', [8625]], ['Rsh', [8625]], ['rsqb', [93]], ['rsquo', [8217]], ['rsquor', [8217]], ['CloseCurlyQuote', [8217]], ['rthree', [8908]], ['rtimes', [8906]], ['rtri', [9657]], ['rtrie', [8885]], ['rtrif', [9656]], ['rtriltri', [10702]], ['RuleDelayed', [10740]], ['ruluhar', [10600]], ['rx', [8478]], ['Sacute', [346]], ['sacute', [347]], ['sbquo', [8218]], ['scap', [10936]], ['Scaron', [352]], ['scaron', [353]], ['Sc', [10940]], ['sc', [8827]], ['sccue', [8829]], ['sce', [10928]], ['scE', [10932]], ['Scedil', [350]], ['scedil', [351]], ['Scirc', [348]], ['scirc', [349]], ['scnap', [10938]], ['scnE', [10934]], ['scnsim', [8937]], ['scpolint', [10771]], ['scsim', [8831]], ['Scy', [1057]], ['scy', [1089]], ['sdotb', [8865]], ['sdot', [8901]], ['sdote', [10854]], ['searhk', [10533]], ['searr', [8600]], ['seArr', [8664]], ['searrow', [8600]], ['sect', [167]], ['semi', [59]], ['seswar', [10537]], ['setminus', [8726]], ['setmn', [8726]], ['sext', [10038]], ['Sfr', [120086]], ['sfr', [120112]], ['sfrown', [8994]], ['sharp', [9839]], ['SHCHcy', [1065]], ['shchcy', [1097]], ['SHcy', [1064]], ['shcy', [1096]], ['ShortDownArrow', [8595]], ['ShortLeftArrow', [8592]], ['shortmid', [8739]], ['shortparallel', [8741]], ['ShortRightArrow', [8594]], ['ShortUpArrow', [8593]], ['shy', [173]], ['Sigma', [931]], ['sigma', [963]], ['sigmaf', [962]], ['sigmav', [962]], ['sim', [8764]], ['simdot', [10858]], ['sime', [8771]], ['simeq', [8771]], ['simg', [10910]], ['simgE', [10912]], ['siml', [10909]], ['simlE', [10911]], ['simne', [8774]], ['simplus', [10788]], ['simrarr', [10610]], ['slarr', [8592]], ['SmallCircle', [8728]], ['smallsetminus', [8726]], ['smashp', [10803]], ['smeparsl', [10724]], ['smid', [8739]], ['smile', [8995]], ['smt', [10922]], ['smte', [10924]], ['smtes', [10924, 65024]], ['SOFTcy', [1068]], ['softcy', [1100]], ['solbar', [9023]], ['solb', [10692]], ['sol', [47]], ['Sopf', [120138]], ['sopf', [120164]], ['spades', [9824]], ['spadesuit', [9824]], ['spar', [8741]], ['sqcap', [8851]], ['sqcaps', [8851, 65024]], ['sqcup', [8852]], ['sqcups', [8852, 65024]], ['Sqrt', [8730]], ['sqsub', [8847]], ['sqsube', [8849]], ['sqsubset', [8847]], ['sqsubseteq', [8849]], ['sqsup', [8848]], ['sqsupe', [8850]], ['sqsupset', [8848]], ['sqsupseteq', [8850]], ['square', [9633]], ['Square', [9633]], ['SquareIntersection', [8851]], ['SquareSubset', [8847]], ['SquareSubsetEqual', [8849]], ['SquareSuperset', [8848]], ['SquareSupersetEqual', [8850]], ['SquareUnion', [8852]], ['squarf', [9642]], ['squ', [9633]], ['squf', [9642]], ['srarr', [8594]], ['Sscr', [119982]], ['sscr', [120008]], ['ssetmn', [8726]], ['ssmile', [8995]], ['sstarf', [8902]], ['Star', [8902]], ['star', [9734]], ['starf', [9733]], ['straightepsilon', [1013]], ['straightphi', [981]], ['strns', [175]], ['sub', [8834]], ['Sub', [8912]], ['subdot', [10941]], ['subE', [10949]], ['sube', [8838]], ['subedot', [10947]], ['submult', [10945]], ['subnE', [10955]], ['subne', [8842]], ['subplus', [10943]], ['subrarr', [10617]], ['subset', [8834]], ['Subset', [8912]], ['subseteq', [8838]], ['subseteqq', [10949]], ['SubsetEqual', [8838]], ['subsetneq', [8842]], ['subsetneqq', [10955]], ['subsim', [10951]], ['subsub', [10965]], ['subsup', [10963]], ['succapprox', [10936]], ['succ', [8827]], ['succcurlyeq', [8829]], ['Succeeds', [8827]], ['SucceedsEqual', [10928]], ['SucceedsSlantEqual', [8829]], ['SucceedsTilde', [8831]], ['succeq', [10928]], ['succnapprox', [10938]], ['succneqq', [10934]], ['succnsim', [8937]], ['succsim', [8831]], ['SuchThat', [8715]], ['sum', [8721]], ['Sum', [8721]], ['sung', [9834]], ['sup1', [185]], ['sup2', [178]], ['sup3', [179]], ['sup', [8835]], ['Sup', [8913]], ['supdot', [10942]], ['supdsub', [10968]], ['supE', [10950]], ['supe', [8839]], ['supedot', [10948]], ['Superset', [8835]], ['SupersetEqual', [8839]], ['suphsol', [10185]], ['suphsub', [10967]], ['suplarr', [10619]], ['supmult', [10946]], ['supnE', [10956]], ['supne', [8843]], ['supplus', [10944]], ['supset', [8835]], ['Supset', [8913]], ['supseteq', [8839]], ['supseteqq', [10950]], ['supsetneq', [8843]], ['supsetneqq', [10956]], ['supsim', [10952]], ['supsub', [10964]], ['supsup', [10966]], ['swarhk', [10534]], ['swarr', [8601]], ['swArr', [8665]], ['swarrow', [8601]], ['swnwar', [10538]], ['szlig', [223]], ['Tab', [9]], ['target', [8982]], ['Tau', [932]], ['tau', [964]], ['tbrk', [9140]], ['Tcaron', [356]], ['tcaron', [357]], ['Tcedil', [354]], ['tcedil', [355]], ['Tcy', [1058]], ['tcy', [1090]], ['tdot', [8411]], ['telrec', [8981]], ['Tfr', [120087]], ['tfr', [120113]], ['there4', [8756]], ['therefore', [8756]], ['Therefore', [8756]], ['Theta', [920]], ['theta', [952]], ['thetasym', [977]], ['thetav', [977]], ['thickapprox', [8776]], ['thicksim', [8764]], ['ThickSpace', [8287, 8202]], ['ThinSpace', [8201]], ['thinsp', [8201]], ['thkap', [8776]], ['thksim', [8764]], ['THORN', [222]], ['thorn', [254]], ['tilde', [732]], ['Tilde', [8764]], ['TildeEqual', [8771]], ['TildeFullEqual', [8773]], ['TildeTilde', [8776]], ['timesbar', [10801]], ['timesb', [8864]], ['times', [215]], ['timesd', [10800]], ['tint', [8749]], ['toea', [10536]], ['topbot', [9014]], ['topcir', [10993]], ['top', [8868]], ['Topf', [120139]], ['topf', [120165]], ['topfork', [10970]], ['tosa', [10537]], ['tprime', [8244]], ['trade', [8482]], ['TRADE', [8482]], ['triangle', [9653]], ['triangledown', [9663]], ['triangleleft', [9667]], ['trianglelefteq', [8884]], ['triangleq', [8796]], ['triangleright', [9657]], ['trianglerighteq', [8885]], ['tridot', [9708]], ['trie', [8796]], ['triminus', [10810]], ['TripleDot', [8411]], ['triplus', [10809]], ['trisb', [10701]], ['tritime', [10811]], ['trpezium', [9186]], ['Tscr', [119983]], ['tscr', [120009]], ['TScy', [1062]], ['tscy', [1094]], ['TSHcy', [1035]], ['tshcy', [1115]], ['Tstrok', [358]], ['tstrok', [359]], ['twixt', [8812]], ['twoheadleftarrow', [8606]], ['twoheadrightarrow', [8608]], ['Uacute', [218]], ['uacute', [250]], ['uarr', [8593]], ['Uarr', [8607]], ['uArr', [8657]], ['Uarrocir', [10569]], ['Ubrcy', [1038]], ['ubrcy', [1118]], ['Ubreve', [364]], ['ubreve', [365]], ['Ucirc', [219]], ['ucirc', [251]], ['Ucy', [1059]], ['ucy', [1091]], ['udarr', [8645]], ['Udblac', [368]], ['udblac', [369]], ['udhar', [10606]], ['ufisht', [10622]], ['Ufr', [120088]], ['ufr', [120114]], ['Ugrave', [217]], ['ugrave', [249]], ['uHar', [10595]], ['uharl', [8639]], ['uharr', [8638]], ['uhblk', [9600]], ['ulcorn', [8988]], ['ulcorner', [8988]], ['ulcrop', [8975]], ['ultri', [9720]], ['Umacr', [362]], ['umacr', [363]], ['uml', [168]], ['UnderBar', [95]], ['UnderBrace', [9183]], ['UnderBracket', [9141]], ['UnderParenthesis', [9181]], ['Union', [8899]], ['UnionPlus', [8846]], ['Uogon', [370]], ['uogon', [371]], ['Uopf', [120140]], ['uopf', [120166]], ['UpArrowBar', [10514]], ['uparrow', [8593]], ['UpArrow', [8593]], ['Uparrow', [8657]], ['UpArrowDownArrow', [8645]], ['updownarrow', [8597]], ['UpDownArrow', [8597]], ['Updownarrow', [8661]], ['UpEquilibrium', [10606]], ['upharpoonleft', [8639]], ['upharpoonright', [8638]], ['uplus', [8846]], ['UpperLeftArrow', [8598]], ['UpperRightArrow', [8599]], ['upsi', [965]], ['Upsi', [978]], ['upsih', [978]], ['Upsilon', [933]], ['upsilon', [965]], ['UpTeeArrow', [8613]], ['UpTee', [8869]], ['upuparrows', [8648]], ['urcorn', [8989]], ['urcorner', [8989]], ['urcrop', [8974]], ['Uring', [366]], ['uring', [367]], ['urtri', [9721]], ['Uscr', [119984]], ['uscr', [120010]], ['utdot', [8944]], ['Utilde', [360]], ['utilde', [361]], ['utri', [9653]], ['utrif', [9652]], ['uuarr', [8648]], ['Uuml', [220]], ['uuml', [252]], ['uwangle', [10663]], ['vangrt', [10652]], ['varepsilon', [1013]], ['varkappa', [1008]], ['varnothing', [8709]], ['varphi', [981]], ['varpi', [982]], ['varpropto', [8733]], ['varr', [8597]], ['vArr', [8661]], ['varrho', [1009]], ['varsigma', [962]], ['varsubsetneq', [8842, 65024]], ['varsubsetneqq', [10955, 65024]], ['varsupsetneq', [8843, 65024]], ['varsupsetneqq', [10956, 65024]], ['vartheta', [977]], ['vartriangleleft', [8882]], ['vartriangleright', [8883]], ['vBar', [10984]], ['Vbar', [10987]], ['vBarv', [10985]], ['Vcy', [1042]], ['vcy', [1074]], ['vdash', [8866]], ['vDash', [8872]], ['Vdash', [8873]], ['VDash', [8875]], ['Vdashl', [10982]], ['veebar', [8891]], ['vee', [8744]], ['Vee', [8897]], ['veeeq', [8794]], ['vellip', [8942]], ['verbar', [124]], ['Verbar', [8214]], ['vert', [124]], ['Vert', [8214]], ['VerticalBar', [8739]], ['VerticalLine', [124]], ['VerticalSeparator', [10072]], ['VerticalTilde', [8768]], ['VeryThinSpace', [8202]], ['Vfr', [120089]], ['vfr', [120115]], ['vltri', [8882]], ['vnsub', [8834, 8402]], ['vnsup', [8835, 8402]], ['Vopf', [120141]], ['vopf', [120167]], ['vprop', [8733]], ['vrtri', [8883]], ['Vscr', [119985]], ['vscr', [120011]], ['vsubnE', [10955, 65024]], ['vsubne', [8842, 65024]], ['vsupnE', [10956, 65024]], ['vsupne', [8843, 65024]], ['Vvdash', [8874]], ['vzigzag', [10650]], ['Wcirc', [372]], ['wcirc', [373]], ['wedbar', [10847]], ['wedge', [8743]], ['Wedge', [8896]], ['wedgeq', [8793]], ['weierp', [8472]], ['Wfr', [120090]], ['wfr', [120116]], ['Wopf', [120142]], ['wopf', [120168]], ['wp', [8472]], ['wr', [8768]], ['wreath', [8768]], ['Wscr', [119986]], ['wscr', [120012]], ['xcap', [8898]], ['xcirc', [9711]], ['xcup', [8899]], ['xdtri', [9661]], ['Xfr', [120091]], ['xfr', [120117]], ['xharr', [10231]], ['xhArr', [10234]], ['Xi', [926]], ['xi', [958]], ['xlarr', [10229]], ['xlArr', [10232]], ['xmap', [10236]], ['xnis', [8955]], ['xodot', [10752]], ['Xopf', [120143]], ['xopf', [120169]], ['xoplus', [10753]], ['xotime', [10754]], ['xrarr', [10230]], ['xrArr', [10233]], ['Xscr', [119987]], ['xscr', [120013]], ['xsqcup', [10758]], ['xuplus', [10756]], ['xutri', [9651]], ['xvee', [8897]], ['xwedge', [8896]], ['Yacute', [221]], ['yacute', [253]], ['YAcy', [1071]], ['yacy', [1103]], ['Ycirc', [374]], ['ycirc', [375]], ['Ycy', [1067]], ['ycy', [1099]], ['yen', [165]], ['Yfr', [120092]], ['yfr', [120118]], ['YIcy', [1031]], ['yicy', [1111]], ['Yopf', [120144]], ['yopf', [120170]], ['Yscr', [119988]], ['yscr', [120014]], ['YUcy', [1070]], ['yucy', [1102]], ['yuml', [255]], ['Yuml', [376]], ['Zacute', [377]], ['zacute', [378]], ['Zcaron', [381]], ['zcaron', [382]], ['Zcy', [1047]], ['zcy', [1079]], ['Zdot', [379]], ['zdot', [380]], ['zeetrf', [8488]], ['ZeroWidthSpace', [8203]], ['Zeta', [918]], ['zeta', [950]], ['zfr', [120119]], ['Zfr', [8488]], ['ZHcy', [1046]], ['zhcy', [1078]], ['zigrarr', [8669]], ['zopf', [120171]], ['Zopf', [8484]], ['Zscr', [119989]], ['zscr', [120015]], ['zwj', [8205]], ['zwnj', [8204]]];
@@ -8218,35 +8224,52 @@ module.exports = Html5Entities;
 
 
 /***/ }),
-/* 37 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(1))(120);
-
-/***/ }),
 /* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(1))(13);
+"use strict";
+
+var Observable_1 = __webpack_require__(40);
+var map_1 = __webpack_require__(102);
+Observable_1.Observable.prototype.map = map_1.map;
+//# sourceMappingURL=map.js.map
 
 /***/ }),
 /* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(1))(334);
+module.exports = (__webpack_require__(1))(120);
 
 /***/ }),
 /* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = (__webpack_require__(1))(13);
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(1))(332);
+
+/***/ }),
+/* 42 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(1))(334);
+
+/***/ }),
+/* 43 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-__webpack_require__(102);
+__webpack_require__(104);
 var core_1 = __webpack_require__(0);
-var angular2_universal_1 = __webpack_require__(39);
-var app_module_1 = __webpack_require__(50);
-__webpack_require__(103);
+var angular2_universal_1 = __webpack_require__(42);
+var app_module_1 = __webpack_require__(53);
+__webpack_require__(105);
 var rootElemTagName = 'app'; // Update this if you change your root component selector
 // Enable either Hot Module Reloading or production mode
 if (true) {
@@ -8274,7 +8297,7 @@ else {
 
 
 /***/ }),
-/* 41 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(__resourceQuery, module) {/*eslint-env browser*/
@@ -8290,7 +8313,7 @@ var options = {
   name: ''
 };
 if (true) {
-  var querystring = __webpack_require__(83);
+  var querystring = __webpack_require__(88);
   var overrides = querystring.parse(__resourceQuery.slice(1));
   if (overrides.path) options.path = overrides.path;
   if (overrides.timeout) options.timeout = overrides.timeout;
@@ -8410,11 +8433,11 @@ if (typeof window !== 'undefined') {
 }
 
 function createReporter() {
-  var strip = __webpack_require__(86);
+  var strip = __webpack_require__(90);
 
   var overlay;
   if (typeof document !== 'undefined' && options.overlay) {
-    overlay = __webpack_require__(95);
+    overlay = __webpack_require__(99);
   }
 
   var styles = {
@@ -8467,7 +8490,7 @@ function createReporter() {
   };
 }
 
-var processUpdate = __webpack_require__(96);
+var processUpdate = __webpack_require__(100);
 
 var customHandler;
 var subscribeAllHandler;
@@ -8532,16 +8555,16 @@ if (module) {
   };
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, "?path=%2F__webpack_hmr", __webpack_require__(105)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, "?path=%2F__webpack_hmr", __webpack_require__(107)(module)))
 
 /***/ }),
-/* 42 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(336);
 
 /***/ }),
-/* 43 */
+/* 46 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8565,7 +8588,7 @@ module.exports = (__webpack_require__(1))(336);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__directives_reactive_directives_form_group_name__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__directives_select_control_value_accessor__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__directives_select_multiple_control_value_accessor__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__directives_validators__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__directives_validators__ = __webpack_require__(33);
 /* unused harmony reexport CheckboxControlValueAccessor */
 /* unused harmony reexport DefaultValueAccessor */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__directives_ng_control__ = __webpack_require__(7);
@@ -8675,7 +8698,7 @@ function InternalFormsSharedModule_tsickle_Closure_declarations() {
 //# sourceMappingURL=directives.js.map
 
 /***/ }),
-/* 44 */
+/* 47 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8715,16 +8738,16 @@ function normalizeAsyncValidator(validator) {
 //# sourceMappingURL=normalize_validator.js.map
 
 /***/ }),
-/* 45 */
+/* 48 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FormsModule; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ReactiveFormsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_radio_control_value_accessor__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__form_builder__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__form_builder__ = __webpack_require__(35);
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -8793,7 +8816,7 @@ function ReactiveFormsModule_tsickle_Closure_declarations() {
 //# sourceMappingURL=form_providers.js.map
 
 /***/ }),
-/* 46 */
+/* 49 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8836,13 +8859,13 @@ function ReactiveFormsModule_tsickle_Closure_declarations() {
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return __WEBPACK_IMPORTED_MODULE_16__directives_select_control_value_accessor__["b"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__directives_select_multiple_control_value_accessor__ = __webpack_require__(20);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "u", function() { return __WEBPACK_IMPORTED_MODULE_17__directives_select_multiple_control_value_accessor__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__directives_validators__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__directives_validators__ = __webpack_require__(33);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "v", function() { return __WEBPACK_IMPORTED_MODULE_18__directives_validators__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "w", function() { return __WEBPACK_IMPORTED_MODULE_18__directives_validators__["b"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "x", function() { return __WEBPACK_IMPORTED_MODULE_18__directives_validators__["c"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "y", function() { return __WEBPACK_IMPORTED_MODULE_18__directives_validators__["d"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "z", function() { return __WEBPACK_IMPORTED_MODULE_18__directives_validators__["e"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__form_builder__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__form_builder__ = __webpack_require__(35);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "A", function() { return __WEBPACK_IMPORTED_MODULE_19__form_builder__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__model__ = __webpack_require__(21);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "B", function() { return __WEBPACK_IMPORTED_MODULE_20__model__["a"]; });
@@ -8853,9 +8876,9 @@ function ReactiveFormsModule_tsickle_Closure_declarations() {
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "F", function() { return __WEBPACK_IMPORTED_MODULE_21__validators__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "G", function() { return __WEBPACK_IMPORTED_MODULE_21__validators__["b"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "H", function() { return __WEBPACK_IMPORTED_MODULE_21__validators__["c"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__version__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__version__ = __webpack_require__(50);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "I", function() { return __WEBPACK_IMPORTED_MODULE_22__version__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__form_providers__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__form_providers__ = __webpack_require__(48);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "J", function() { return __WEBPACK_IMPORTED_MODULE_23__form_providers__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "K", function() { return __WEBPACK_IMPORTED_MODULE_23__form_providers__["b"]; });
 /**
@@ -8903,7 +8926,7 @@ function ReactiveFormsModule_tsickle_Closure_declarations() {
 //# sourceMappingURL=forms.js.map
 
 /***/ }),
-/* 47 */
+/* 50 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8924,7 +8947,7 @@ var /** @type {?} */ VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["
 //# sourceMappingURL=version.js.map
 
 /***/ }),
-/* 48 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9107,7 +9130,7 @@ ansiHTML.reset()
 
 
 /***/ }),
-/* 49 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9118,7 +9141,7 @@ module.exports = function () {
 
 
 /***/ }),
-/* 50 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9131,19 +9154,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(101);
-var angular2_universal_1 = __webpack_require__(39);
-var forms_1 = __webpack_require__(29);
-var app_component_1 = __webpack_require__(51);
-var navmenu_component_1 = __webpack_require__(56);
-var home_component_1 = __webpack_require__(59);
-var index_component_1 = __webpack_require__(54);
-var scoreslist_component_1 = __webpack_require__(60);
-var newaccount_component_1 = __webpack_require__(55);
-var changepassword_component_1 = __webpack_require__(57);
-var time_component_1 = __webpack_require__(53);
-var alienroundup_component_1 = __webpack_require__(52);
-var changepassword_equal_validator_directive_1 = __webpack_require__(58);
+var router_1 = __webpack_require__(41);
+var angular2_universal_1 = __webpack_require__(42);
+var forms_1 = __webpack_require__(30);
+var app_component_1 = __webpack_require__(54);
+var navmenu_component_1 = __webpack_require__(60);
+var home_component_1 = __webpack_require__(63);
+var index_component_1 = __webpack_require__(57);
+var teacherlogin_component_1 = __webpack_require__(59);
+var scoreslist_component_1 = __webpack_require__(64);
+var newaccount_component_1 = __webpack_require__(58);
+var changepassword_component_1 = __webpack_require__(61);
+var time_component_1 = __webpack_require__(56);
+var alienroundup_component_1 = __webpack_require__(55);
+var changepassword_equal_validator_directive_1 = __webpack_require__(62);
 var AppModule = (function () {
     function AppModule() {
     }
@@ -9159,6 +9183,7 @@ AppModule = __decorate([
             newaccount_component_1.NewAccountComponent,
             changepassword_component_1.ChangePasswordComponent,
             home_component_1.HomeComponent,
+            teacherlogin_component_1.TeacherLoginComponent,
             changepassword_equal_validator_directive_1.EqualValidator,
             scoreslist_component_1.ScoresListComponent,
             alienroundup_component_1.AlienRoundupComponent,
@@ -9175,6 +9200,7 @@ AppModule = __decorate([
                 { path: 'changepassword', component: changepassword_component_1.ChangePasswordComponent },
                 { path: 'list', component: scoreslist_component_1.ScoresListComponent },
                 { path: 'time', component: time_component_1.TimeComponent },
+                { path: 'teacherlogin', component: teacherlogin_component_1.TeacherLoginComponent },
                 { path: 'alienroundup', component: alienroundup_component_1.AlienRoundupComponent },
                 { path: '**', redirectTo: 'index' }
             ])
@@ -9185,7 +9211,7 @@ exports.AppModule = AppModule;
 
 
 /***/ }),
-/* 51 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9206,15 +9232,15 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'app',
-        template: __webpack_require__(72),
-        styles: [__webpack_require__(87)]
+        template: __webpack_require__(76),
+        styles: [__webpack_require__(91)]
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
 
 
 /***/ }),
-/* 52 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9248,15 +9274,15 @@ var AlienRoundupComponent = (function () {
 AlienRoundupComponent = __decorate([
     core_1.Component({
         selector: 'alienroundup',
-        template: __webpack_require__(73),
-        styles: [__webpack_require__(88)]
+        template: __webpack_require__(77),
+        styles: [__webpack_require__(92)]
     })
 ], AlienRoundupComponent);
 exports.AlienRoundupComponent = AlienRoundupComponent;
 
 
 /***/ }),
-/* 53 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9287,12 +9313,9 @@ var TimeComponent = (function () {
         this.hr = Math.floor(Math.random() * (24 - 1) + 1);
         this.min = Math.floor(Math.random() * (60 - 1) + 1);
     }
-    TimeComponent.prototype.ngAfterViewInit = function () {
+    TimeComponent.prototype.ngOnInit = function () {
         var canvas = this.myCanvas.nativeElement;
         this.context = canvas.getContext("2d");
-        this.drawclock();
-    };
-    TimeComponent.prototype.drawclock = function () {
         var now = new Date();
         //var canvas = document.getElementById("canvas");
         //var ctx = document.getElementById('canvas').getContext('2d');
@@ -9336,8 +9359,8 @@ var TimeComponent = (function () {
         }
         c.restore();
         var sec = 0;
-        var min = 30;
-        var hr = 5;
+        var min = Math.floor(Math.random() * (60 - 1) + 1);
+        var hr = Math.floor(Math.random() * (24 - 1) + 1);
         hr = hr >= 12 ? hr - 12 : hr;
         c.fillStyle = 'black';
         // write Hours
@@ -9395,15 +9418,15 @@ __decorate([
 TimeComponent = __decorate([
     core_1.Component({
         selector: 'time',
-        template: __webpack_require__(74),
-        styles: [__webpack_require__(89)]
+        template: __webpack_require__(78),
+        styles: [__webpack_require__(93)]
     })
 ], TimeComponent);
 exports.TimeComponent = TimeComponent;
 
 
 /***/ }),
-/* 54 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9414,26 +9437,36 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-__webpack_require__(84);
+var http_1 = __webpack_require__(29);
+__webpack_require__(38);
 var IndexComponent = (function () {
-    function IndexComponent() {
+    function IndexComponent(http) {
+        var _this = this;
+        http.get('/api/Students/Pics').subscribe(function (result) {
+            _this.images = result.json();
+        });
+        console.log(this.images);
     }
     return IndexComponent;
 }());
 IndexComponent = __decorate([
     core_1.Component({
         selector: 'index',
-        template: __webpack_require__(75),
-        styles: [__webpack_require__(90)]
-    })
+        template: __webpack_require__(79),
+        styles: [__webpack_require__(94)]
+    }),
+    __metadata("design:paramtypes", [http_1.Http])
 ], IndexComponent);
 exports.IndexComponent = IndexComponent;
 
 
 /***/ }),
-/* 55 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9507,15 +9540,86 @@ var NewAccountComponent = (function () {
 NewAccountComponent = __decorate([
     core_1.Component({
         selector: 'newaccount',
-        template: __webpack_require__(76),
-        styles: [__webpack_require__(91)]
+        template: __webpack_require__(80),
+        styles: [__webpack_require__(95)]
     })
 ], NewAccountComponent);
 exports.NewAccountComponent = NewAccountComponent;
 
 
 /***/ }),
-/* 56 */
+/* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(0);
+var router_1 = __webpack_require__(41);
+var http_1 = __webpack_require__(29);
+__webpack_require__(38);
+var TeacherLoginComponent = (function () {
+    function TeacherLoginComponent(http, route, router) {
+        this.http = http;
+        this.route = route;
+        this.router = router;
+        this.model = { username: "", password: "" };
+        this.loading = false;
+    }
+    TeacherLoginComponent.prototype.ngOnInit = function () {
+        // reset login status
+        this.logout();
+    };
+    TeacherLoginComponent.prototype.login = function () {
+        var _this = this;
+        this.loading = true;
+        this.loginuser(this.model.username, this.model.password)
+            .subscribe(function (data) {
+            _this.router.navigate(['/scores']);
+        }, function (error) {
+            _this.loading = false;
+        });
+    };
+    TeacherLoginComponent.prototype.loginuser = function (username, password) {
+        var user = { username: username, password: password };
+        return this.http.post('/api/teacher/check', JSON.stringify(user))
+            .map(function (response) {
+            if (response) {
+                if (response.status < 300) {
+                    sessionStorage.setItem('currentUser', user.username);
+                }
+            }
+        });
+    };
+    TeacherLoginComponent.prototype.logout = function () {
+        // remove user from local storage to log user out
+        sessionStorage.removeItem('currentUser');
+    };
+    return TeacherLoginComponent;
+}());
+TeacherLoginComponent = __decorate([
+    core_1.Component({
+        selector: 'teacherlogin',
+        template: __webpack_require__(81),
+    }),
+    __metadata("design:paramtypes", [http_1.Http,
+        router_1.ActivatedRoute,
+        router_1.Router])
+], TeacherLoginComponent);
+exports.TeacherLoginComponent = TeacherLoginComponent;
+
+
+/***/ }),
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9536,15 +9640,15 @@ var NavMenuComponent = (function () {
 NavMenuComponent = __decorate([
     core_1.Component({
         selector: 'nav-menu',
-        template: __webpack_require__(77),
-        styles: [__webpack_require__(92)]
+        template: __webpack_require__(82),
+        styles: [__webpack_require__(96)]
     })
 ], NavMenuComponent);
 exports.NavMenuComponent = NavMenuComponent;
 
 
 /***/ }),
-/* 57 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9566,15 +9670,15 @@ ChangePasswordComponent = __decorate([
     core_1.Component({
         moduleId: module.i + '',
         selector: 'changepassword',
-        template: __webpack_require__(78),
-        styles: [__webpack_require__(93)]
+        template: __webpack_require__(83),
+        styles: [__webpack_require__(97)]
     })
 ], ChangePasswordComponent);
 exports.ChangePasswordComponent = ChangePasswordComponent;
 
 
 /***/ }),
-/* 58 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9593,7 +9697,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-var forms_1 = __webpack_require__(29);
+var forms_1 = __webpack_require__(30);
 var EqualValidator = EqualValidator_1 = (function () {
     function EqualValidator(validateEqual, reverse) {
         this.validateEqual = validateEqual;
@@ -9649,7 +9753,7 @@ var EqualValidator_1;
 
 
 /***/ }),
-/* 59 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9670,15 +9774,15 @@ var HomeComponent = (function () {
 HomeComponent = __decorate([
     core_1.Component({
         selector: 'home',
-        template: __webpack_require__(79),
-        styles: [__webpack_require__(94)]
+        template: __webpack_require__(84),
+        styles: [__webpack_require__(98)]
     })
 ], HomeComponent);
 exports.HomeComponent = HomeComponent;
 
 
 /***/ }),
-/* 60 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9694,7 +9798,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-var http_1 = __webpack_require__(99);
+var http_1 = __webpack_require__(29);
 var ScoresListComponent = (function () {
     function ScoresListComponent(http) {
         var _this = this;
@@ -9708,7 +9812,7 @@ var ScoresListComponent = (function () {
 ScoresListComponent = __decorate([
     core_1.Component({
         selector: 'list',
-        template: __webpack_require__(80)
+        template: __webpack_require__(85)
     }),
     __metadata("design:paramtypes", [http_1.Http])
 ], ScoresListComponent);
@@ -9716,7 +9820,7 @@ exports.ScoresListComponent = ScoresListComponent;
 
 
 /***/ }),
-/* 61 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -9730,7 +9834,7 @@ exports.push([module.i, "@media (max-width: 767px) {\r\n    /* On small screens,
 
 
 /***/ }),
-/* 62 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -9744,7 +9848,7 @@ exports.push([module.i, "div#spaceship {\r\n    position: relative;\r\n    paddi
 
 
 /***/ }),
-/* 63 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -9758,7 +9862,7 @@ exports.push([module.i, "div#time_wrap {\r\n    background-image: url(\"http://i
 
 
 /***/ }),
-/* 64 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -9766,13 +9870,13 @@ exports = module.exports = __webpack_require__(6)();
 
 
 // module
-exports.push([module.i, "body {\r}\r\rdiv.jumbotron {\rmargin:0px 0px 0px 0px;\rpadding:0px 0px 0px 0px;\rborder:none;\rbackground-color:black;\r}\rh1#login_title {\r    margin-top: 10px;\r    margin-bottom: 10px;\r    font: 50px Arial, Trebuchet MS, Verdana;\r    font-weight: normal;\r    text-align: center;\r}\rdiv.login_content {\r    \r     height:75%;\r     width:100%;\r\r}\rdiv.login_elements {\r    display:inline-block;\r       \r}\rdiv.student {\r    height:110px;\r    background-color: lightgray;\r    box-sizing: border-box;\r    border: 2px solid;\r    border-color: black;\r    margin-top: 2px;\r}\rdiv#picture_grid {\r    max-width:700px;\r    min-width:700px;\r    height:98%;\r    background-color: none;\r    box-sizing:border-box;\r    padding:0px 0px 0px 10px ;\r}\rdiv#index_A {\r    background-image: url(\"http://i.imgur.com/orANXsm.png\");\r    width: 100%;\r    height: 100%;\r    background-size: cover;\r}\rdiv#color_select {\r    /*width: 25%;*/\r    height: 98%;\r    background-color: none;\r    box-sizing:border-box;\r    padding:0px 0px 0px 0px;\r}\rdiv#login_wrap {\r    margin-top:5%;\r    margin-right:auto;\r    margin-left:auto;\r    width:70%;\r    height:85%;\r    background-color:none;\r    border: 2px solid;\r    border-color: dimgray;\r    border-radius: 20px;\r    padding-left: 0px;\r    padding-right: 0px;\r    padding-top: 0px;\r    padding-bottom: 0px;\r    max-width:1054.5px;\r    max-height:650px;\r}\rli {\r    list-style-type: none;\r    border-radius: 2px;\r    border: .1px solid;\r    border-color: dimgray;\r    margin: 4px 10px 2px 0px;\r    width: 100%;\r    height: 25px;\r    box-sizing: border-box;\r}\r\r    li.blue {\r        background-color: blue;\r        color: black;\r        cursor: pointer;\r    }\r\rul#color_list {\r    padding: 0px 10px 0px 5px;\r    max-width: 310px;\r    min-width: 310px;\r    margin:0px auto 0px auto;\r}\r\rli.green {\r    background-color: green;\r    color: black;\r    cursor: pointer;\r}\r\rli.red {\r    background-color: red;\r    color: black;\r    cursor: pointer;\r}\r\rli.black {\r    color: white;\r    background-color: black;\r    cursor: pointer;\r}\r\rli.white {\r    background-color: White;\r    color: black;\r    cursor: pointer;\r}\r\rli.yellow {\r    background-color: yellow;\r    color: black;\r    cursor: pointer;\r}\r\rli.gray {\r    background-color: gray;\r    color: black;\r    cursor: pointer;\r}\r\rli.orange {\r    background-color: orange;\r    color: black;\r    cursor: pointer;\r}\r\rli.purple {\r    background-color: purple;\r    color: black;\r    cursor: pointer;\r}\r\rli.pink {\r    background-color: pink;\r    color: black;\r    cursor: pointer;\r}\r\rli.brown {\r    background-color: brown;\r    color: black;\r    cursor: pointer;\r}\r\rli.violet {\r    background-color: violet;\r    color: black;\r    cursor: pointer;\r}\r\rli.tan {\r    background-color: tan;\r    color: black;\r    cursor: pointer;\r}\r\ra {\r    margin: 0px auto 0px auto;\r    padding: 0px 0px 0px 0px;\r}\r\rbutton.btn:active {\r    background-color: #3e8e41;\r    transform: translateY(2px);\r}\r\rbutton.btn:hover {\r    background-color: #3d475c\r}\rbutton.btn {\r    width: 200px;\r    height: 40px;\r    margin: 0px auto 0px auto;\r    padding: 0px 0px 0px 0px;\r    font: 20px Arial, Trebuchet MS, Verdana;\r    background-color: #808080;\r    color: white;\r    border: 1px solid #c2d1f0;\r    cursor: pointer;\r\r}\rdiv#buttons_block {\r    width:200px;\r    padding:0px 0px 0px 0px;\r}\rdiv#input_row {\r    margin:0px auto 25px auto;\r    width:60%;\r}\ra#register{    \r\n}\ra#teacher_login {\r}", ""]);
+exports.push([module.i, "body {\r}\r\rdiv.jumbotron {\rmargin:0px 0px 0px 0px;\rpadding:0px 0px 0px 0px;\rborder:none;\rbackground-color:black;\r}\rh1#login_title {\r    margin-top: 10px;\r    margin-bottom: 10px;\r    font: 50px Arial, Trebuchet MS, Verdana;\r    font-weight: normal;\r    text-align: center;\r}\rdiv.login_content {\r    \r     height:75%;\r     width:100%;\r\r}\rdiv.login_elements {\r    display:inline-block;\r       \r}\rdiv.student {\r    height:110px;\r    background-color: lightgray;\r    box-sizing: border-box;\r    border: 2px solid;\r    border-color: black;\r    margin-top: 2px;\r}\rdiv#picture_grid {\r    max-width:700px;\r    min-width:700px;\r    height:98%;\r    background-color: none;\r    box-sizing:border-box;\r    padding:0px 0px 0px 10px ;\r}\rdiv#index_A {\r    background-image: url(\"http://i.imgur.com/orANXsm.png\");\r    width: 100%;\r    height: 100%;\r    background-size: cover;\r}\rdiv#color_select {\r    /*width: 25%;*/\r    height: 98%;\r    background-color: none;\r    box-sizing:border-box;\r    padding:0px 0px 0px 0px;\r}\rdiv#login_wrap {\r    margin-top:5%;\r    margin-right:auto;\r    margin-left:auto;\r    width:70%;\r    height:85%;\r    background-color:none;\r    border: 2px solid;\r    border-color: dimgray;\r    border-radius: 20px;\r    padding-left: 0px;\r    padding-right: 0px;\r    padding-top: 0px;\r    padding-bottom: 0px;\r    max-width:1054.5px;\r    max-height:650px;\r}\rli {\r    list-style-type: none;\r    border-radius: 2px;\r    border: .1px solid;\r    border-color: dimgray;\r    margin: 4px 10px 2px 0px;\r    width: 100%;\r    height: 25px;\r    box-sizing: border-box;\r}\r\r    li.blue {\r        background-color: blue;\r        color: black;\r        cursor: pointer;\r    }\r\rul#color_list {\r    padding: 0px 10px 0px 5px;\r    max-width: 310px;\r    min-width: 310px;\r    margin:0px auto 0px auto;\r}\r\rli.green {\r    background-color: green;\r    color: black;\r    cursor: pointer;\r}\r\rli.red {\r    background-color: red;\r    color: black;\r    cursor: pointer;\r}\r\rli.black {\r    color: white;\r    background-color: black;\r    cursor: pointer;\r}\r\rli.white {\r    background-color: White;\r    color: black;\r    cursor: pointer;\r}\r\rli.yellow {\r    background-color: yellow;\r    color: black;\r    cursor: pointer;\r}\r\rli.gray {\r    background-color: gray;\r    color: black;\r    cursor: pointer;\r}\r\rli.orange {\r    background-color: orange;\r    color: black;\r    cursor: pointer;\r}\r\rli.purple {\r    background-color: purple;\r    color: black;\r    cursor: pointer;\r}\r\rli.pink {\r    background-color: pink;\r    color: black;\r    cursor: pointer;\r}\r\rli.brown {\r    background-color: brown;\r    color: black;\r    cursor: pointer;\r}\r\rli.violet {\r    background-color: violet;\r    color: black;\r    cursor: pointer;\r}\r\rli.tan {\r    background-color: tan;\r    color: black;\r    cursor: pointer;\r}\r\ra {\r    margin: 0px auto 0px auto;\r    padding: 0px 0px 0px 0px;\r}\r\rbutton.btn:active {\r    background-color: #3e8e41;\r    transform: translateY(2px);\r}\r\rbutton.btn:hover {\r    background-color: #3d475c\r}\rbutton.btn {\r    width: 200px;\r    height: 40px;\r    margin: 0px auto 0px auto;\r    padding: 0px 0px 0px 0px;\r    font: 20px Arial, Trebuchet MS, Verdana;\r    background-color: #808080;\r    color: white;\r    border: 1px solid #c2d1f0;\r    cursor: pointer;\r\r}\rdiv#buttons_block {\r    width:200px;\r    padding:0px 0px 0px 0px;\r}\rdiv#input_row {\r    margin:0px auto 25px auto;\r    width:60%;\r}\ra#register{    \r\n}\ra#teacher_login {\r}\r\r\r\rimg.thumbnail {\r    height: 110px;\r    width:110px;\r    background-color: lightgray;\r    box-sizing: border-box;\r    border: 2px solid;\r    border-color: black;\r    margin-top: 2px;\r    display:inline-block;\r}\r\r\r\rli.student {\r    height: 110px;\r    width: 110px;\r    position: relative;\r    display: inline-block;\r}", ""]);
 
 // exports
 
 
 /***/ }),
-/* 65 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -9786,7 +9890,7 @@ exports.push([module.i, "\r\noption {\r\n    font: 24px Arial, Trebuchet MS, Ver
 
 
 /***/ }),
-/* 66 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -9800,7 +9904,7 @@ exports.push([module.i, "li .glyphicon {\r\n    margin-right: 10px;\r\n}\r\n\r\n
 
 
 /***/ }),
-/* 67 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -9814,7 +9918,7 @@ exports.push([module.i, "body {\r\n}\r\n", ""]);
 
 
 /***/ }),
-/* 68 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)();
@@ -9828,19 +9932,19 @@ exports.push([module.i, "body {\r\n}\r\ndiv#page_wrap {\r\n    background-image:
 
 
 /***/ }),
-/* 69 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = {
-  XmlEntities: __webpack_require__(71),
-  Html4Entities: __webpack_require__(70),
-  Html5Entities: __webpack_require__(36),
-  AllHtmlEntities: __webpack_require__(36)
+  XmlEntities: __webpack_require__(75),
+  Html4Entities: __webpack_require__(74),
+  Html5Entities: __webpack_require__(37),
+  AllHtmlEntities: __webpack_require__(37)
 };
 
 
 /***/ }),
-/* 70 */
+/* 74 */
 /***/ (function(module, exports) {
 
 var HTML_ALPHA = ['apos', 'nbsp', 'iexcl', 'cent', 'pound', 'curren', 'yen', 'brvbar', 'sect', 'uml', 'copy', 'ordf', 'laquo', 'not', 'shy', 'reg', 'macr', 'deg', 'plusmn', 'sup2', 'sup3', 'acute', 'micro', 'para', 'middot', 'cedil', 'sup1', 'ordm', 'raquo', 'frac14', 'frac12', 'frac34', 'iquest', 'Agrave', 'Aacute', 'Acirc', 'Atilde', 'Auml', 'Aring', 'Aelig', 'Ccedil', 'Egrave', 'Eacute', 'Ecirc', 'Euml', 'Igrave', 'Iacute', 'Icirc', 'Iuml', 'ETH', 'Ntilde', 'Ograve', 'Oacute', 'Ocirc', 'Otilde', 'Ouml', 'times', 'Oslash', 'Ugrave', 'Uacute', 'Ucirc', 'Uuml', 'Yacute', 'THORN', 'szlig', 'agrave', 'aacute', 'acirc', 'atilde', 'auml', 'aring', 'aelig', 'ccedil', 'egrave', 'eacute', 'ecirc', 'euml', 'igrave', 'iacute', 'icirc', 'iuml', 'eth', 'ntilde', 'ograve', 'oacute', 'ocirc', 'otilde', 'ouml', 'divide', 'oslash', 'ugrave', 'uacute', 'ucirc', 'uuml', 'yacute', 'thorn', 'yuml', 'quot', 'amp', 'lt', 'gt', 'OElig', 'oelig', 'Scaron', 'scaron', 'Yuml', 'circ', 'tilde', 'ensp', 'emsp', 'thinsp', 'zwnj', 'zwj', 'lrm', 'rlm', 'ndash', 'mdash', 'lsquo', 'rsquo', 'sbquo', 'ldquo', 'rdquo', 'bdquo', 'dagger', 'Dagger', 'permil', 'lsaquo', 'rsaquo', 'euro', 'fnof', 'Alpha', 'Beta', 'Gamma', 'Delta', 'Epsilon', 'Zeta', 'Eta', 'Theta', 'Iota', 'Kappa', 'Lambda', 'Mu', 'Nu', 'Xi', 'Omicron', 'Pi', 'Rho', 'Sigma', 'Tau', 'Upsilon', 'Phi', 'Chi', 'Psi', 'Omega', 'alpha', 'beta', 'gamma', 'delta', 'epsilon', 'zeta', 'eta', 'theta', 'iota', 'kappa', 'lambda', 'mu', 'nu', 'xi', 'omicron', 'pi', 'rho', 'sigmaf', 'sigma', 'tau', 'upsilon', 'phi', 'chi', 'psi', 'omega', 'thetasym', 'upsih', 'piv', 'bull', 'hellip', 'prime', 'Prime', 'oline', 'frasl', 'weierp', 'image', 'real', 'trade', 'alefsym', 'larr', 'uarr', 'rarr', 'darr', 'harr', 'crarr', 'lArr', 'uArr', 'rArr', 'dArr', 'hArr', 'forall', 'part', 'exist', 'empty', 'nabla', 'isin', 'notin', 'ni', 'prod', 'sum', 'minus', 'lowast', 'radic', 'prop', 'infin', 'ang', 'and', 'or', 'cap', 'cup', 'int', 'there4', 'sim', 'cong', 'asymp', 'ne', 'equiv', 'le', 'ge', 'sub', 'sup', 'nsub', 'sube', 'supe', 'oplus', 'otimes', 'perp', 'sdot', 'lceil', 'rceil', 'lfloor', 'rfloor', 'lang', 'rang', 'loz', 'spades', 'clubs', 'hearts', 'diams'];
@@ -9993,7 +10097,7 @@ module.exports = Html4Entities;
 
 
 /***/ }),
-/* 71 */
+/* 75 */
 /***/ (function(module, exports) {
 
 var ALPHA_INDEX = {
@@ -10154,61 +10258,67 @@ module.exports = XmlEntities;
 
 
 /***/ }),
-/* 72 */
+/* 76 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"<!--container conntainer-table--> \" style=\"width:100%; height:100%;\" id=\"app_box \">\r\n    <div class='<!--row vertical-center-row-->' style=\"width:100%; height:100%;\" >       \r\n        <div  class=' <!--col-lg-2 col-lg-offset-2 vertical-center-->' id=\"wrap\">\r\n            <router-outlet></router-outlet>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
 
 /***/ }),
-/* 73 */
+/* 77 */
 /***/ (function(module, exports) {
 
 module.exports = "<head>\r\n    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>\r\n\r\n</head>\r\n\r\n\r\n<div class=\"container\" id=\"alien_wrap\" style=\"width:100%; height:100%;\">\r\n    <div id=\"alien_roundup\">\r\n        <div class=\"jumbotron\" id=\"playing_field\">\r\n            <h2>Alien Roundup</h2>\r\n            <!-- Here we are declaring a local variable called “form” and setting it to an instance of ngForm. This is very important. Now our local form variable becomes of type FormGroup allowing us access to the FormGroup API’s on this local variable. We use this in the ngSubmit event where we send the value of the form via form.value -->\r\n           <div class=\"row\" id=\"gameRow\"> \r\n       \r\n                <div  id=\"spaceship\"  *ngFor=\"let item of items\">\r\n                   <img id=\"alien \"src={{alien}}>\r\n                </div>\r\n       \r\n           </div > \r\n            <form #form=\"ngForm\" (ngSubmit)=\"submitForm(form.value)\">\r\n                <div class=\"form-group\">\r\n                    <label>Your Guess:</label>\r\n                    <!-- Since we are working with template driven forms, we can use the ngModel directive to capture the values of our forms. One thing to note if you are coming from Angular 1.x. Using ngModel as shown below creates a one-way data binding, so once we hit submit the data is only sent to the controller. If we wanted to use two-way data binding, we would have to wrap the ngModel in [()] and assign an attribute to it. Also the name of the field corresponds to the name attribute so our first input will be firstName. -->\r\n                    <input type=\"text\" class=\"form-control\" placeholder=\"Guess Here\" name=\"Guess\" ngModel required>\r\n                </div>\r\n                <div class=\"form-group\" id=\"guess_area\">\r\n                    <button type=\"submit\" class=\"btn btn-default\">Submit</button>\r\n                    <input onclick='responsiveVoice.speak(\"Please enter your guess\");' type='button' value='🔊 Play' />\r\n                </div>\r\n            </form>\r\n        </div>\r\n    </div>\r\n</div>";
 
 /***/ }),
-/* 74 */
+/* 78 */
 /***/ (function(module, exports) {
 
 module.exports = "\r\n<head>\r\n    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>\r\n   \r\n</head>-->\r\n \r\n<div class=\"container\" id=\"time_wrap\" style=\"width:100%; height:100%;\">\r\n    <div id=\"time_lord\">\r\n        <div class=\"jumbotron\" id=\"playing_field\">\r\n            <h2>Time Lords</h2>\r\n            <div class=\"container\" id=\"clock\">\r\n                <div id=\"clock_wrap\">\r\n                <h2> What time is this? {{guess | date: 'shortTime'}} </h2>\r\n                <canvas class=\"clock\" id=\"myCanvas\" #myCanvas width=\"150\" height=\"150\"></canvas>\r\n                <input id=\"answer\" type=\"text\" placeholder=\"Enter Answer\">\r\n                </div>\r\n           \r\n                <div>\r\n                    <input type=\"button\" text=\"submit\"><input onclick='responsiveVoice.speak(\"Please enter the current time\");' type='button' value='🔊 Play' />\r\n                </div>\r\n            </div>\r\n            \r\n            <div id=\"footer\">\r\n                <h2> Heres A hint:</h2>\r\n                <h3> Current Time Is: {{ clock | async }}  </h3>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>";
 
 /***/ }),
-/* 75 */
-/***/ (function(module, exports) {
-
-module.exports = "<head>\r\n    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>\r\n\r\n</head>\r\n<div class=\"container \" id=\"index_A\" style=\"width:100%; height:100%; \">\r\n    <div id=\"login_wrap\">\r\n        <h1 id=\"login_title\">Login</h1>\r\n        <div class=\" row login_content\">\r\n            <div class=\"col-xs-8 login_elements\" id=\"picture_grid\">\r\n                <div class=\"jumbotron\">\r\n                <div class=\"row\" id=\"picture_wrap\">\r\n                    <div class=\"col-xs-2 student\" id=\"s1\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s2\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s3\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s4\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s5\"> </div>\r\n                    <div class=\"col-xs-2 student \" id=\"s6\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s7\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s8\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s9\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s10\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s11\"> </div>\r\n                    <div class=\"col-xs-2 student \" id=\"s12\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s13\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s14\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s15\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s16\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s17\"> </div>\r\n                    <div class=\"col-xs-2 student \" id=\"s18\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s19\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s20\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s21\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s22\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s23\"> </div>\r\n                    <div class=\"col-xs-2 student \" id=\"s24\"> </div>      \r\n                </div>  \r\n                </div>\r\n            </div>\r\n                <div class=\"col-xs-4  login_elements\" id=\"color_select\">\r\n                    <ul id=\"color_list\">\r\n                        <li class=\"blue\" value=\"blue\">Blue</li>\r\n                        <li class=\"green\" value=\"green\">Green</li>\r\n                        <li class=\"red\" value=\"red\">Red</li>\r\n                        <li class=\"black\" value=\"black\">Black</li>\r\n                        <li class=\"white\" value=\"white\">White</li>\r\n                        <li class=\"yellow\" value=\"yellow\">Yellow</li>\r\n                        <li class=\"gray\" value=\"gray\">Gray</li>\r\n                        <li class=\"orange\" value=\"orange\">Orange</li>\r\n                        <li class=\"purple\" value=\"purple\">Purple</li>\r\n                        <li class=\"pink\" value=\"pink\">Pink</li>\r\n                        <li class=\"brown\" value=\"brown\">Brown</li>\r\n                        <li class=\"violet\" value=\"violet\">Violet</li>\r\n                        <li class=\"tan\" value=\"tan\">Tan</li>\r\n                    </ul>\r\n                </div>       \r\n        </div>\r\n        <div class=\"row\" id=\"input_row\">\r\n            <div class=\"col-xs-3\">\r\n                <a [routerLink]=\"['/newaccount']\" id=\"register\">Register</a>\r\n            </div>\r\n            <div class=\"col-xs-6\" id=\"buttons_block\">               \r\n                <button type=\"button\" class=\"btn\">Login</button>\r\n            </div>\r\n            <div class=\"col-xs-3\">\r\n                <a [routerLink]=\"['/teacherlogin']\" id=\"teacher_log\">Teacher Login</a>\r\n            </div>\r\n        </div>\r\n     </div>\r\n </div>\r\n\r\n";
-
-/***/ }),
-/* 76 */
-/***/ (function(module, exports) {
-
-module.exports = "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>\r\n\r\n    <meta charset=\"utf-8\" />\r\n    <title></title>\r\n</head>\r\n<body class=\"container-fluid\" id=\"account_box\">\r\n    <div class=\"container-fluid\" >\r\n        <h1> Registration </h1>\r\n        <form class=\"container-fluid\" name=\"NewAccountForm\" #f=\"ngForm\" (ngSubmit)=\"f.form.valid && onSubmit()\">\r\n\r\n            <div class=\"form-group\">\r\n                <label for=\"FirstName\">First Name</label>\r\n                <input type=\"text\" class=\"form-control\" name=\"FirstName \" id=\"FirstName\" [(ngModel)]=\"model.firstname\" placeholder=\"Enter first name\" />\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <label for=\"LastName\">Last Name</label>\r\n                <input type=\"text\" class=\"form-control\" name=\"LastName \" id=\"LastName\" [(ngModel)]=\"model.lastname\" placeholder=\"Enter Last Name\" />\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <label for=\"UserName\">User Image</label>\r\n                <input type=\"text\" class=\"form-control\" name=\"UserName \" id=\"LastName\" [(ngModel)]=\"model.username\" placeholder=\"Enter user name\" />\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <label for=\"colors\">User Color</label> \r\n                <select class=\"form-control\" id=\"colors\" > \r\n                    <option style=\"color:gray;\" value=\"null\">select color</option>\r\n                    <option class=\"blue\" value=\"blue\">Blue</option> \r\n                    <option class=\"green\" value=\"green\" >Green</option>\r\n                    <option class=\"red\" value=\"red\">Red</option>\r\n                    <option class=\"black\" value=\"black\">Black</option>\r\n                    <option class=\"white\" value=\"white\">White</option>\r\n                    <option class=\"yellow\" value=\"yellow\">Yellow</option>\r\n                    <option class=\"gray\" value=\"gray\">Gray</option>\r\n                    <option class=\"orange\" value=\"orange\">Orange</option>\r\n                    <option class=\"purple\" value=\"purple\">Purple</option>\r\n                    <option class=\"pink\" value=\"pink\">Pink</option>\r\n                    <option class=\"brown\" value=\"brown\">Brown</option>\r\n                    <option class=\"violet\" value=\"violet\">Violet</option>\r\n                    <option class=\"tan\" value=\"tan\">Tan</option>\r\n                </select>\r\n            </div>\r\n            <div class=\"checkbox\">\r\n                <label><input type=\"checkbox\" name=\"isTeacher\" [(ngModel)]=\"model.isTeacher\">Check if you are a teacher</label>\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <select class=\"custom-select\">\r\n                    <option selected>Choose Teacher</option>\r\n                    <option value=\"bob\">Bob Smith</option>\r\n                    <option value=\"sandra\">Sandra Klien</option>\r\n                </select>\r\n            </div>\r\n           \r\n            <button type=\"button\" class=\"btn\">Submit</button><input onclick='responsiveVoice.speak(\"please give us all your infos\");' type='button' value='🔊 Play' />\r\n\r\n        </form>\r\n    </div>\r\n</body>\r\n</html>";
-
-/***/ }),
-/* 77 */
-/***/ (function(module, exports) {
-
-module.exports = "<div class='main-nav'>\r\n    <div class='navbar navbar-inverse'>\r\n        <div class='navbar-header'>\r\n            <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>\r\n                <span class='sr-only'>Toggle navigation</span>\r\n                <span class='icon-bar'></span>\r\n                <span class='icon-bar'></span>\r\n                <span class='icon-bar'></span>\r\n            </button>\r\n            <a class='navbar-brand' [routerLink]=\"['/home']\">JSON_Student_App</a>\r\n        </div>\r\n        <div class='clearfix'></div>\r\n        <div class='navbar-collapse collapse'>\r\n            <ul class='nav navbar-nav'>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/home']\">\r\n                        <span class='glyphicon glyphicon-home'></span> Home\r\n                    </a>\r\n                </li>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/changepassword']\">\r\n                        <span class='glyphicon glyphicon-pencil'></span> Change Password\r\n                    </a>\r\n                </li>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/list']\">\r\n                        <span class='glyphicon glyphicon-list'></span> Score List\r\n                    </a>\r\n                </li>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/time']\">\r\n                        <span class='glyphicon glyphicon-time'></span> Time Lords\r\n                    </a>\r\n                </li>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/mathblaster']\">\r\n                        <span class='glyphicon glyphicon-blackboard'></span> Math Blaster\r\n                    </a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
-
-/***/ }),
-/* 78 */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"container\">\r\n    <h1>Change Password</h1>\r\n    <form #f=\"ngForm\" novalidate (ngSubmit)=\"save(f.value, f.valid)\">\r\n        <!-- we will place our fields here -->\r\n\r\n        <div class=\"form-group\">\r\n            <label for=\"\">Password</label>\r\n            <input type=\"password\" class=\"form-control\" name=\"oldPassword\" />\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"\">New Password</label>\r\n            <input type=\"password\" class=\"form-control\" name=\"newPassword\" />\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"\">Retype password</label>\r\n            <input type=\"password\" class=\"form-control\" name=\"confirmPassword\" />\r\n        </div>\r\n        <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"!myForm.valid\">Submit</button>\r\n    </form>\r\n\r\n    </div>";
-
-/***/ }),
 /* 79 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\" container\" id=\"page_wrap\">\r\n    <div class=\"row\" id=\"home_wrap\">\r\n        <div class=\"row\" id=\"logo_wrap\">\r\n              <div class=\" col-lg-4\" id=\"logo1\">\r\n\r\n              </div> \r\n              <div class=\" col-lg-4\" id=\"logo2\">\r\n                  <img  src=\"http://i.imgur.com/wehmORA.png\" id=\"logo_img\" alt=\"Logo\" >\r\n              </div>\r\n              <div class=\" col-lg-4\" id=\"logo3\">\r\n\r\n              </div>\r\n\r\n        </div>\r\n        <div class=\"flex-row\" id=\"system_wrap\">\r\n            \r\n            <div class=\"col-lg-1\" id=\"mercury\" [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/fmnKsIJ.png\" id=\"mercury_img\" alt=\"murcury\"  [routerLink]=\"['/alienroundup']\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"venus\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/cm5ZcFi.png\" id=\"venus_img\" alt=\"venus\"  [routerLink]=\"['/time']\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"earth\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/D03gV5K.png \" id=\"earth_img\" alt=\"earth\" [routerLink]=\"['/flashcards']\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"mars\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/PjwNk7K.png \" id=\"mars_img\" alt=\"mars\">\r\n            </div>\r\n            <div class=\"col-lg-2\" id=\"jupiter\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/ErtUG9c.png\" id=\"jupiter_img\" alt=\"jupiter\">\r\n            </div>\r\n            <div class=\"col-lg-2\" id=\"saturn\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/tDzCYWv.png\" id=\"saturn_img\" alt=\"saturn\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"uranus\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/i3BOMxT.png\" id=\"uranus_img\" alt=\"uranus\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"neptune\"  [routerLinkActive]=\"['link-active']\">\r\n               <img src=\"http://i.imgur.com/PLieBrN.png\" id=\"neptune_img\" alt=\"neptune\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
+module.exports = "<head>\r\n    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>\r\n\r\n</head>\r\n<div class=\"container \" id=\"index_A\" style=\"width:100%; height:100%; \">\r\n    <div id=\"login_wrap\">\r\n        <h1 id=\"login_title\">Login</h1>\r\n        <div class=\" row login_content\">\r\n            <div class=\"col-xs-8 login_elements\" id=\"picture_grid\">\r\n                <div class=\"jumbotron\">\r\n                    <div class=\"row\" id=\"picture_wrap\"  >\r\n                        <div *ngFor=\"let image of images;\">\r\n                        <div class=\"col-xs-2 student\" id=\"s1\"> <img class=\"thumbnail\" src={{image}}> </div>\r\n                        </div>\r\n                    </div>  \r\n                <!--<div class=\"row\" id=\"picture_wrap\">\r\n                    <div class=\"col-xs-2 student\" id=\"1\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"2\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"3\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"4\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"5\"> </div>\r\n                    <div class=\"col-xs-2 student \" id=\"6\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s7\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s8\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s9\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s10\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s11\"> </div>\r\n                    <div class=\"col-xs-2 student \" id=\"s12\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s13\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s14\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s15\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s16\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s17\"> </div>\r\n                    <div class=\"col-xs-2 student \" id=\"s18\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s19\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s20\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s21\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s22\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s23\"> </div>\r\n                    <div class=\"col-xs-2 student \" id=\"s24\"> </div>      \r\n                </div>-->  \r\n                </div>\r\n            </div>\r\n                <div class=\"col-xs-4  login_elements\" id=\"color_select\">\r\n                    <ul id=\"color_list\">\r\n                        <li class=\"blue\" value=\"blue\">Blue</li>\r\n                        <li class=\"green\" value=\"green\">Green</li>\r\n                        <li class=\"red\" value=\"red\">Red</li>\r\n                        <li class=\"black\" value=\"black\">Black</li>\r\n                        <li class=\"white\" value=\"white\">White</li>\r\n                        <li class=\"yellow\" value=\"yellow\">Yellow</li>\r\n                        <li class=\"gray\" value=\"gray\">Gray</li>\r\n                        <li class=\"orange\" value=\"orange\">Orange</li>\r\n                        <li class=\"purple\" value=\"purple\">Purple</li>\r\n                        <li class=\"pink\" value=\"pink\">Pink</li>\r\n                        <li class=\"brown\" value=\"brown\">Brown</li>\r\n                        <li class=\"violet\" value=\"violet\">Violet</li>\r\n                        <li class=\"tan\" value=\"tan\">Tan</li>\r\n                    </ul>\r\n                </div>       \r\n        </div>\r\n        <div class=\"row\" id=\"input_row\">\r\n            <div class=\"col-xs-3\">\r\n                <a [routerLink]=\"['/newaccount']\" id=\"register\">Register</a>\r\n            </div>\r\n            <div class=\"col-xs-6\" id=\"buttons_block\">               \r\n                <button type=\"button\" class=\"btn\">Login</button>\r\n            </div>\r\n            <div class=\"col-xs-3\">\r\n                <a [routerLink]=\"['/teacherlogin']\" id=\"teacher_log\">Teacher Login</a>\r\n            </div>\r\n        </div>\r\n     </div>\r\n </div>\r\n\r\n";
 
 /***/ }),
 /* 80 */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Student Score Table</h1>\r\n<p *ngIf=\"!scores\"><em>Loading...</em></p>\r\n<table class='table' *ngIf=\"scores\">\r\n    <thead>\r\n        <tr>\r\n            <th>Score ID</th>\r\n            <th>Game ID</th>\r\n            <th>Student ID</th>\r\n            <th>Teacher ID</th>\r\n            <th>Attepmt Time</th>\r\n            <th>Questions Answered</th>\r\n            <th>Correctly Answered</th>\r\n            <th>Difficulty</th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n        <tr *ngFor=\"let score of scores\">\r\n        \r\n        </tr>\r\n    </tbody>\r\n</table>";
+module.exports = "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>\r\n\r\n    <meta charset=\"utf-8\" />\r\n    <title></title>\r\n</head>\r\n<body class=\"container-fluid\" id=\"account_box\">\r\n    <div class=\"container-fluid\" >\r\n        <h1> Registration </h1>\r\n        <form class=\"container-fluid\" name=\"NewAccountForm\" #f=\"ngForm\" (ngSubmit)=\"f.form.valid && onSubmit()\">\r\n\r\n            <div class=\"form-group\">\r\n                <label for=\"FirstName\">First Name</label>\r\n                <input type=\"text\" class=\"form-control\" name=\"FirstName \" id=\"FirstName\" [(ngModel)]=\"model.firstname\" placeholder=\"Enter first name\" />\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <label for=\"LastName\">Last Name</label>\r\n                <input type=\"text\" class=\"form-control\" name=\"LastName \" id=\"LastName\" [(ngModel)]=\"model.lastname\" placeholder=\"Enter Last Name\" />\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <label for=\"UserName\">User Image</label>\r\n                <input type=\"text\" class=\"form-control\" name=\"UserName \" id=\"LastName\" [(ngModel)]=\"model.username\" placeholder=\"Enter user name\" />\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <label for=\"colors\">User Color</label> \r\n                <select class=\"form-control\" id=\"colors\" > \r\n                    <option style=\"color:gray;\" value=\"null\">select color</option>\r\n                    <option class=\"blue\" value=\"blue\">Blue</option> \r\n                    <option class=\"green\" value=\"green\" >Green</option>\r\n                    <option class=\"red\" value=\"red\">Red</option>\r\n                    <option class=\"black\" value=\"black\">Black</option>\r\n                    <option class=\"white\" value=\"white\">White</option>\r\n                    <option class=\"yellow\" value=\"yellow\">Yellow</option>\r\n                    <option class=\"gray\" value=\"gray\">Gray</option>\r\n                    <option class=\"orange\" value=\"orange\">Orange</option>\r\n                    <option class=\"purple\" value=\"purple\">Purple</option>\r\n                    <option class=\"pink\" value=\"pink\">Pink</option>\r\n                    <option class=\"brown\" value=\"brown\">Brown</option>\r\n                    <option class=\"violet\" value=\"violet\">Violet</option>\r\n                    <option class=\"tan\" value=\"tan\">Tan</option>\r\n                </select>\r\n            </div>\r\n            <div class=\"checkbox\">\r\n                <label><input type=\"checkbox\" name=\"isTeacher\" [(ngModel)]=\"model.isTeacher\">Check if you are a teacher</label>\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <select class=\"custom-select\">\r\n                    <option selected>Choose Teacher</option>\r\n                    <option value=\"bob\">Bob Smith</option>\r\n                    <option value=\"sandra\">Sandra Klien</option>\r\n                </select>\r\n            </div>\r\n           \r\n            <button type=\"button\" class=\"btn\">Submit</button><input onclick='responsiveVoice.speak(\"please give us all your infos\");' type='button' value='🔊 Play' />\r\n\r\n        </form>\r\n    </div>\r\n</body>\r\n</html>";
 
 /***/ }),
 /* 81 */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"col-md-6 col-md-offset-3\">\r\n    <h2>Teacher Login</h2>\r\n    <form name=\"form\" (ngSubmit)=\"f.form.valid && login()\" #f=\"ngForm\" novalidate>\r\n        <div class=\"form-group\" [ngClass]=\"{ 'has-error': f.submitted && !username.valid }\">\r\n            <label for=\"username\">Username</label>\r\n            <input type=\"text\" class=\"form-control\" name=\"username\" [(ngModel)]=\"model.username\" #username=\"ngModel\" required />\r\n            <div *ngIf=\"f.submitted && !username.valid\" class=\"help-block\">Username is required</div>\r\n        </div>\r\n        <div class=\"form-group\" [ngClass]=\"{ 'has-error': f.submitted && !password.valid }\">\r\n            <label for=\"password\">Password</label>\r\n            <input type=\"password\" class=\"form-control\" name=\"password\" [(ngModel)]=\"model.password\" #password=\"ngModel\" required />\r\n            <div *ngIf=\"f.submitted && !password.valid\" class=\"help-block\">Password is required</div>\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <button [disabled]=\"loading\" class=\"btn btn-primary\">Login</button>\r\n            <img *ngIf=\"loading\" src=\"data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==\" />\r\n        </div>\r\n    </form>\r\n</div>";
+
+/***/ }),
+/* 82 */
+/***/ (function(module, exports) {
+
+module.exports = "<div class='main-nav'>\r\n    <div class='navbar navbar-inverse'>\r\n        <div class='navbar-header'>\r\n            <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>\r\n                <span class='sr-only'>Toggle navigation</span>\r\n                <span class='icon-bar'></span>\r\n                <span class='icon-bar'></span>\r\n                <span class='icon-bar'></span>\r\n            </button>\r\n            <a class='navbar-brand' [routerLink]=\"['/home']\">JSON_Student_App</a>\r\n        </div>\r\n        <div class='clearfix'></div>\r\n        <div class='navbar-collapse collapse'>\r\n            <ul class='nav navbar-nav'>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/home']\">\r\n                        <span class='glyphicon glyphicon-home'></span> Home\r\n                    </a>\r\n                </li>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/changepassword']\">\r\n                        <span class='glyphicon glyphicon-pencil'></span> Change Password\r\n                    </a>\r\n                </li>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/list']\">\r\n                        <span class='glyphicon glyphicon-list'></span> Score List\r\n                    </a>\r\n                </li>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/time']\">\r\n                        <span class='glyphicon glyphicon-time'></span> Time Lords\r\n                    </a>\r\n                </li>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/mathblaster']\">\r\n                        <span class='glyphicon glyphicon-blackboard'></span> Math Blaster\r\n                    </a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
+
+/***/ }),
+/* 83 */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\r\n    <h1>Change Password</h1>\r\n    <form #f=\"ngForm\" novalidate (ngSubmit)=\"save(f.value, f.valid)\">\r\n        <!-- we will place our fields here -->\r\n\r\n        <div class=\"form-group\">\r\n            <label for=\"\">Password</label>\r\n            <input type=\"password\" class=\"form-control\" name=\"oldPassword\" />\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"\">New Password</label>\r\n            <input type=\"password\" class=\"form-control\" name=\"newPassword\" />\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"\">Retype password</label>\r\n            <input type=\"password\" class=\"form-control\" name=\"confirmPassword\" />\r\n        </div>\r\n        <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"!myForm.valid\">Submit</button>\r\n    </form>\r\n\r\n    </div>";
+
+/***/ }),
+/* 84 */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\" container\" id=\"page_wrap\">\r\n    <div class=\"row\" id=\"home_wrap\">\r\n        <div class=\"row\" id=\"logo_wrap\">\r\n              <div class=\" col-lg-4\" id=\"logo1\">\r\n\r\n              </div> \r\n              <div class=\" col-lg-4\" id=\"logo2\">\r\n                  <img  src=\"http://i.imgur.com/wehmORA.png\" id=\"logo_img\" alt=\"Logo\" >\r\n              </div>\r\n              <div class=\" col-lg-4\" id=\"logo3\">\r\n\r\n              </div>\r\n\r\n        </div>\r\n        <div class=\"flex-row\" id=\"system_wrap\">\r\n            \r\n            <div class=\"col-lg-1\" id=\"mercury\" [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/fmnKsIJ.png\" id=\"mercury_img\" alt=\"murcury\"  [routerLink]=\"['/alienroundup']\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"venus\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/cm5ZcFi.png\" id=\"venus_img\" alt=\"venus\"  [routerLink]=\"['/time']\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"earth\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/D03gV5K.png \" id=\"earth_img\" alt=\"earth\" [routerLink]=\"['/flashcards']\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"mars\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/PjwNk7K.png \" id=\"mars_img\" alt=\"mars\">\r\n            </div>\r\n            <div class=\"col-lg-2\" id=\"jupiter\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/ErtUG9c.png\" id=\"jupiter_img\" alt=\"jupiter\">\r\n            </div>\r\n            <div class=\"col-lg-2\" id=\"saturn\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/tDzCYWv.png\" id=\"saturn_img\" alt=\"saturn\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"uranus\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/i3BOMxT.png\" id=\"uranus_img\" alt=\"uranus\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"neptune\"  [routerLinkActive]=\"['link-active']\">\r\n               <img src=\"http://i.imgur.com/PLieBrN.png\" id=\"neptune_img\" alt=\"neptune\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
+
+/***/ }),
+/* 85 */
+/***/ (function(module, exports) {
+
+module.exports = "<h1>Student Score Table</h1>\r\n<p *ngIf=\"!scores\"><em>Loading...</em></p>\r\n<table class='table' *ngIf=\"scores\">\r\n    <thead>\r\n        <tr>\r\n            <th>Score ID</th>\r\n            <th>Game ID</th>\r\n            <th>Student ID</th>\r\n            <th>Teacher ID</th>\r\n            <th>Attepmt Time</th>\r\n            <th>Questions Answered</th>\r\n            <th>Correctly Answered</th>\r\n            <th>Difficulty</th>\r\n            <th>Student</th>\r\n            <th>Teacher</th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n        <tr *ngFor=\"let score of scores\">\r\n        \r\n        </tr>\r\n    </tbody>\r\n</table>";
+
+/***/ }),
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10299,7 +10409,7 @@ var isArray = Array.isArray || function (xs) {
 
 
 /***/ }),
-/* 82 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10391,34 +10501,23 @@ var objectKeys = Object.keys || function (obj) {
 
 
 /***/ }),
-/* 83 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-exports.decode = exports.parse = __webpack_require__(81);
-exports.encode = exports.stringify = __webpack_require__(82);
+exports.decode = exports.parse = __webpack_require__(86);
+exports.encode = exports.stringify = __webpack_require__(87);
 
 
 /***/ }),
-/* 84 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var Observable_1 = __webpack_require__(38);
-var map_1 = __webpack_require__(98);
-Observable_1.Observable.prototype.map = map_1.map;
-//# sourceMappingURL=map.js.map
-
-/***/ }),
-/* 85 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var root_1 = __webpack_require__(104);
+var root_1 = __webpack_require__(106);
 /* tslint:enable:max-line-length */
 /**
  * Converts an Observable sequence to a ES2015 compliant promise.
@@ -10491,73 +10590,17 @@ exports.toPromise = toPromise;
 //# sourceMappingURL=toPromise.js.map
 
 /***/ }),
-/* 86 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var ansiRegex = __webpack_require__(49)();
+var ansiRegex = __webpack_require__(52)();
 
 module.exports = function (str) {
 	return typeof str === 'string' ? str.replace(ansiRegex, '') : str;
 };
 
-
-/***/ }),
-/* 87 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(61);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-/* 88 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(62);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-/* 89 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(63);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
-
-/***/ }),
-/* 90 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-        var result = __webpack_require__(64);
-
-        if (typeof result === "string") {
-            module.exports = result;
-        } else {
-            module.exports = result.toString();
-        }
-    
 
 /***/ }),
 /* 91 */
@@ -10619,6 +10662,62 @@ module.exports = function (str) {
 /* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
+
+        var result = __webpack_require__(69);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+/* 96 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(70);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+/* 97 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(71);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+/* 98 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(72);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+/* 99 */
+/***/ (function(module, exports, __webpack_require__) {
+
 /*eslint-env browser*/
 
 var clientOverlay = document.createElement('div');
@@ -10645,7 +10744,7 @@ for (var key in styles) {
   clientOverlay.style[key] = styles[key];
 }
 
-var ansiHTML = __webpack_require__(48);
+var ansiHTML = __webpack_require__(51);
 var colors = {
   reset: ['transparent', 'transparent'],
   black: '181818',
@@ -10660,7 +10759,7 @@ var colors = {
 };
 ansiHTML.setColors(colors);
 
-var Entities = __webpack_require__(69).AllHtmlEntities;
+var Entities = __webpack_require__(73).AllHtmlEntities;
 var entities = new Entities();
 
 exports.showProblems =
@@ -10701,7 +10800,7 @@ function problemType (type) {
 
 
 /***/ }),
-/* 96 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -10839,66 +10938,54 @@ module.exports = function(hash, moduleMap, options) {
 
 
 /***/ }),
-/* 97 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(11);
 
 /***/ }),
-/* 98 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(121);
 
 /***/ }),
-/* 99 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(1))(194);
-
-/***/ }),
-/* 100 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(316);
 
 /***/ }),
-/* 101 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(1))(332);
-
-/***/ }),
-/* 102 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(333);
 
 /***/ }),
-/* 103 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(335);
 
 /***/ }),
-/* 104 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(47);
 
 /***/ }),
-/* 105 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(574);
 
 /***/ }),
-/* 106 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(42);
-__webpack_require__(41);
-module.exports = __webpack_require__(40);
+__webpack_require__(45);
+__webpack_require__(44);
+module.exports = __webpack_require__(43);
 
 
 /***/ })

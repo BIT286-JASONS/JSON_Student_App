@@ -7,15 +7,6 @@ C:/Users/huda/Documents/GitHub/JSON_Student_App/obj/Debug/netcoreapp1.1/JSON_Stu
 C:/Users/huda/Documents/GitHub/JSON_Student_App/obj/Debug/netcoreapp1.1/JSON_Student_App.dll
 C:/Users/huda/Documents/GitHub/JSON_Student_App/obj/Debug/netcoreapp1.1/JSON_Student_App.pdb
 C:/Users/huda/Documents/GitHub/JSON_Student_App/obj/Debug/netcoreapp1.1/JSON_Student_App.csprojResolveAssemblyReference.cache
-C:/Users/chris/Source/Repos/JSON_Student_App/bin/Debug/netcoreapp1.1/JSON_Student_App.deps.json
-C:/Users/chris/Source/Repos/JSON_Student_App/bin/Debug/netcoreapp1.1/JSON_Student_App.runtimeconfig.json
-C:/Users/chris/Source/Repos/JSON_Student_App/bin/Debug/netcoreapp1.1/JSON_Student_App.runtimeconfig.dev.json
-C:/Users/chris/Source/Repos/JSON_Student_App/bin/Debug/netcoreapp1.1/JSON_Student_App.dll
-C:/Users/chris/Source/Repos/JSON_Student_App/bin/Debug/netcoreapp1.1/JSON_Student_App.pdb
-C:/Users/chris/Source/Repos/JSON_Student_App/obj/Debug/netcoreapp1.1/JSON_Student_App.csprojResolveAssemblyReference.cache
-C:/Users/chris/Source/Repos/JSON_Student_App/obj/Debug/netcoreapp1.1/JSON_Student_App.AssemblyInfo.cs
-C:/Users/chris/Source/Repos/JSON_Student_App/obj/Debug/netcoreapp1.1/JSON_Student_App.dll
-C:/Users/chris/Source/Repos/JSON_Student_App/obj/Debug/netcoreapp1.1/JSON_Student_App.pdb
 C:/Users/huda/Source/Repos/JSON_Student_App/bin/Debug/netcoreapp1.1/JSON_Student_App.deps.json
 C:/Users/huda/Source/Repos/JSON_Student_App/bin/Debug/netcoreapp1.1/JSON_Student_App.runtimeconfig.json
 C:/Users/huda/Source/Repos/JSON_Student_App/bin/Debug/netcoreapp1.1/JSON_Student_App.runtimeconfig.dev.json
@@ -42,3 +33,11 @@ C:/Users/huda/Source/Repos/JSON_Student_App2/bin/Debug/netcoreapp1.1/JSON_Studen
 /Users/Ella/Documents/Cascadia/BIT286/JSON_Student_App/obj/Debug/netcoreapp1.1/JSON_Student_App.AssemblyInfo.cs
 /Users/Ella/Documents/Cascadia/BIT286/JSON_Student_App/obj/Debug/netcoreapp1.1/JSON_Student_App.dll
 /Users/Ella/Documents/Cascadia/BIT286/JSON_Student_App/obj/Debug/netcoreapp1.1/JSON_Student_App.pdb
+C:\Users\chris\Source\Repos\JSON_Student_App\bin\Debug\netcoreapp1.1\JSON_Student_App.deps.json
+C:\Users\chris\Source\Repos\JSON_Student_App\bin\Debug\netcoreapp1.1\JSON_Student_App.runtimeconfig.json
+C:\Users\chris\Source\Repos\JSON_Student_App\bin\Debug\netcoreapp1.1\JSON_Student_App.runtimeconfig.dev.json
+C:\Users\chris\Source\Repos\JSON_Student_App\bin\Debug\netcoreapp1.1\JSON_Student_App.dll
+C:\Users\chris\Source\Repos\JSON_Student_App\bin\Debug\netcoreapp1.1\JSON_Student_App.pdb
+C:\Users\chris\Source\Repos\JSON_Student_App\obj\Debug\netcoreapp1.1\JSON_Student_App.AssemblyInfo.cs
+C:\Users\chris\Source\Repos\JSON_Student_App\obj\Debug\netcoreapp1.1\JSON_Student_App.dll
+C:\Users\chris\Source\Repos\JSON_Student_App\obj\Debug\netcoreapp1.1\JSON_Student_App.pdb

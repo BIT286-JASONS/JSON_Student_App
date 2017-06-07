@@ -14,6 +14,15 @@ import 'rxjs/add/operator/map'
 
 
 export class IndexComponent {
+
+    public images: string[];
+
+    constructor(http: Http) {
+        http.get('/api/Students/Pics').subscribe(result => {
+            this.images = result.json() as string[];
+        });
+        console.log(this.images);
+    }
     //model: User = {username: "", password: ""};
     //loading = false;
 
