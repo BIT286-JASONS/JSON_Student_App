@@ -8,20 +8,21 @@ import { Http } from '@angular/http';
 export class ScoresListComponent {
     public scores: Score[];
 
-    //constructor(http: Http) {
-    //    http.get('/api/Score/Get').subscribe(result => {
-    //        this.scores = result.json() as Score[];
-    //    });
-    //    console.log(this.scores);
-    //}
+    constructor(http: Http) {
+        http.get('/api/Scores/Get').subscribe(result => {
+            this.scores = result.json() as Score[];
+        });
+        console.log(this.scores);
+    }
 }
 
 interface Score {
-    id: number;
-    gameID: number;
-    studentID: number;
+    scoresId: number;
+    gameId: number;
+    studentId: number;
+    teacherId: number;
+    attemptTime: string;
     numberQuestions: number;
     numberCorrect: number;
-    time: string;
-    teacherID: number
+    difficulty: number
 }
