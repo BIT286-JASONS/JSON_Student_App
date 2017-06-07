@@ -1,11 +1,12 @@
 div#spaceship {
     position: relative;
     padding-top: 0;
-    height:50px;
-    width:70px;
+    height: 110px;
+    width: 120px;
+    display: inline-block;
 }
 img{
-    display:inline-block;
+   
     position: absolute;
     top: 0;
     left: 0;
@@ -14,4 +15,51 @@ img{
 div#gameRow {
 height:400px;
 background-color:gray;
+}
+div#alien_wrap {
+    background-image: url("http://i.imgur.com/orANXsm.png ");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+div#alien_roundup {
+    margin-top: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+    height: 85%;
+    background-color: transparent;
+    border: 2px solid;
+    border-color: dimgray;
+    border-radius: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    max-width: 1054.5px;
+    max-height: 650px;
+}
+h2 {
+    text-align:center;
+    color:white;
+    background-color:none;
+    margin:0px 0px 0px 0px;
+}
+#playing_field {
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    background-color: transparent;
+}
+#gameRow {
+    width: 90%;
+    border: 2px solid;
+    border-color: forestgreen;
+    border-radius: 5px;
+    margin:0px auto 0px auto;
+
+}
+form {
+    width:50%;
+    margin:0px auto 0px auto;
 }

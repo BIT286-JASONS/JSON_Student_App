@@ -3,8 +3,9 @@ import { Observable } from 'rxjs'
 import { FormsModule } from '@angular/forms';
 
 @Component({
-    selector: 'time',
-    templateUrl: './time.component.html',
+    selector: 'flashcards',
+    templateUrl: './flashcards.component.html',
+    styleUrls: ['./flashcards.component.css']
 })
 
 
