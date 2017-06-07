@@ -41,7 +41,7 @@ import { EqualValidator } from './components/scores/changepassword/changepasswor
             { path: 'changepassword', component: ChangePasswordComponent },
             { path: 'list', component: ScoresListComponent },
             { path: 'time', component: TimeComponent },
-            { path: 'login', component: TeacherLoginComponent },
+            { path: 'teacherlogin', component: TeacherLoginComponent },
             { path: 'alienroundup', component: AlienRoundupComponent },
             { path: '**', redirectTo: 'index' }
            
