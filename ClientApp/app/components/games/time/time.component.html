@@ -13,16 +13,18 @@
         <div class="container">
             <h2> What time is this? {{guess | date: 'shortTime'}} </h2>
             <canvas id="myCanvas" #myCanvas width="150" height="150"></canvas><br />
-            <input type="text" text="Enter Answer">
-            <input type="button" text="submit">
+            <input type="text" value="Enter Answer">
+            <input type="button" value="submit">
             <input onclick='responsiveVoice.speak("Please enter the current time");' type='button' value='🔊 Play' />
+            
+            <h2> Heres A hint:</h2>
+            <h3> Current Time Is: {{ clock | async }}  </h3>
         </div>
         <div>
             
         </div>
         <div>
-            <h2> Heres A hint:</h2>
-            <h3> Current Time Is: {{ clock | async }}  </h3>
+            
         </div>
     </div>
 

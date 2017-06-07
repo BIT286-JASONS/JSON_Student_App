@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, OnInit } from '@angular/core';
 import { Observable } from 'rxjs'
 import { FormsModule } from '@angular/forms';
 
@@ -9,10 +9,10 @@ import { FormsModule } from '@angular/forms';
 })
 
 
-export class flashcardsComponent {
+export class flashcardsComponent implements OnInit{
 
-    //one: Number = Math.floor((Math.random() * 10) + 1);
-    //two: Number = Math.floor((Math.random() * 10) + 1);
+    one: Number = Math.floor((Math.random() * 10) + 1);
+    two: Number = Math.floor((Math.random() * 10) + 1);
 
     //constructor(
     //    public one: number,
@@ -21,18 +21,13 @@ export class flashcardsComponent {
     //    public alterEgo?: string
     //) { }
 
-    //ngAfterViewInit() {
+    ngOnInit() {
 
-    //}
+    }
 
-    //onSubmitAnswer() {
+    
 
-    //if (mo = this.one + this.two)
-    //{
-        
-    //}
-
-    //}
+    
 
 
 }

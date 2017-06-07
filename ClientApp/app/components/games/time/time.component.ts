@@ -44,7 +44,7 @@ export class TimeComponent implements OnInit {
         //var canvas = <HTMLCanvasElement> $('#myCanvas').find('canvas').get(0);
         //var ctx: CanvasRenderingContext2D = canvas.getContext("2d");
 
-        alert('things');
+        
         const c = this.context;
 
         c.save();
