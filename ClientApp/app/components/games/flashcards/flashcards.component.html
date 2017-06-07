@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <!---->
+
+    <div class="jumbotron">
+        <table>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td>{{one}}</td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td>+</td>
+                <td>{{two}}</td>
+            </tr>
+            
+        </table>
+        =========
+        <br />
+       
+            <input type="text" class="form-control" id="answer" placeholder="Answer here!" ng-model="userAnswer">
+        
+            <button class="btn btn-primary center-block full-width" ng-click="onSubmitAnswer()" id="submitbutton">Submit</button>
+        
+       
+       
+            <button class="btn btn-danger center-block full-width" ng-click="skipQuestion()">Skip</button>
+        <input onclick='responsiveVoice.speak("please add the two numbers");' type='button' value='🔊 Play' />
+    </div>
+
+
+</body>
+</html>
