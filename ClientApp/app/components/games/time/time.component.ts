@@ -1,4 +1,4 @@
-import { Component, ViewChild} from '@angular/core';
+import { Component, ViewChild, OnInit } from '@angular/core';
 import { Observable } from 'rxjs'
 
 @Component({
@@ -7,7 +7,7 @@ import { Observable } from 'rxjs'
 })
 
 
-export class TimeComponent {
+export class TimeComponent implements OnInit {
 
     //guess: number = this.getRandom();
     //clock = Observable
@@ -25,18 +25,15 @@ export class TimeComponent {
     hr = Math.floor(Math.random() * (24 - 1) + 1);
     min = Math.floor(Math.random() * (60 - 1) + 1);
 
+        context: CanvasRenderingContext2D;
+        @ViewChild("myCanvas") myCanvas;
+    
 
-    context: CanvasRenderingContext2D;
-    @ViewChild("myCanvas") myCanvas;
+        ngOnInit() {
 
-    ngAfterViewInit() {
        
         let canvas = this.myCanvas.nativeElement;
         this.context = canvas.getContext("2d");
-
-        this.drawclock();
-    }
-    drawclock() {
 
         var now = new Date();
         //var canvas = document.getElementById("canvas");
@@ -86,8 +83,8 @@ export class TimeComponent {
         c.restore();
 
         var sec = 0;
-        var min = 30;
-        var hr = 5;
+        var min = Math.floor(Math.random() * (60 - 1) + 1);
+        var hr = Math.floor(Math.random() * (24 - 1) + 1);
         hr = hr >= 12 ? hr - 12 : hr;
 
         c.fillStyle = 'black';
@@ -143,6 +140,7 @@ export class TimeComponent {
 
         //window.requestAnimationFrame(clock);
     }
+    
 
 
 }

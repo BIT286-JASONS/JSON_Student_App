@@ -12,11 +12,13 @@
     <div class="jumbotron">
         <div class="container">
             <h2> What time is this? {{guess | date: 'shortTime'}} </h2>
-            <canvas id="myCanvas" #myCanvas width="150" height="150"></canvas>
+            <canvas id="myCanvas" #myCanvas width="150" height="150"></canvas><br />
             <input type="text" text="Enter Answer">
+            <input type="button" text="submit">
+            <input onclick='responsiveVoice.speak("Please enter the current time");' type='button' value='🔊 Play' />
         </div>
         <div>
-            <input type="button" text="submit"><input onclick='responsiveVoice.speak("Please enter the current time");' type='button' value='🔊 Play' />
+            
         </div>
         <div>
             <h2> Heres A hint:</h2>

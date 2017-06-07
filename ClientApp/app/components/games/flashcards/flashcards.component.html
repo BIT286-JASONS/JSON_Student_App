@@ -10,7 +10,7 @@
 <body>
     <!---->
 
-    <div class="jumbotron">
+    <div class="jumbotron" ng-app="flashcards" ng-controller="myCtrl">
         <table>
             <tr>
                 <td> </td>
@@ -24,18 +24,20 @@
                 <td>+</td>
                 <td>{{two}}</td>
             </tr>
-            
+
         </table>
         =========
         <br />
-       
-            <input type="text" class="form-control" id="answer" placeholder="Answer here!" ng-model="userAnswer">
-        
-            <button class="btn btn-primary center-block full-width" ng-click="onSubmitAnswer()" id="submitbutton">Submit</button>
-        
-       
-       
-            <button class="btn btn-danger center-block full-width" ng-click="skipQuestion()">Skip</button>
+
+        <input type="text" class="form-control" id="answer" placeholder="Answer here!" ng-model="userAnswer">
+
+        <button class="btn btn-primary center-block full-width" (click)="onSubmitAnswer()" ng-click="onSubmitAnswer()" id="submitbutton">Submit</button>
+
+        <div>
+            {{ iscorrect }}
+        </div>
+
+        <button class="btn btn-danger center-block full-width" ng-click="skipQuestion()">Skip</button>
         <input onclick='responsiveVoice.speak("please add the two numbers");' type='button' value='🔊 Play' />
     </div>
 
