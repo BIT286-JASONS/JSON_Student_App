@@ -8,7 +8,7 @@ import { Observable } from 'rxjs'
 
 
 export class TimeComponent implements OnInit {
-
+    
     //guess: number = this.getRandom();
     //clock = Observable
     //    .interval(1000)
@@ -21,16 +21,16 @@ export class TimeComponent implements OnInit {
     //    const min = randTime ? 0 : 30;
     //    return new Date().setHours(hr, min, 0);
     //}
-
-    hr = Math.floor(Math.random() * (24 - 1) + 1);
-    min = Math.floor(Math.random() * (60 - 1) + 1);
+    public iscorrect = "ehh";
+    public hour = Math.floor(Math.random() * (24 - 1) + 1);
+    public minn = Math.floor(Math.random() * (60 - 1) + 1);
 
         context: CanvasRenderingContext2D;
         @ViewChild("myCanvas") myCanvas;
     
 
         ngOnInit() {
-
+            
        
         let canvas = this.myCanvas.nativeElement;
         this.context = canvas.getContext("2d");
@@ -83,8 +83,8 @@ export class TimeComponent implements OnInit {
         c.restore();
 
         var sec = 0;
-        var min = Math.floor(Math.random() * (60 - 1) + 1);
-        var hr = Math.floor(Math.random() * (24 - 1) + 1);
+        var min = this.minn;
+        var hr = this.hour;
         hr = hr >= 12 ? hr - 12 : hr;
 
         c.fillStyle = 'black';
@@ -138,9 +138,19 @@ export class TimeComponent implements OnInit {
 
         c.restore();
 
+
+        
         //window.requestAnimationFrame(clock);
-    }
-    
+        }
+
+
+        submit()
+        {
+            alert("yay");
+            //if ($scope.useranswer.tostring == )
+            //this.iscorrect = "YAAYa"
+            this.iscorrect = "YAYYA";
+        }
 
 
 }
