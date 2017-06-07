@@ -4,6 +4,7 @@ import { Observable } from 'rxjs'
 @Component({
     selector: 'time',
     templateUrl: './time.component.html',
+    styleUrls: ['./time.component.css']
 })
 
 

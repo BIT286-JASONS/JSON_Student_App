@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "f106bc8ac6bbbbe8a4e3"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "d64ae78310ec701b592e"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -704,7 +704,7 @@
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return hotCreateRequire(104)(__webpack_require__.s = 104);
+/******/ 	return hotCreateRequire(106)(__webpack_require__.s = 106);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -752,7 +752,7 @@ var /** @type {?} */ NG_VALUE_ACCESSOR = new __WEBPACK_IMPORTED_MODULE_0__angula
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NG_ASYNC_VALIDATORS; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return Validators; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_collection__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_lang__ = __webpack_require__(9);
@@ -1249,6 +1249,62 @@ function selectValueAccessor(dir, valueAccessors) {
 
 /***/ }),
 /* 6 */
+/***/ (function(module, exports) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+module.exports = function() {
+	var list = [];
+
+	// return the list of modules as css string
+	list.toString = function toString() {
+		var result = [];
+		for(var i = 0; i < this.length; i++) {
+			var item = this[i];
+			if(item[2]) {
+				result.push("@media " + item[2] + "{" + item[1] + "}");
+			} else {
+				result.push(item[1]);
+			}
+		}
+		return result.join("");
+	};
+
+	// import a list of modules into the list
+	list.i = function(modules, mediaQuery) {
+		if(typeof modules === "string")
+			modules = [[null, modules, ""]];
+		var alreadyImportedModules = {};
+		for(var i = 0; i < this.length; i++) {
+			var id = this[i][0];
+			if(typeof id === "number")
+				alreadyImportedModules[id] = true;
+		}
+		for(i = 0; i < modules.length; i++) {
+			var item = modules[i];
+			// skip already imported module
+			// this implementation is not 100% perfect for weird media query combinations
+			//  when a module is imported multiple times with different media queries.
+			//  I hope this will never occur (Hey this way we have smaller bundles)
+			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+				if(mediaQuery && !item[2]) {
+					item[2] = mediaQuery;
+				} else if(mediaQuery) {
+					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+				}
+				list.push(item);
+			}
+		}
+	};
+	return list;
+};
+
+
+/***/ }),
+/* 7 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1341,62 +1397,6 @@ function NgControl_tsickle_Closure_declarations() {
     NgControl.prototype._rawAsyncValidators;
 }
 //# sourceMappingURL=ng_control.js.map
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports) {
-
-/*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
-*/
-// css base code, injected by the css-loader
-module.exports = function() {
-	var list = [];
-
-	// return the list of modules as css string
-	list.toString = function toString() {
-		var result = [];
-		for(var i = 0; i < this.length; i++) {
-			var item = this[i];
-			if(item[2]) {
-				result.push("@media " + item[2] + "{" + item[1] + "}");
-			} else {
-				result.push(item[1]);
-			}
-		}
-		return result.join("");
-	};
-
-	// import a list of modules into the list
-	list.i = function(modules, mediaQuery) {
-		if(typeof modules === "string")
-			modules = [[null, modules, ""]];
-		var alreadyImportedModules = {};
-		for(var i = 0; i < this.length; i++) {
-			var id = this[i][0];
-			if(typeof id === "number")
-				alreadyImportedModules[id] = true;
-		}
-		for(i = 0; i < modules.length; i++) {
-			var item = modules[i];
-			// skip already imported module
-			// this implementation is not 100% perfect for weird media query combinations
-			//  when a module is imported multiple times with different media queries.
-			//  I hope this will never occur (Hey this way we have smaller bundles)
-			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-				if(mediaQuery && !item[2]) {
-					item[2] = mediaQuery;
-				} else if(mediaQuery) {
-					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-				}
-				list.push(item);
-			}
-		}
-	};
-	return list;
-};
-
 
 /***/ }),
 /* 8 */
@@ -1754,7 +1754,7 @@ function escapeRegExp(s) {
     return s.replace(/([.*+?^=!:${}()|[\]\/\\])/g, '\\$1');
 }
 //# sourceMappingURL=lang.js.map
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(95)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(97)))
 
 /***/ }),
 /* 10 */
@@ -2146,7 +2146,7 @@ function NgForm_tsickle_Closure_declarations() {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RadioControlValueAccessor; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__control_value_accessor__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ng_control__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ng_control__ = __webpack_require__(7);
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -4071,7 +4071,7 @@ function NgSelectMultipleOption_tsickle_Closure_declarations() {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return FormControl; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return FormGroup; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return FormArray; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_shared__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_async__ = __webpack_require__(8);
@@ -5959,7 +5959,7 @@ var AbstractControlDirective = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return NgControlStatusGroup; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__control_container__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ng_control__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ng_control__ = __webpack_require__(7);
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -6136,7 +6136,7 @@ function NgControlStatusGroup_tsickle_Closure_declarations() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__abstract_form_group_directive__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__control_container__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__control_value_accessor__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ng_control__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ng_control__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ng_form__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ng_model_group__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__shared__ = __webpack_require__(5);
@@ -6697,7 +6697,7 @@ function RangeValueAccessor_tsickle_Closure_declarations() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_async__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__validators__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__control_value_accessor__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ng_control__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ng_control__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__reactive_errors__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared__ = __webpack_require__(5);
 /**
@@ -6905,7 +6905,7 @@ function FormControlDirective_tsickle_Closure_declarations() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__abstract_form_group_directive__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__control_container__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__control_value_accessor__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ng_control__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ng_control__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__reactive_errors__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shared__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__form_group_directive__ = __webpack_require__(13);
@@ -8242,11 +8242,11 @@ module.exports = (__webpack_require__(1))(334);
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-__webpack_require__(100);
+__webpack_require__(102);
 var core_1 = __webpack_require__(0);
 var angular2_universal_1 = __webpack_require__(39);
 var app_module_1 = __webpack_require__(50);
-__webpack_require__(101);
+__webpack_require__(103);
 var rootElemTagName = 'app'; // Update this if you change your root component selector
 // Enable either Hot Module Reloading or production mode
 if (true) {
@@ -8290,7 +8290,7 @@ var options = {
   name: ''
 };
 if (true) {
-  var querystring = __webpack_require__(82);
+  var querystring = __webpack_require__(83);
   var overrides = querystring.parse(__resourceQuery.slice(1));
   if (overrides.path) options.path = overrides.path;
   if (overrides.timeout) options.timeout = overrides.timeout;
@@ -8410,11 +8410,11 @@ if (typeof window !== 'undefined') {
 }
 
 function createReporter() {
-  var strip = __webpack_require__(85);
+  var strip = __webpack_require__(86);
 
   var overlay;
   if (typeof document !== 'undefined' && options.overlay) {
-    overlay = __webpack_require__(93);
+    overlay = __webpack_require__(95);
   }
 
   var styles = {
@@ -8467,7 +8467,7 @@ function createReporter() {
   };
 }
 
-var processUpdate = __webpack_require__(94);
+var processUpdate = __webpack_require__(96);
 
 var customHandler;
 var subscribeAllHandler;
@@ -8532,7 +8532,7 @@ if (module) {
   };
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, "?path=%2F__webpack_hmr", __webpack_require__(103)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, "?path=%2F__webpack_hmr", __webpack_require__(105)(module)))
 
 /***/ }),
 /* 42 */
@@ -8568,7 +8568,7 @@ module.exports = (__webpack_require__(1))(336);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__directives_validators__ = __webpack_require__(32);
 /* unused harmony reexport CheckboxControlValueAccessor */
 /* unused harmony reexport DefaultValueAccessor */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__directives_ng_control__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__directives_ng_control__ = __webpack_require__(7);
 /* unused harmony reexport NgControl */
 /* unused harmony reexport NgControlStatus */
 /* unused harmony reexport NgControlStatusGroup */
@@ -8809,7 +8809,7 @@ function ReactiveFormsModule_tsickle_Closure_declarations() {
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_4__directives_control_value_accessor__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directives_default_value_accessor__ = __webpack_require__(16);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_5__directives_default_value_accessor__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__directives_ng_control__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__directives_ng_control__ = __webpack_require__(7);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_6__directives_ng_control__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__directives_ng_control_status__ = __webpack_require__(23);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_7__directives_ng_control_status__["a"]; });
@@ -9131,7 +9131,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-var router_1 = __webpack_require__(99);
+var router_1 = __webpack_require__(101);
 var angular2_universal_1 = __webpack_require__(39);
 var forms_1 = __webpack_require__(29);
 var app_component_1 = __webpack_require__(51);
@@ -9206,8 +9206,8 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'app',
-        template: __webpack_require__(71),
-        styles: [__webpack_require__(86)]
+        template: __webpack_require__(72),
+        styles: [__webpack_require__(87)]
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
@@ -9248,8 +9248,8 @@ var AlienRoundupComponent = (function () {
 AlienRoundupComponent = __decorate([
     core_1.Component({
         selector: 'alienroundup',
-        template: __webpack_require__(72),
-        styles: [__webpack_require__(87)]
+        template: __webpack_require__(73),
+        styles: [__webpack_require__(88)]
     })
 ], AlienRoundupComponent);
 exports.AlienRoundupComponent = AlienRoundupComponent;
@@ -9395,7 +9395,8 @@ __decorate([
 TimeComponent = __decorate([
     core_1.Component({
         selector: 'time',
-        template: __webpack_require__(73),
+        template: __webpack_require__(74),
+        styles: [__webpack_require__(89)]
     })
 ], TimeComponent);
 exports.TimeComponent = TimeComponent;
@@ -9415,7 +9416,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-__webpack_require__(83);
+__webpack_require__(84);
 var IndexComponent = (function () {
     function IndexComponent() {
     }
@@ -9424,8 +9425,8 @@ var IndexComponent = (function () {
 IndexComponent = __decorate([
     core_1.Component({
         selector: 'index',
-        template: __webpack_require__(74),
-        styles: [__webpack_require__(88)]
+        template: __webpack_require__(75),
+        styles: [__webpack_require__(90)]
     })
 ], IndexComponent);
 exports.IndexComponent = IndexComponent;
@@ -9506,8 +9507,8 @@ var NewAccountComponent = (function () {
 NewAccountComponent = __decorate([
     core_1.Component({
         selector: 'newaccount',
-        template: __webpack_require__(75),
-        styles: [__webpack_require__(89)]
+        template: __webpack_require__(76),
+        styles: [__webpack_require__(91)]
     })
 ], NewAccountComponent);
 exports.NewAccountComponent = NewAccountComponent;
@@ -9535,8 +9536,8 @@ var NavMenuComponent = (function () {
 NavMenuComponent = __decorate([
     core_1.Component({
         selector: 'nav-menu',
-        template: __webpack_require__(76),
-        styles: [__webpack_require__(90)]
+        template: __webpack_require__(77),
+        styles: [__webpack_require__(92)]
     })
 ], NavMenuComponent);
 exports.NavMenuComponent = NavMenuComponent;
@@ -9565,8 +9566,8 @@ ChangePasswordComponent = __decorate([
     core_1.Component({
         moduleId: module.i + '',
         selector: 'changepassword',
-        template: __webpack_require__(77),
-        styles: [__webpack_require__(91)]
+        template: __webpack_require__(78),
+        styles: [__webpack_require__(93)]
     })
 ], ChangePasswordComponent);
 exports.ChangePasswordComponent = ChangePasswordComponent;
@@ -9669,8 +9670,8 @@ var HomeComponent = (function () {
 HomeComponent = __decorate([
     core_1.Component({
         selector: 'home',
-        template: __webpack_require__(78),
-        styles: [__webpack_require__(92)]
+        template: __webpack_require__(79),
+        styles: [__webpack_require__(94)]
     })
 ], HomeComponent);
 exports.HomeComponent = HomeComponent;
@@ -9693,7 +9694,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(0);
-var http_1 = __webpack_require__(97);
+var http_1 = __webpack_require__(99);
 var ScoresListComponent = (function () {
     function ScoresListComponent(http) {
         var _this = this;
@@ -9707,7 +9708,7 @@ var ScoresListComponent = (function () {
 ScoresListComponent = __decorate([
     core_1.Component({
         selector: 'list',
-        template: __webpack_require__(79)
+        template: __webpack_require__(80)
     }),
     __metadata("design:paramtypes", [http_1.Http])
 ], ScoresListComponent);
@@ -9718,7 +9719,7 @@ exports.ScoresListComponent = ScoresListComponent;
 /* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(7)();
+exports = module.exports = __webpack_require__(6)();
 // imports
 
 
@@ -9732,7 +9733,7 @@ exports.push([module.i, "@media (max-width: 767px) {\r\n    /* On small screens,
 /* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(7)();
+exports = module.exports = __webpack_require__(6)();
 // imports
 
 
@@ -9746,7 +9747,21 @@ exports.push([module.i, "div#spaceship {\r\n    position: relative;\r\n    paddi
 /* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(7)();
+exports = module.exports = __webpack_require__(6)();
+// imports
+
+
+// module
+exports.push([module.i, "div#time_wrap {\r\n    background-image: url(\"http://i.imgur.com/orANXsm.png \");\r\n    width: 100%;\r\n    height: 100%;\r\n    background-size: cover;\r\n}\r\ndiv#time_lord {\r\n    margin-top: 5%;\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n    width: 70%;\r\n    height: 85%;\r\n    background-color: transparent;\r\n    border: 2px solid;\r\n    border-color: dimgray;\r\n    border-radius: 20px;\r\n    padding-left: 0px;\r\n    padding-right: 0px;\r\n    padding-top: 0px;\r\n    padding-bottom: 0px;\r\n    max-width: 1054.5px;\r\n    max-height: 650px;\r\n}\r\nh2 {\r\n    text-align: center;\r\n    color: white;\r\n    background-color: none;\r\n    margin: 0px 0px 0px 0px;\r\n}\r\n#playing_field {\r\n    height:100%;\r\n    background-color: transparent;\r\n}\r\ndiv#clock {\r\n    height: 300px;\r\n    border: 2px solid;\r\n    border-color: dimgray; \r\n    background-color: dimgrey;\r\n}\r\ndiv#clock_wrap {\r\n    \r\n}\r\ndiv#footer {\r\n    border: 2px solid;\r\n    border-color: dimgray;\r\n    background-color: dimgray;\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(6)();
 // imports
 
 
@@ -9757,10 +9772,10 @@ exports.push([module.i, "body {\r}\r\rdiv.jumbotron {\rmargin:0px 0px 0px 0px;\r
 
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(7)();
+exports = module.exports = __webpack_require__(6)();
 // imports
 
 
@@ -9771,10 +9786,10 @@ exports.push([module.i, "\r\noption {\r\n    font: 24px Arial, Trebuchet MS, Ver
 
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(7)();
+exports = module.exports = __webpack_require__(6)();
 // imports
 
 
@@ -9785,10 +9800,10 @@ exports.push([module.i, "li .glyphicon {\r\n    margin-right: 10px;\r\n}\r\n\r\n
 
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(7)();
+exports = module.exports = __webpack_require__(6)();
 // imports
 
 
@@ -9799,10 +9814,10 @@ exports.push([module.i, "body {\r\n}\r\n", ""]);
 
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(7)();
+exports = module.exports = __webpack_require__(6)();
 // imports
 
 
@@ -9813,19 +9828,19 @@ exports.push([module.i, "body {\r\n}\r\ndiv#page_wrap {\r\n    background-image:
 
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = {
-  XmlEntities: __webpack_require__(70),
-  Html4Entities: __webpack_require__(69),
+  XmlEntities: __webpack_require__(71),
+  Html4Entities: __webpack_require__(70),
   Html5Entities: __webpack_require__(36),
   AllHtmlEntities: __webpack_require__(36)
 };
 
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, exports) {
 
 var HTML_ALPHA = ['apos', 'nbsp', 'iexcl', 'cent', 'pound', 'curren', 'yen', 'brvbar', 'sect', 'uml', 'copy', 'ordf', 'laquo', 'not', 'shy', 'reg', 'macr', 'deg', 'plusmn', 'sup2', 'sup3', 'acute', 'micro', 'para', 'middot', 'cedil', 'sup1', 'ordm', 'raquo', 'frac14', 'frac12', 'frac34', 'iquest', 'Agrave', 'Aacute', 'Acirc', 'Atilde', 'Auml', 'Aring', 'Aelig', 'Ccedil', 'Egrave', 'Eacute', 'Ecirc', 'Euml', 'Igrave', 'Iacute', 'Icirc', 'Iuml', 'ETH', 'Ntilde', 'Ograve', 'Oacute', 'Ocirc', 'Otilde', 'Ouml', 'times', 'Oslash', 'Ugrave', 'Uacute', 'Ucirc', 'Uuml', 'Yacute', 'THORN', 'szlig', 'agrave', 'aacute', 'acirc', 'atilde', 'auml', 'aring', 'aelig', 'ccedil', 'egrave', 'eacute', 'ecirc', 'euml', 'igrave', 'iacute', 'icirc', 'iuml', 'eth', 'ntilde', 'ograve', 'oacute', 'ocirc', 'otilde', 'ouml', 'divide', 'oslash', 'ugrave', 'uacute', 'ucirc', 'uuml', 'yacute', 'thorn', 'yuml', 'quot', 'amp', 'lt', 'gt', 'OElig', 'oelig', 'Scaron', 'scaron', 'Yuml', 'circ', 'tilde', 'ensp', 'emsp', 'thinsp', 'zwnj', 'zwj', 'lrm', 'rlm', 'ndash', 'mdash', 'lsquo', 'rsquo', 'sbquo', 'ldquo', 'rdquo', 'bdquo', 'dagger', 'Dagger', 'permil', 'lsaquo', 'rsaquo', 'euro', 'fnof', 'Alpha', 'Beta', 'Gamma', 'Delta', 'Epsilon', 'Zeta', 'Eta', 'Theta', 'Iota', 'Kappa', 'Lambda', 'Mu', 'Nu', 'Xi', 'Omicron', 'Pi', 'Rho', 'Sigma', 'Tau', 'Upsilon', 'Phi', 'Chi', 'Psi', 'Omega', 'alpha', 'beta', 'gamma', 'delta', 'epsilon', 'zeta', 'eta', 'theta', 'iota', 'kappa', 'lambda', 'mu', 'nu', 'xi', 'omicron', 'pi', 'rho', 'sigmaf', 'sigma', 'tau', 'upsilon', 'phi', 'chi', 'psi', 'omega', 'thetasym', 'upsih', 'piv', 'bull', 'hellip', 'prime', 'Prime', 'oline', 'frasl', 'weierp', 'image', 'real', 'trade', 'alefsym', 'larr', 'uarr', 'rarr', 'darr', 'harr', 'crarr', 'lArr', 'uArr', 'rArr', 'dArr', 'hArr', 'forall', 'part', 'exist', 'empty', 'nabla', 'isin', 'notin', 'ni', 'prod', 'sum', 'minus', 'lowast', 'radic', 'prop', 'infin', 'ang', 'and', 'or', 'cap', 'cup', 'int', 'there4', 'sim', 'cong', 'asymp', 'ne', 'equiv', 'le', 'ge', 'sub', 'sup', 'nsub', 'sube', 'supe', 'oplus', 'otimes', 'perp', 'sdot', 'lceil', 'rceil', 'lfloor', 'rfloor', 'lang', 'rang', 'loz', 'spades', 'clubs', 'hearts', 'diams'];
@@ -9978,7 +9993,7 @@ module.exports = Html4Entities;
 
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports) {
 
 var ALPHA_INDEX = {
@@ -10139,61 +10154,61 @@ module.exports = XmlEntities;
 
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"<!--container conntainer-table--> \" style=\"width:100%; height:100%;\" id=\"app_box \">\r\n    <div class='<!--row vertical-center-row-->' style=\"width:100%; height:100%;\" >       \r\n        <div  class=' <!--col-lg-2 col-lg-offset-2 vertical-center-->' id=\"wrap\">\r\n            <router-outlet></router-outlet>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, exports) {
 
 module.exports = "<head>\r\n    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>\r\n\r\n</head>\r\n\r\n\r\n<div class=\"container\" id=\"alien_wrap\" style=\"width:100%; height:100%;\">\r\n    <div id=\"alien_roundup\">\r\n        <div class=\"jumbotron\" id=\"playing_field\">\r\n            <h2>Alien Roundup</h2>\r\n            <!-- Here we are declaring a local variable called “form” and setting it to an instance of ngForm. This is very important. Now our local form variable becomes of type FormGroup allowing us access to the FormGroup API’s on this local variable. We use this in the ngSubmit event where we send the value of the form via form.value -->\r\n           <div class=\"row\" id=\"gameRow\"> \r\n       \r\n                <div  id=\"spaceship\"  *ngFor=\"let item of items\">\r\n                   <img id=\"alien \"src={{alien}}>\r\n                </div>\r\n       \r\n           </div > \r\n            <form #form=\"ngForm\" (ngSubmit)=\"submitForm(form.value)\">\r\n                <div class=\"form-group\">\r\n                    <label>Your Guess:</label>\r\n                    <!-- Since we are working with template driven forms, we can use the ngModel directive to capture the values of our forms. One thing to note if you are coming from Angular 1.x. Using ngModel as shown below creates a one-way data binding, so once we hit submit the data is only sent to the controller. If we wanted to use two-way data binding, we would have to wrap the ngModel in [()] and assign an attribute to it. Also the name of the field corresponds to the name attribute so our first input will be firstName. -->\r\n                    <input type=\"text\" class=\"form-control\" placeholder=\"Guess Here\" name=\"Guess\" ngModel required>\r\n                </div>\r\n                <div class=\"form-group\" id=\"guess_area\">\r\n                    <button type=\"submit\" class=\"btn btn-default\">Submit</button>\r\n                    <input onclick='responsiveVoice.speak(\"Please enter your guess\");' type='button' value='🔊 Play' />\r\n                </div>\r\n            </form>\r\n        </div>\r\n    </div>\r\n</div>";
 
 /***/ }),
-/* 73 */
-/***/ (function(module, exports) {
-
-module.exports = "<!DOCTYPE html>\r\n\r\n<html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>\r\n    <meta charset=\"utf-8\" />\r\n    <title></title>\r\n</head>-->\r\n<body>\r\n    <!---->\r\n    \r\n    <div class=\"jumbotron\">\r\n        <div class=\"container\">\r\n            <h2> What time is this? {{guess | date: 'shortTime'}} </h2>\r\n            <canvas id=\"myCanvas\" #myCanvas width=\"150\" height=\"150\"></canvas>\r\n            <input type=\"text\" text=\"Enter Answer\">\r\n        </div>\r\n        <div>\r\n            <input type=\"button\" text=\"submit\"><input onclick='responsiveVoice.speak(\"Please enter the current time\");' type='button' value='🔊 Play' />\r\n        </div>\r\n        <div>\r\n            <h2> Heres A hint:</h2>\r\n            <h3> Current Time Is: {{ clock | async }}  </h3>\r\n        </div>\r\n    </div>\r\n\r\n\r\n</body>\r\n</html>";
-
-/***/ }),
 /* 74 */
 /***/ (function(module, exports) {
 
-module.exports = "<head>\r\n    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>\r\n\r\n</head>\r\n<div class=\"container \" id=\"index_A\" style=\"width:100%; height:100%; \">\r\n    <div id=\"login_wrap\">\r\n        <h1 id=\"login_title\">Login</h1>\r\n        <div class=\" row login_content\">\r\n            <div class=\"col-xs-8 login_elements\" id=\"picture_grid\">\r\n                <div class=\"jumbotron\">\r\n                <div class=\"row\" id=\"picture_wrap\">\r\n                    <div class=\"col-xs-2 student\" id=\"s1\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s2\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s3\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s4\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s5\"> </div>\r\n                    <div class=\"col-xs-2 student \" id=\"s6\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s7\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s8\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s9\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s10\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s11\"> </div>\r\n                    <div class=\"col-xs-2 student \" id=\"s12\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s13\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s14\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s15\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s16\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s17\"> </div>\r\n                    <div class=\"col-xs-2 student \" id=\"s18\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s19\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s20\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s21\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s22\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s23\"> </div>\r\n                    <div class=\"col-xs-2 student \" id=\"s24\"> </div>      \r\n                </div>  \r\n                </div>\r\n            </div>\r\n                <div class=\"col-xs-4  login_elements\" id=\"color_select\">\r\n                    <ul id=\"color_list\">\r\n                        <li class=\"blue\" value=\"blue\">Blue</li>\r\n                        <li class=\"green\" value=\"green\">Green</li>\r\n                        <li class=\"red\" value=\"red\">Red</li>\r\n                        <li class=\"black\" value=\"black\">Black</li>\r\n                        <li class=\"white\" value=\"white\">White</li>\r\n                        <li class=\"yellow\" value=\"yellow\">Yellow</li>\r\n                        <li class=\"gray\" value=\"gray\">Gray</li>\r\n                        <li class=\"orange\" value=\"orange\">Orange</li>\r\n                        <li class=\"purple\" value=\"purple\">Purple</li>\r\n                        <li class=\"pink\" value=\"pink\">Pink</li>\r\n                        <li class=\"brown\" value=\"brown\">Brown</li>\r\n                        <li class=\"violet\" value=\"violet\">Violet</li>\r\n                        <li class=\"tan\" value=\"tan\">Tan</li>\r\n                    </ul>\r\n                </div>       \r\n        </div>\r\n        <div class=\"row\" id=\"input_row\">\r\n            <div class=\"col-xs-3\">\r\n                <a [routerLink]=\"['/newaccount']\" id=\"register\">Register</a>\r\n            </div>\r\n            <div class=\"col-xs-6\" id=\"buttons_block\">               \r\n                <button type=\"button\" class=\"btn\">Login</button>\r\n            </div>\r\n            <div class=\"col-xs-3\">\r\n                <a [routerLink]=\"['/teacherlogin']\" id=\"teacher_log\">Teacher Login</a>\r\n            </div>\r\n        </div>\r\n     </div>\r\n </div>\r\n\r\n";
+module.exports = "\r\n<head>\r\n    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>\r\n   \r\n</head>-->\r\n \r\n<div class=\"container\" id=\"time_wrap\" style=\"width:100%; height:100%;\">\r\n    <div id=\"time_lord\">\r\n        <div class=\"jumbotron\" id=\"playing_field\">\r\n            <h2>Time Lords</h2>\r\n            <div class=\"container\" id=\"clock\">\r\n                <div id=\"clock_wrap\">\r\n                <h2> What time is this? {{guess | date: 'shortTime'}} </h2>\r\n                <canvas class=\"clock\" id=\"myCanvas\" #myCanvas width=\"150\" height=\"150\"></canvas>\r\n                <input id=\"answer\" type=\"text\" placeholder=\"Enter Answer\">\r\n                </div>\r\n           \r\n                <div>\r\n                    <input type=\"button\" text=\"submit\"><input onclick='responsiveVoice.speak(\"Please enter the current time\");' type='button' value='🔊 Play' />\r\n                </div>\r\n            </div>\r\n            \r\n            <div id=\"footer\">\r\n                <h2> Heres A hint:</h2>\r\n                <h3> Current Time Is: {{ clock | async }}  </h3>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>";
 
 /***/ }),
 /* 75 */
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>\r\n\r\n    <meta charset=\"utf-8\" />\r\n    <title></title>\r\n</head>\r\n<body class=\"container-fluid\" id=\"account_box\">\r\n    <div class=\"container-fluid\" >\r\n        <h1> Registration </h1>\r\n        <form class=\"container-fluid\" name=\"NewAccountForm\" #f=\"ngForm\" (ngSubmit)=\"f.form.valid && onSubmit()\">\r\n\r\n            <div class=\"form-group\">\r\n                <label for=\"FirstName\">First Name</label>\r\n                <input type=\"text\" class=\"form-control\" name=\"FirstName \" id=\"FirstName\" [(ngModel)]=\"model.firstname\" placeholder=\"Enter first name\" />\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <label for=\"LastName\">Last Name</label>\r\n                <input type=\"text\" class=\"form-control\" name=\"LastName \" id=\"LastName\" [(ngModel)]=\"model.lastname\" placeholder=\"Enter Last Name\" />\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <label for=\"UserName\">User Image</label>\r\n                <input type=\"text\" class=\"form-control\" name=\"UserName \" id=\"LastName\" [(ngModel)]=\"model.username\" placeholder=\"Enter user name\" />\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <label for=\"colors\">User Color</label> \r\n                <select class=\"form-control\" id=\"colors\" > \r\n                    <option style=\"color:gray;\" value=\"null\">select color</option>\r\n                    <option class=\"blue\" value=\"blue\">Blue</option> \r\n                    <option class=\"green\" value=\"green\" >Green</option>\r\n                    <option class=\"red\" value=\"red\">Red</option>\r\n                    <option class=\"black\" value=\"black\">Black</option>\r\n                    <option class=\"white\" value=\"white\">White</option>\r\n                    <option class=\"yellow\" value=\"yellow\">Yellow</option>\r\n                    <option class=\"gray\" value=\"gray\">Gray</option>\r\n                    <option class=\"orange\" value=\"orange\">Orange</option>\r\n                    <option class=\"purple\" value=\"purple\">Purple</option>\r\n                    <option class=\"pink\" value=\"pink\">Pink</option>\r\n                    <option class=\"brown\" value=\"brown\">Brown</option>\r\n                    <option class=\"violet\" value=\"violet\">Violet</option>\r\n                    <option class=\"tan\" value=\"tan\">Tan</option>\r\n                </select>\r\n            </div>\r\n            <div class=\"checkbox\">\r\n                <label><input type=\"checkbox\" name=\"isTeacher\" [(ngModel)]=\"model.isTeacher\">Check if you are a teacher</label>\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <select class=\"custom-select\">\r\n                    <option selected>Choose Teacher</option>\r\n                    <option value=\"bob\">Bob Smith</option>\r\n                    <option value=\"sandra\">Sandra Klien</option>\r\n                </select>\r\n            </div>\r\n           \r\n            <button type=\"button\" class=\"btn\">Submit</button><input onclick='responsiveVoice.speak(\"please give us all your infos\");' type='button' value='🔊 Play' />\r\n\r\n        </form>\r\n    </div>\r\n</body>\r\n</html>";
+module.exports = "<head>\r\n    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>\r\n\r\n</head>\r\n<div class=\"container \" id=\"index_A\" style=\"width:100%; height:100%; \">\r\n    <div id=\"login_wrap\">\r\n        <h1 id=\"login_title\">Login</h1>\r\n        <div class=\" row login_content\">\r\n            <div class=\"col-xs-8 login_elements\" id=\"picture_grid\">\r\n                <div class=\"jumbotron\">\r\n                <div class=\"row\" id=\"picture_wrap\">\r\n                    <div class=\"col-xs-2 student\" id=\"s1\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s2\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s3\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s4\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s5\"> </div>\r\n                    <div class=\"col-xs-2 student \" id=\"s6\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s7\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s8\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s9\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s10\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s11\"> </div>\r\n                    <div class=\"col-xs-2 student \" id=\"s12\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s13\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s14\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s15\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s16\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s17\"> </div>\r\n                    <div class=\"col-xs-2 student \" id=\"s18\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s19\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s20\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s21\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s22\"> </div>\r\n                    <div class=\"col-xs-2 student\" id=\"s23\"> </div>\r\n                    <div class=\"col-xs-2 student \" id=\"s24\"> </div>      \r\n                </div>  \r\n                </div>\r\n            </div>\r\n                <div class=\"col-xs-4  login_elements\" id=\"color_select\">\r\n                    <ul id=\"color_list\">\r\n                        <li class=\"blue\" value=\"blue\">Blue</li>\r\n                        <li class=\"green\" value=\"green\">Green</li>\r\n                        <li class=\"red\" value=\"red\">Red</li>\r\n                        <li class=\"black\" value=\"black\">Black</li>\r\n                        <li class=\"white\" value=\"white\">White</li>\r\n                        <li class=\"yellow\" value=\"yellow\">Yellow</li>\r\n                        <li class=\"gray\" value=\"gray\">Gray</li>\r\n                        <li class=\"orange\" value=\"orange\">Orange</li>\r\n                        <li class=\"purple\" value=\"purple\">Purple</li>\r\n                        <li class=\"pink\" value=\"pink\">Pink</li>\r\n                        <li class=\"brown\" value=\"brown\">Brown</li>\r\n                        <li class=\"violet\" value=\"violet\">Violet</li>\r\n                        <li class=\"tan\" value=\"tan\">Tan</li>\r\n                    </ul>\r\n                </div>       \r\n        </div>\r\n        <div class=\"row\" id=\"input_row\">\r\n            <div class=\"col-xs-3\">\r\n                <a [routerLink]=\"['/newaccount']\" id=\"register\">Register</a>\r\n            </div>\r\n            <div class=\"col-xs-6\" id=\"buttons_block\">               \r\n                <button type=\"button\" class=\"btn\">Login</button>\r\n            </div>\r\n            <div class=\"col-xs-3\">\r\n                <a [routerLink]=\"['/teacherlogin']\" id=\"teacher_log\">Teacher Login</a>\r\n            </div>\r\n        </div>\r\n     </div>\r\n </div>\r\n\r\n";
 
 /***/ }),
 /* 76 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class='main-nav'>\r\n    <div class='navbar navbar-inverse'>\r\n        <div class='navbar-header'>\r\n            <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>\r\n                <span class='sr-only'>Toggle navigation</span>\r\n                <span class='icon-bar'></span>\r\n                <span class='icon-bar'></span>\r\n                <span class='icon-bar'></span>\r\n            </button>\r\n            <a class='navbar-brand' [routerLink]=\"['/home']\">JSON_Student_App</a>\r\n        </div>\r\n        <div class='clearfix'></div>\r\n        <div class='navbar-collapse collapse'>\r\n            <ul class='nav navbar-nav'>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/home']\">\r\n                        <span class='glyphicon glyphicon-home'></span> Home\r\n                    </a>\r\n                </li>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/changepassword']\">\r\n                        <span class='glyphicon glyphicon-pencil'></span> Change Password\r\n                    </a>\r\n                </li>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/list']\">\r\n                        <span class='glyphicon glyphicon-list'></span> Score List\r\n                    </a>\r\n                </li>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/time']\">\r\n                        <span class='glyphicon glyphicon-time'></span> Time Lords\r\n                    </a>\r\n                </li>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/mathblaster']\">\r\n                        <span class='glyphicon glyphicon-blackboard'></span> Math Blaster\r\n                    </a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
+module.exports = "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>\r\n\r\n    <meta charset=\"utf-8\" />\r\n    <title></title>\r\n</head>\r\n<body class=\"container-fluid\" id=\"account_box\">\r\n    <div class=\"container-fluid\" >\r\n        <h1> Registration </h1>\r\n        <form class=\"container-fluid\" name=\"NewAccountForm\" #f=\"ngForm\" (ngSubmit)=\"f.form.valid && onSubmit()\">\r\n\r\n            <div class=\"form-group\">\r\n                <label for=\"FirstName\">First Name</label>\r\n                <input type=\"text\" class=\"form-control\" name=\"FirstName \" id=\"FirstName\" [(ngModel)]=\"model.firstname\" placeholder=\"Enter first name\" />\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <label for=\"LastName\">Last Name</label>\r\n                <input type=\"text\" class=\"form-control\" name=\"LastName \" id=\"LastName\" [(ngModel)]=\"model.lastname\" placeholder=\"Enter Last Name\" />\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <label for=\"UserName\">User Image</label>\r\n                <input type=\"text\" class=\"form-control\" name=\"UserName \" id=\"LastName\" [(ngModel)]=\"model.username\" placeholder=\"Enter user name\" />\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <label for=\"colors\">User Color</label> \r\n                <select class=\"form-control\" id=\"colors\" > \r\n                    <option style=\"color:gray;\" value=\"null\">select color</option>\r\n                    <option class=\"blue\" value=\"blue\">Blue</option> \r\n                    <option class=\"green\" value=\"green\" >Green</option>\r\n                    <option class=\"red\" value=\"red\">Red</option>\r\n                    <option class=\"black\" value=\"black\">Black</option>\r\n                    <option class=\"white\" value=\"white\">White</option>\r\n                    <option class=\"yellow\" value=\"yellow\">Yellow</option>\r\n                    <option class=\"gray\" value=\"gray\">Gray</option>\r\n                    <option class=\"orange\" value=\"orange\">Orange</option>\r\n                    <option class=\"purple\" value=\"purple\">Purple</option>\r\n                    <option class=\"pink\" value=\"pink\">Pink</option>\r\n                    <option class=\"brown\" value=\"brown\">Brown</option>\r\n                    <option class=\"violet\" value=\"violet\">Violet</option>\r\n                    <option class=\"tan\" value=\"tan\">Tan</option>\r\n                </select>\r\n            </div>\r\n            <div class=\"checkbox\">\r\n                <label><input type=\"checkbox\" name=\"isTeacher\" [(ngModel)]=\"model.isTeacher\">Check if you are a teacher</label>\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <select class=\"custom-select\">\r\n                    <option selected>Choose Teacher</option>\r\n                    <option value=\"bob\">Bob Smith</option>\r\n                    <option value=\"sandra\">Sandra Klien</option>\r\n                </select>\r\n            </div>\r\n           \r\n            <button type=\"button\" class=\"btn\">Submit</button><input onclick='responsiveVoice.speak(\"please give us all your infos\");' type='button' value='🔊 Play' />\r\n\r\n        </form>\r\n    </div>\r\n</body>\r\n</html>";
 
 /***/ }),
 /* 77 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <h1>Change Password</h1>\r\n    <form #f=\"ngForm\" novalidate (ngSubmit)=\"save(f.value, f.valid)\">\r\n        <!-- we will place our fields here -->\r\n\r\n        <div class=\"form-group\">\r\n            <label for=\"\">Password</label>\r\n            <input type=\"password\" class=\"form-control\" name=\"oldPassword\" />\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"\">New Password</label>\r\n            <input type=\"password\" class=\"form-control\" name=\"newPassword\" />\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"\">Retype password</label>\r\n            <input type=\"password\" class=\"form-control\" name=\"confirmPassword\" />\r\n        </div>\r\n        <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"!myForm.valid\">Submit</button>\r\n    </form>\r\n\r\n    </div>";
+module.exports = "<div class='main-nav'>\r\n    <div class='navbar navbar-inverse'>\r\n        <div class='navbar-header'>\r\n            <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>\r\n                <span class='sr-only'>Toggle navigation</span>\r\n                <span class='icon-bar'></span>\r\n                <span class='icon-bar'></span>\r\n                <span class='icon-bar'></span>\r\n            </button>\r\n            <a class='navbar-brand' [routerLink]=\"['/home']\">JSON_Student_App</a>\r\n        </div>\r\n        <div class='clearfix'></div>\r\n        <div class='navbar-collapse collapse'>\r\n            <ul class='nav navbar-nav'>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/home']\">\r\n                        <span class='glyphicon glyphicon-home'></span> Home\r\n                    </a>\r\n                </li>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/changepassword']\">\r\n                        <span class='glyphicon glyphicon-pencil'></span> Change Password\r\n                    </a>\r\n                </li>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/list']\">\r\n                        <span class='glyphicon glyphicon-list'></span> Score List\r\n                    </a>\r\n                </li>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/time']\">\r\n                        <span class='glyphicon glyphicon-time'></span> Time Lords\r\n                    </a>\r\n                </li>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/mathblaster']\">\r\n                        <span class='glyphicon glyphicon-blackboard'></span> Math Blaster\r\n                    </a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
 
 /***/ }),
 /* 78 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\" container\" id=\"page_wrap\">\r\n    <div class=\"row\" id=\"home_wrap\">\r\n        <div class=\"row\" id=\"logo_wrap\">\r\n              <div class=\" col-lg-4\" id=\"logo1\">\r\n\r\n              </div> \r\n              <div class=\" col-lg-4\" id=\"logo2\">\r\n                  <img  src=\"http://i.imgur.com/wehmORA.png\" id=\"logo_img\" alt=\"Logo\" >\r\n              </div>\r\n              <div class=\" col-lg-4\" id=\"logo3\">\r\n\r\n              </div>\r\n\r\n        </div>\r\n        <div class=\"flex-row\" id=\"system_wrap\">\r\n            \r\n            <div class=\"col-lg-1\" id=\"mercury\" [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/fmnKsIJ.png\" id=\"mercury_img\" alt=\"murcury\"  [routerLink]=\"['/alienroundup']\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"venus\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/cm5ZcFi.png\" id=\"venus_img\" alt=\"venus\"  [routerLink]=\"['/time']\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"earth\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/D03gV5K.png \" id=\"earth_img\" alt=\"earth\" [routerLink]=\"['/flashcards']\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"mars\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/PjwNk7K.png \" id=\"mars_img\" alt=\"mars\">\r\n            </div>\r\n            <div class=\"col-lg-2\" id=\"jupiter\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/ErtUG9c.png\" id=\"jupiter_img\" alt=\"jupiter\">\r\n            </div>\r\n            <div class=\"col-lg-2\" id=\"saturn\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/tDzCYWv.png\" id=\"saturn_img\" alt=\"saturn\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"uranus\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/i3BOMxT.png\" id=\"uranus_img\" alt=\"uranus\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"neptune\"  [routerLinkActive]=\"['link-active']\">\r\n               <img src=\"http://i.imgur.com/PLieBrN.png\" id=\"neptune_img\" alt=\"neptune\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
+module.exports = "<div class=\"container\">\r\n    <h1>Change Password</h1>\r\n    <form #f=\"ngForm\" novalidate (ngSubmit)=\"save(f.value, f.valid)\">\r\n        <!-- we will place our fields here -->\r\n\r\n        <div class=\"form-group\">\r\n            <label for=\"\">Password</label>\r\n            <input type=\"password\" class=\"form-control\" name=\"oldPassword\" />\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"\">New Password</label>\r\n            <input type=\"password\" class=\"form-control\" name=\"newPassword\" />\r\n        </div>\r\n        <div class=\"form-group\">\r\n            <label for=\"\">Retype password</label>\r\n            <input type=\"password\" class=\"form-control\" name=\"confirmPassword\" />\r\n        </div>\r\n        <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"!myForm.valid\">Submit</button>\r\n    </form>\r\n\r\n    </div>";
 
 /***/ }),
 /* 79 */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Student Score Table</h1>\r\n<p *ngIf=\"!scores\"><em>Loading...</em></p>\r\n<table class='table' *ngIf=\"scores\">\r\n    <thead>\r\n        <tr>\r\n            <th>Score ID</th>\r\n            <th>Game ID</th>\r\n            <th>Student ID</th>\r\n            <th>Teacher ID</th>\r\n            <th>Attepmt Time</th>\r\n            <th>Questions Answered</th>\r\n            <th>Correctly Answered</th>\r\n            <th>Difficulty</th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n        <tr *ngFor=\"let score of scores\">\r\n        \r\n        </tr>\r\n    </tbody>\r\n</table>";
+module.exports = "<div class=\" container\" id=\"page_wrap\">\r\n    <div class=\"row\" id=\"home_wrap\">\r\n        <div class=\"row\" id=\"logo_wrap\">\r\n              <div class=\" col-lg-4\" id=\"logo1\">\r\n\r\n              </div> \r\n              <div class=\" col-lg-4\" id=\"logo2\">\r\n                  <img  src=\"http://i.imgur.com/wehmORA.png\" id=\"logo_img\" alt=\"Logo\" >\r\n              </div>\r\n              <div class=\" col-lg-4\" id=\"logo3\">\r\n\r\n              </div>\r\n\r\n        </div>\r\n        <div class=\"flex-row\" id=\"system_wrap\">\r\n            \r\n            <div class=\"col-lg-1\" id=\"mercury\" [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/fmnKsIJ.png\" id=\"mercury_img\" alt=\"murcury\"  [routerLink]=\"['/alienroundup']\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"venus\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/cm5ZcFi.png\" id=\"venus_img\" alt=\"venus\"  [routerLink]=\"['/time']\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"earth\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/D03gV5K.png \" id=\"earth_img\" alt=\"earth\" [routerLink]=\"['/flashcards']\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"mars\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/PjwNk7K.png \" id=\"mars_img\" alt=\"mars\">\r\n            </div>\r\n            <div class=\"col-lg-2\" id=\"jupiter\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/ErtUG9c.png\" id=\"jupiter_img\" alt=\"jupiter\">\r\n            </div>\r\n            <div class=\"col-lg-2\" id=\"saturn\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/tDzCYWv.png\" id=\"saturn_img\" alt=\"saturn\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"uranus\"  [routerLinkActive]=\"['link-active']\">\r\n                <img src=\"http://i.imgur.com/i3BOMxT.png\" id=\"uranus_img\" alt=\"uranus\">\r\n            </div>\r\n            <div class=\"col-lg-1\" id=\"neptune\"  [routerLinkActive]=\"['link-active']\">\r\n               <img src=\"http://i.imgur.com/PLieBrN.png\" id=\"neptune_img\" alt=\"neptune\">\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
 
 /***/ }),
 /* 80 */
+/***/ (function(module, exports) {
+
+module.exports = "<h1>Student Score Table</h1>\r\n<p *ngIf=\"!scores\"><em>Loading...</em></p>\r\n<table class='table' *ngIf=\"scores\">\r\n    <thead>\r\n        <tr>\r\n            <th>Score ID</th>\r\n            <th>Game ID</th>\r\n            <th>Student ID</th>\r\n            <th>Teacher ID</th>\r\n            <th>Attepmt Time</th>\r\n            <th>Questions Answered</th>\r\n            <th>Correctly Answered</th>\r\n            <th>Difficulty</th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n        <tr *ngFor=\"let score of scores\">\r\n        \r\n        </tr>\r\n    </tbody>\r\n</table>";
+
+/***/ }),
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10284,7 +10299,7 @@ var isArray = Array.isArray || function (xs) {
 
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10376,26 +10391,15 @@ var objectKeys = Object.keys || function (obj) {
 
 
 /***/ }),
-/* 82 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.decode = exports.parse = __webpack_require__(80);
-exports.encode = exports.stringify = __webpack_require__(81);
-
-
-/***/ }),
 /* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var Observable_1 = __webpack_require__(38);
-var map_1 = __webpack_require__(96);
-Observable_1.Observable.prototype.map = map_1.map;
-//# sourceMappingURL=map.js.map
+
+exports.decode = exports.parse = __webpack_require__(81);
+exports.encode = exports.stringify = __webpack_require__(82);
+
 
 /***/ }),
 /* 84 */
@@ -10403,7 +10407,18 @@ Observable_1.Observable.prototype.map = map_1.map;
 
 "use strict";
 
-var root_1 = __webpack_require__(102);
+var Observable_1 = __webpack_require__(38);
+var map_1 = __webpack_require__(98);
+Observable_1.Observable.prototype.map = map_1.map;
+//# sourceMappingURL=map.js.map
+
+/***/ }),
+/* 85 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var root_1 = __webpack_require__(104);
 /* tslint:enable:max-line-length */
 /**
  * Converts an Observable sequence to a ES2015 compliant promise.
@@ -10476,7 +10491,7 @@ exports.toPromise = toPromise;
 //# sourceMappingURL=toPromise.js.map
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10489,7 +10504,7 @@ module.exports = function (str) {
 
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -10503,7 +10518,7 @@ module.exports = function (str) {
     
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -10517,7 +10532,7 @@ module.exports = function (str) {
     
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -10531,7 +10546,7 @@ module.exports = function (str) {
     
 
 /***/ }),
-/* 89 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -10545,7 +10560,7 @@ module.exports = function (str) {
     
 
 /***/ }),
-/* 90 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -10559,7 +10574,7 @@ module.exports = function (str) {
     
 
 /***/ }),
-/* 91 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -10573,7 +10588,7 @@ module.exports = function (str) {
     
 
 /***/ }),
-/* 92 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -10587,7 +10602,21 @@ module.exports = function (str) {
     
 
 /***/ }),
-/* 93 */
+/* 94 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+        var result = __webpack_require__(68);
+
+        if (typeof result === "string") {
+            module.exports = result;
+        } else {
+            module.exports = result.toString();
+        }
+    
+
+/***/ }),
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*eslint-env browser*/
@@ -10631,7 +10660,7 @@ var colors = {
 };
 ansiHTML.setColors(colors);
 
-var Entities = __webpack_require__(68).AllHtmlEntities;
+var Entities = __webpack_require__(69).AllHtmlEntities;
 var entities = new Entities();
 
 exports.showProblems =
@@ -10672,7 +10701,7 @@ function problemType (type) {
 
 
 /***/ }),
-/* 94 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -10810,61 +10839,61 @@ module.exports = function(hash, moduleMap, options) {
 
 
 /***/ }),
-/* 95 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(11);
 
 /***/ }),
-/* 96 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(121);
 
 /***/ }),
-/* 97 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(194);
 
 /***/ }),
-/* 98 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(316);
 
 /***/ }),
-/* 99 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(332);
 
 /***/ }),
-/* 100 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(333);
 
 /***/ }),
-/* 101 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(335);
 
 /***/ }),
-/* 102 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(47);
 
 /***/ }),
-/* 103 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(1))(574);
 
 /***/ }),
-/* 104 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(42);
