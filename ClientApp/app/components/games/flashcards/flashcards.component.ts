@@ -2,8 +2,9 @@ import { Component, ViewChild} from '@angular/core';
 import { Observable } from 'rxjs'
 
 @Component({
-    selector: 'time',
-    templateUrl: './time.component.html',
+    selector: 'flashcards',
+    templateUrl: './flashcards.component.html',
+    styleUrls: ['./flashcards.component.css']
 })
 
 
